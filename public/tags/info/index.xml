@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Claire&#39;s Blog</title>
-    <link>https://chapien.net/</link>
-    <description>Recent content on Claire&#39;s Blog</description>
+    <title>Info on Claire&#39;s Blog</title>
+    <link>https://chapien.net/tags/info/</link>
+    <description>Recent content in Info on Claire&#39;s Blog</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en</language>
     <copyright>©2025. Except where otherwise noted, works on this site are licensed under CC BY-NC-SA 4.0</copyright>
-    <lastBuildDate>Sun, 05 Jan 2025 06:12:50 +0000</lastBuildDate>
-    <atom:link href="https://chapien.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chapien.net/tags/info/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://chapien.net/about/</link>
@@ -24,13 +24,6 @@
       <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://chapien.net/contact/</guid>
       <description>How to contact me</description>
-    </item>
-    <item>
-      <title>Hello World</title>
-      <link>https://chapien.net/blog/posts/2025/hello/</link>
-      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://chapien.net/blog/posts/2025/hello/</guid>
-      <description>&lt;p&gt;This is my first post to this blog. I don&amp;rsquo;t really have anything to say yet, it&amp;rsquo;s just here to make sure that there isn&amp;rsquo;t empty space on the homepage. Make sure to read the about page, if you want to know what to expect!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
