@@ -1,0 +1,5 @@
+{{ range readDir "static/assets/images/glyphs/notation" }}
+  {{ if (findRE ".png$" .Name) }}
+    <a href="https://chapien.net/assets/images/glyphs/notation/{{ .Name }}">{{ .Name }}</a>
+  {{ end }}
+{{ end }}

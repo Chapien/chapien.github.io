@@ -7,8 +7,95 @@
     <generator>Hugo -- 0.140.2</generator>
     <language>en</language>
     <copyright>©2025. Except where otherwise noted, works on this site are licensed under CC BY-NC-SA 4.0</copyright>
-    <lastBuildDate>Sun, 05 Jan 2025 06:12:50 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chapien.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Images</title>
+      <link>https://chapien.net/images/</link>
+      <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://chapien.net/images/</guid>
+      <description>&lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/bass.png&#34;&gt;bass.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/checkpoint.png&#34;&gt;checkpoint.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/eighth.png&#34;&gt;eighth.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/eighth_b.png&#34;&gt;eighth_b.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/eighth_r.png&#34;&gt;eighth_r.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/end.png&#34;&gt;end.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/flat.png&#34;&gt;flat.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/half.png&#34;&gt;half.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/half_r.png&#34;&gt;half_r.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/measure.png&#34;&gt;measure.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/quarter.png&#34;&gt;quarter.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/quarter_r.png&#34;&gt;quarter_r.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/repeat.png&#34;&gt;repeat.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/sharp.png&#34;&gt;sharp.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/sixteenth.png&#34;&gt;sixteenth.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/sixteenth_b.png&#34;&gt;sixteenth_b.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/sixteenth_r.png&#34;&gt;sixteenth_r.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/start.png&#34;&gt;start.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/treble.png&#34;&gt;treble.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/whole.png&#34;&gt;whole.png&lt;/a&gt;
+  
+
+  
+    &lt;a href=&#34;https://chapien.net/assets/images/glyphs/notation/whole_r.png&#34;&gt;whole_r.png&lt;/a&gt;</description>
+    </item>
     <item>
       <title>About</title>
       <link>https://chapien.net/about/</link>
@@ -27,9 +114,9 @@
     </item>
     <item>
       <title>Hello World</title>
-      <link>https://chapien.net/blog/posts/2025/hello/</link>
+      <link>https://chapien.net/blog/site/posts/2025/hello/</link>
       <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://chapien.net/blog/posts/2025/hello/</guid>
+      <guid>https://chapien.net/blog/site/posts/2025/hello/</guid>
       <description>&lt;p&gt;This is my first post to this blog. I don&amp;rsquo;t really have anything to say yet, it&amp;rsquo;s just here to make sure that there isn&amp;rsquo;t empty space on the homepage. Make sure to read the about page, if you want to know what to expect!&lt;/p&gt;</description>
     </item>
   </channel>

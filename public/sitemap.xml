@@ -2,29 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://chapien.net/</loc>
+    <lastmod>2025-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chapien.net/images/</loc>
+    <lastmod>2025-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chapien.net/tags/info/</loc>
+    <lastmod>2025-01-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chapien.net/tags/</loc>
+    <lastmod>2025-01-31T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://chapien.net/about/</loc>
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chapien.net/tags/blog/</loc>
-    <lastmod>2025-01-05T06:12:50+00:00</lastmod>
+    <lastmod>2025-01-05T20:28:16+00:00</lastmod>
   </url><url>
     <loc>https://chapien.net/blog/</loc>
-    <lastmod>2025-01-05T06:12:50+00:00</lastmod>
-  </url><url>
-    <loc>https://chapien.net/</loc>
-    <lastmod>2025-01-05T06:12:50+00:00</lastmod>
+    <lastmod>2025-01-05T20:28:16+00:00</lastmod>
   </url><url>
     <loc>https://chapien.net/contact/</loc>
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chapien.net/blog/posts/2025/hello/</loc>
-    <lastmod>2025-01-05T06:12:50+00:00</lastmod>
-  </url><url>
-    <loc>https://chapien.net/tags/info/</loc>
-    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chapien.net/tags/</loc>
-    <lastmod>2025-01-05T06:12:50+00:00</lastmod>
+    <loc>https://chapien.net/blog/site/posts/2025/hello/</loc>
+    <lastmod>2025-01-05T20:28:16+00:00</lastmod>
   </url><url>
     <loc>https://chapien.net/archive/</loc>
   </url><url>
