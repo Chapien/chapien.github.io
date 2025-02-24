@@ -1,0 +1,70 @@
+### Base Hugo ##########################################################
+
+baseURL = "https://chapien.net/"
+languageCode = "en-us"
+title = "Claire's Blog"
+copyright = "©2025. Except where otherwise noted, works on this site are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
+theme = "hugo-PaperMod"
+
+### Languages ##########################################################
+
+[languages.en]
+languageName = "English"
+weight = 1
+
+[languages.en.taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[[languages.en.menu.main]]
+name = "About"
+url = "about"
+weight = 1
+
+[[languages.en.menu.main]]
+name = "Contact"
+url = "contact"
+weight = 4
+
+[[languages.en.menu.main]]
+name = "Archive"
+url = "archive"
+weight = 5
+
+[[languages.en.menu.main]]
+name = "Tags"
+url = "tags/"
+weight = 10
+
+[[languages.en.menu.main]]
+name = "Search"
+url = "search/"
+weight = 15
+
+### Papermod Params ####################################################
+
+[params]
+home = ["HTML","RSS","JSON"]
+env = "production"
+description = "Claire's personal blog."
+author = "Claire"
+defaultTheme = "auto"
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowAllPagewsInArchive = false
+ShowPageNums = true
+ShowToC = true
+TocOpen = true
+socialIcons = [
+    {name = "itchio", url = "https://itch.io/profile/chapien"},
+    {name = "kofi", url = "https://ko-fi.com/chapien"},    
+    {name = "bluesky", url = "https://bsky.app/profile/claire.chapien.net"},
+    {name = "tumblr", url = "https://chappydev.tumblr.com/"}
+]
+
+[params.homeInfoParams]
+Title = "Claire's Blog"
+Content = "A personal space for my more thought out writing. For more information, check out the [about](about) page.  I write with an adult audience in mind. There's not going to be much explicit on here, but please be over 18. In addition, do not try to interact with me on social media unless you are over 21. If you are over 18 but under 21, you can still e-mail me.  Assuming you know what e-mail is, anyway.\n"

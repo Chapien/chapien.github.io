@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Claire&#39;s Blog</title>
-    <link>https://chapien.net/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Claire&#39;s Blog</description>
-    <generator>Hugo -- 0.140.2</generator>
+    <generator>Hugo -- 0.144.2</generator>
     <language>en</language>
     <copyright>©2025. Except where otherwise noted, works on this site are licensed under CC BY-NC-SA 4.0</copyright>
-    <atom:link href="https://chapien.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
