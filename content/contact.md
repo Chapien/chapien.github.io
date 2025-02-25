@@ -5,9 +5,11 @@ description: How to contact me
 draft: false
 tags:
   - info
-author: Claire
+author:
+  - Claire
 showtoc: true
 tocopen: true
+hidesummary: true
 ---
 For inquiries about my work, writings, games, etc., or if you wish to ask a question for me to publicly answer on this blog, please contact me via the following methods:
 - e-mail: inquiries@chapien.net

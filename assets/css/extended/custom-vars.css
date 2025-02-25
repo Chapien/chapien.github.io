@@ -1,9 +1,9 @@
 body {
-    font-family: -apple-system,Inter,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+    font-family: Inter,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: -apple-system-headline,Montserrat,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+    font-family: Montserrat,-apple-system-headline,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
 }
 
 .post-content a {
@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .first-entry {
     align-items: center;
+}
+
+.first-entry .entry-content a {
+    color: var(--link);
 }
 
 .home-info .entry-content {
