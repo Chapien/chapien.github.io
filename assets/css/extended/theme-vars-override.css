@@ -31,7 +31,7 @@
     --entry: var(--nord1);
     --primary: var(--nord5);
     --secondary: var(--nord4);
-    --tertiary: var(---nord3);
+    --tertiary: var(--nord1);
     --content: var(--nord6);
     --hljs-bg: #242934;
     --code-bg: var(--nord2);

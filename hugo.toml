@@ -68,3 +68,13 @@ socialIcons = [
 [params.homeInfoParams]
 Title = "Claire's Blog"
 Content = "A personal space for my more thought out writing. For more information, check out the [about](about) page.  I write with an adult audience in mind. There's not going to be much explicit on here, but please be over 18. In addition, do not try to interact with me on social media unless you are over 21. If you are over 18 but under 21, you can still e-mail me.  Assuming you know what e-mail is, anyway.\n"
+imageURL = "assets/images/profile.png"
+AlignSocialIconsTo = "Center"
+buttons = [
+    {name = "About", url = "about"},
+    {name = "Contact", url = "contact"},
+    {name = "Blog", url = "/blog"}
+]
+
+#[params.profileMode]
+#enabled = true

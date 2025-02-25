@@ -1,0 +1,26 @@
+body {
+    font-family: -apple-system,Inter,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system-headline,Montserrat,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+}
+
+.post-content a {
+    color: var(--link);
+}
+
+.home-info .profile {
+    align-items: center;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height) - (var(--gap) * 2));
+    text-align: center;
+}
+
+.first-entry {
+    align-items: center;
+}
+
+.home-info .entry-content {
+    text-align: justify;
+    -webkit-line-clamp: unset;
+}

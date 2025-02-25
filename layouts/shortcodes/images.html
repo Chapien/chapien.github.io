@@ -1,5 +1,17 @@
+<h1>Index of Images/</h1>
+<table>
+  <tbody><tr>
+    <th>File</th>
+    <th>Name</th>
+    <td class="right"></td>
+      <td class="right"> - </td>
+  </tr>
 {{ range readDir "static/assets/images/glyphs/notation" }}
   {{ if (findRE ".png$" .Name) }}
-    <a href="https://chapien.net/assets/images/glyphs/notation/{{ .Name }}">{{ .Name }}</a>
+    <tr>
+      <td>File</td>
+      <td><a href="https://chapien.net/assets/images/glyphs/notation/{{ .Name }}">{{ .Name }}</a></td>
+    </tr>
   {{ end }}
 {{ end }}
+</tbody></table>
