@@ -66,6 +66,7 @@ socialIcons = [
     {name = "kofi", url = "https://ko-fi.com/chapien"},    
     {name = "github", url = "https://github.com/Chapien"},
     {name = "lastfm", url = "https://www.last.fm/user/chapien"},
+    {name = "bookwyrm", url = "https://bookwyrm.social/user/chapien"},
     {name = "bluesky", url = "https://bsky.app/profile/claire.chapien.net"},
     {name = "tumblr", url = "https://chappydev.tumblr.com/"},
     {name = "mastodon", url = "https://transfem.social/@chapien"},
