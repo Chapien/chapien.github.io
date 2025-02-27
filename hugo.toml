@@ -3,7 +3,7 @@
 baseURL = "https://chapien.net/"
 languageCode = "en-us"
 title = "Claire's Blog"
-copyright = "©2025. Except where otherwise noted, works on this site are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
+copyright = "©2025. Except where noted, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
 theme = "hugo-PaperMod"
 
 ### Languages ##########################################################
@@ -47,14 +47,17 @@ weight = 15
 [params]
 home = ["HTML","RSS","JSON"]
 env = "production"
+hcard = true
 description = "Claire's personal blog."
 author = "Claire"
+Nickname="chapien"
+Pronouns= ["She","Her"]
 defaultTheme = "auto"
-ShowShareButtons = false
+CanonicalLinkText = " "
 ShowPostNavLinks = true
 ShowBreadCrumbs = true
 ShowCodeCopyButtons = true
-ShowAllPagewsInArchive = false
+ShowAllPagesInArchive = false
 ShowPageNums = true
 ShowToC = true
 TocOpen = true
@@ -75,6 +78,7 @@ buttons = [
     {name = "Contact", url = "contact"},
     {name = "Blog", url = "/blog"}
 ]
+
 
 #[params.profileMode]
 #enabled = true
