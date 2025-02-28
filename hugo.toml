@@ -54,6 +54,11 @@ url = "https://tree.chapien.net/"
 weight = 15
 
 [[languages.en.menu.main]]
+name = "RSS"
+url = "feed.xml"
+weight = 16
+
+[[languages.en.menu.main]]
 name = "Search"
 url = "search/"
 weight = 20
@@ -80,7 +85,7 @@ TocOpen = true
 ShowRssButtonInSectionTermList = true
 socialIcons = [
     {name = "pronouns", url= "https://en.pronouns.page/u/chapien"},
-    {name = "rss", url = "http://chapien.net/feed.xml"},
+    #{name = "rss", url = "http://chapien.net/feed.xml"},
     {name = "itchio", url = "https://itch.io/profile/chapien"},
     {name = "kofi", url = "https://ko-fi.com/chapien"},    
     {name = "github", url = "https://github.com/Chapien"},
