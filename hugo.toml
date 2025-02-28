@@ -62,6 +62,7 @@ ShowPageNums = true
 ShowToC = true
 TocOpen = true
 socialIcons = [
+    {name = "pronouns", url= "https://en.pronouns.page/u/chapien"},
     {name = "itchio", url = "https://itch.io/profile/chapien"},
     {name = "kofi", url = "https://ko-fi.com/chapien"},    
     {name = "github", url = "https://github.com/Chapien"},
@@ -74,7 +75,7 @@ socialIcons = [
 
 [params.homeInfoParams]
 Title = "Claire's Blog"
-Content = "Short stories. Blogs about mental health, game dev, and LGBTQ+ issues. [Pronouns](https://en.pronouns.page/u/chapien#! \"Pronouns\"). [About me](about)."
+Content = "Short stories. Blogs about mental health, game dev, and LGBTQ+ issues. [About me](about)."
 imageURL = "assets/images/profile.png"
 AlignSocialIconsTo = "Center"
 buttons = [
