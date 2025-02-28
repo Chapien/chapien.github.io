@@ -8,12 +8,12 @@
     {{- $classval = printf "%s %s" $classval "external" }}
 {{- end -}}
 {{- if strings.HasSuffix $linkurl "#!" }} 
-    {{- $relval = printf "%s %s" $relval "noreferrer me" }}
+    {{- $relval = printf "%s %s" $relval "me noopener noreferrer" }}
     {{- $urlparts := split $linkurl "#" -}}
     {{- $linkurl = index $urlparts 0}}
 {{- end -}}
 {{- if strings.HasSuffix $linkurl "#?" }} 
-    {{- $relval = printf "%s %s" $relval "noreferrer" }}
+    {{- $relval = printf "%s %s" $relval "noopener noreferrer" }}
     {{- $urlparts := split $linkurl "#" -}}
     {{- $linkurl = index $urlparts 0}}
 {{- end -}}

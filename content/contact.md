@@ -27,6 +27,6 @@ If you want to send me money as a donation, you can do so at:
 - ko-fi: https://ko-fi.com/chapien
 
 Finally, if you want to find all public facing social media accounts I have, you can find them at my linktree:
-- linktree: https://linktr.ee/chapien
+- links: https://tree.chapien.net/
 
 Please do not reach out to me via Facebook or LinkedIn, unless I know you in person or you are in the Game Industry and have a professional inquiry. I have not posted links to those profiles anywhere on this site because I value some measure of privacy, no matter how thin.
