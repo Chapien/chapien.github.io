@@ -38,9 +38,14 @@ url = "tags/"
 weight = 10
 
 [[languages.en.menu.main]]
+name = "Link Tree"
+url = "https://tree.chapien.net/"
+weight = 15
+
+[[languages.en.menu.main]]
 name = "Search"
 url = "search/"
-weight = 15
+weight = 20
 
 ### Papermod Params ####################################################
 
@@ -81,7 +86,7 @@ AlignSocialIconsTo = "Center"
 buttons = [
     {name = "About", url = "about"},
     {name = "Contact", url = "contact"},
-    {name = "Blog", url = "/blog"}
+    {name = "Blog", url = "/blog"},
 ]
 
 
