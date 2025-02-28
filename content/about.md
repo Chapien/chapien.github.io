@@ -4,13 +4,16 @@ date: 2025-01-04
 draft: false
 tags:
   - info
-author: Claire
+author:
+  - Claire
 showtoc: true
 tocopen: true
+canonicalURL: https://chapien.net/about/
+ShowCanonicalLink: true
 ---
 ## About the Author
 ### Who are you?
-My name is Claire. I'm an asexual trans woman with a passion for video games, history, and writing. I'm around 30 years old (+/-, depending on when you're reading). I'm a game developer as well as a hobbyist writer. It's not particularly hard to find out more about me, but I prefer to keep at least some separation between my real life and online life, and so I won't share my last name here. 
+My name is Claire. [I'm an asexual trans woman](https://en.pronouns.page/u/chapien#!) with a passion for video games, history, and writing. I'm around 30 years old (+/-, depending on when you're reading). I'm a game developer as well as a hobbyist writer. It's not particularly hard to find out more about me, but I prefer to keep at least some separation between my real life and online life, and so I won't share my last name here. 
 ### You're a Game Developer?
 Yeah! I went to college for computer science and game design. I didn't finish my degree due to real life circumstances, but thanks to the connections I built I managed to get a job regardless. I've worked primarily on ports and smaller scale projects. Again, if you're in the industry, you can find my LinkedIn fairly easily I think. For those that aren't, I worked for a company that was essentially contracted by larger companies to assist with ports, updates to old games, or specific tasks on larger projects. A few games I worked on with them were *Age of Empires Anniversary Edition* and *Bard's Tale Trilogy Remastered*.
 
