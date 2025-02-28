@@ -8,6 +8,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-content a {
     color: var(--link);
+    text-decoration: underline;
+}
+
+.footer-content a {
+    color: var(--link);
+    text-decoration: underline;
 }
 
 .home-info .profile {
@@ -22,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .first-entry .entry-content a {
     color: var(--link);
+    text-decoration: underline;
 }
 
 .home-info .entry-content {
