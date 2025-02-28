@@ -66,6 +66,7 @@ ShowAllPagesInArchive = false
 ShowPageNums = true
 ShowToC = true
 TocOpen = true
+ShowRssButtonInSectionTermList = true
 socialIcons = [
     {name = "pronouns", url= "https://en.pronouns.page/u/chapien"},
     {name = "itchio", url = "https://itch.io/profile/chapien"},
