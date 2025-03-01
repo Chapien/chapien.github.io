@@ -35,3 +35,21 @@ h1, h2, h3, h4, h5, h6 {
     text-align: justify;
     -webkit-line-clamp: unset;
 }
+
+@media (min-width: 700px) {
+    .post-entry {
+      grid-template-columns: 1fr 2fr;
+      display: grid;
+    position: relative;
+    }
+  }
+
+
+
+
+.post-entry .entry-cover {
+    display: block;
+    max-width: 180px;
+    margin: auto;
+    grid-row: span 3;
+}

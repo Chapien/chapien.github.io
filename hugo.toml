@@ -5,6 +5,7 @@ languageCode = "en-us"
 title = "Claire's Blog"
 copyright = "Website content Copyright © 2025 by Claire is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/#?)"
 theme = "hugo-PaperMod"
+builddrafts = true
 
 [outputs]
   home = ['html', 'rss']
