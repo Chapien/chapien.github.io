@@ -12,7 +12,7 @@ tocopen: true
 hidesummary: false
 canonicalURL: https://chapien.net/blog/2025/we_deserve_better/
 ShowCanonicalLink: true
-cover:
+image:
   image: cover.png
   relative: true
   responsiveImages: true
