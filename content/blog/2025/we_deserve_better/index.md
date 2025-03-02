@@ -12,11 +12,11 @@ tocopen: true
 hidesummary: false
 canonicalURL: https://chapien.net/blog/2025/we_deserve_better/
 ShowCanonicalLink: true
-cover: 
-    image: cover.png
-    relative: true
-    responsiveImages: true
-    caption: Image taken from [Wikipedia](https://commons.wikimedia.org/wiki/File:Neurodiversity_Crowd_2.png)
+cover:
+  image: cover.png
+  relative: true
+  responsiveImages: true
+  caption: Image taken from [Wikipedia](https://commons.wikimedia.org/wiki/File:Neurodiversity_Crowd_2.png)
 ---
 Being neurodiverse in America can be rough, to say the least. You are seen as strange at best, dangerous at worst. If you are not being maligned as lazy, you are being fetishized for the seemingly positive traits of your disorder. Then, of course, there's the problem with the word *disorder* to begin with, since it implies something to be fundamentally wrong with your mind. But what if it's society that's wrong, and not you?
 
@@ -52,7 +52,7 @@ The article goes on to detail the public questioning that RFK Jr received at his
 
 > I share Erin Burnett and Dr. Gupta’s skepticism about Robert F Kennedy Jr.’s veracity on a number of health-related subjects. However, on the specific subject of SSRI antidepressants like Prozac and Paxil, and their link to school (and other) shootings, RFK Jr. has a point. Indeed, there are numerous documented cases that show a link between SSRIs and school violence. Following are just three examples.
 
-The infamous link between SSRIs and school shootings, something you here echoed by the antidepressant-skeptical. So is there any efficacy to this correlation? Certainly, SSRIs in particular can have negative side effects. They build dependency; without mine, I get brain zaps that make it very hard to focus. For some people, they outright do not work, and there are a host of negative health effects that can follow. Which, to be clear, is the case with *all medication*, not just psychiatric medicine.
+The infamous link between SSRIs and school shootings, something you hear echoed by the antidepressant-skeptical. So is there any efficacy to this correlation? Certainly, SSRIs in particular can have negative side effects. They build dependency; without mine, I get brain zaps that make it very hard to focus. For some people, they outright do not work, and there are a host of negative health effects that can follow. Which, to be clear, is the case with *all medication*, not just psychiatric medicine.
 
 [There is one study](https://pmc.ncbi.nlm.nih.gov/articles/PMC7347007/) that I could find about the connection between violence and SSRIs. Keeping in mind that I am not a scientist, the data seems to suggest that SSRIs can lead to increased aggression. However, increased rates of violent crime only increased in those who had previous convictions before beginning SSRIs. Different disorders also led to different increases of violence, with a lot of confounding variables making a simple analysis difficult. Regardless, the study concluded:
 
@@ -71,11 +71,11 @@ At the conclusion, the author levels an accusation of conspiracy at the healthca
 >
 >It is high time that more politicians, journalists, health officials, physicians, psychiatrists, and patients were made aware of this potentially lifesaving information.
 
-Certainly, the pharmaceutical company has blood on its hands. But this implies an active suppression of scientific research -- despite the fact that the very research being referred to is available to the public. The reason such research has not led to the banning of SSRIs is twofold. First, there are too many confounding variables to conclude SSRIs are responsible for violent crimes (existing mental health conditions in particular), and second, it's because *SSRIs work*.
+Certainly, the pharmaceutical industry has blood on its hands. But this implies an active suppression of scientific research -- despite the fact that the very research being referred to is available to the public. The reason such research has not led to the banning of SSRIs is twofold. First, there are too many confounding variables to conclude SSRIs are responsible for violent crimes (existing mental health conditions in particular), and second, it's because *SSRIs work*.
 
 SSRIs do not only treat depression; they treat OCD and a myriad of other anxiety conditions as well. My SSRIs have mitigated the worst of my obsessive thought patterns. Before SSRIs, I would regularly obsess over gruesome and obscene imagined situations in my head. I would act out compulsions, such as snorting, opening and closing doors, or even spending hours researching if I was bad person for having those thoughts in order to banish those obsessions.
 
-SSRIs did not cure me. I still have these obsessive thought patterns. But it is a marked improvement. The thoughts are less common. The compulsions are easier to resist. I can go outside without having a panic attack -- something that was incredibly difficult for me before I was medicated. And, on the note of depression, I can actually get out of bed every morning and start my day thanks to my SSRIs -- and thanks to my aderall, too.
+SSRIs did not cure me. I still have these obsessive thought patterns. But it is a marked improvement. The thoughts are less common. The compulsions are easier to resist. I can go outside without having a panic attack -- something that was incredibly difficult for me before I was medicated. And, on the note of depression, I can actually get out of bed every morning and start my day thanks to my SSRIs -- and thanks to my concerta, too.
 
 Almost anyone else who is neurodiverse will tell similar stories. We may disagree on the efficacy of specific medications, but those of us who are medicated will tell you that RFK Jr can take our medications out of our cold, dead hands. This isn't a threat; it's a statement of reality. Without our medications, many of us would die. I might be included in that number, and this is a scary time for all of us.
 
