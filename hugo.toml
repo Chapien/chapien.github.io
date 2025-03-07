@@ -2,7 +2,7 @@
 
 baseURL = "https://chapien.net/"
 languageCode = "en-us"
-title = "Claire's Blog"
+title = "The Claire Scrolls"
 copyright = "Website content Copyright © 2025 by Claire is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/#?)"
 theme = "hugo-PaperMod"
 builddrafts = false
@@ -98,7 +98,7 @@ socialIcons = [
 ]
 
 [params.homeInfoParams]
-Title = "Claire's Blog"
+Title = "Claire"
 Content = "Short stories. Blogs about mental health, game dev, and LGBTQ+ issues. [About me](about)."
 imageURL = "assets/images/profile.png"
 AlignSocialIconsTo = "Center"
