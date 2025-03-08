@@ -6,6 +6,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat,-apple-system-headline,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
 }
 
+header { 
+    font-family: Montserrat,-apple-system-headline,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+}
+
+
 .post-content a {
     box-shadow: none;
     color: var(--link);
@@ -56,12 +61,14 @@ h1, h2, h3, h4, h5, h6 {
     .post-entry {
       grid-template-columns: 1fr 2fr;
       display: grid;
-    position: relative;
+      position: static;
+      padding-left: 0px;
+      padding-right: 0px;
     }
   }
 
 .post-entry .entry-cover {
-    display: block;
+    display: inherit;
     max-width: 180px;
     margin: auto;
     grid-row: span 3;
