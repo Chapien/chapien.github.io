@@ -11,6 +11,7 @@
     --code-bg: var(--nord6);
     --border: var(--nord4);
     --link: var(--nord10);
+    --link-hover: var(--nord9);
 }
 
 /* :root {
@@ -37,6 +38,7 @@
     --code-bg: var(--nord2);
     --border: var(--nord2);
     --link: var(--nord8);
+    --link-hover: var(--nord9);
 }
 
 /* .dark {
