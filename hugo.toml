@@ -14,15 +14,10 @@ builddrafts = false
     path = "hugo-PaperMod"
 
 [outputs]
-  home = ['html', 'rss']
-  section = ['html']
-  taxonomy = ['html']
-  term = ['html']
-
-[outputFormats]
-    [outputFormats.RSS]
-        mediaType = "application/rss+xml"
-        baseName = "feed"
+home = ['html']
+section = ['html']
+taxonomy = ['html']
+term = ['html']
 
 ### Languages ##########################################################
 
@@ -62,7 +57,7 @@ weight = 15
 
 [[languages.en.menu.main]]
 name = "RSS"
-url = "feed.xml"
+url = "blog/feed.xml"
 weight = 16
 
 [[languages.en.menu.main]]
@@ -73,7 +68,7 @@ weight = 20
 ### Papermod Params ####################################################
 
 [params]
-home = ["HTML","RSS","JSON"]
+home = ["HTML"]
 env = "production"
 hcard = true
 description = "Claire's personal blog."
