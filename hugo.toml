@@ -19,6 +19,11 @@ section = ['html']
 taxonomy = ['html']
 term = ['html']
 
+[outputFormats]
+    [outputFormats.RSS]
+        mediaType = "application/rss+xml"
+        baseName = "feed"
+
 ### Languages ##########################################################
 
 [languages.en]
