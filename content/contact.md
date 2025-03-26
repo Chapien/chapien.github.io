@@ -13,10 +13,10 @@ hidesummary: true
 canonicalURL: https://chapien.net/contact/
 ShowCanonicalLink: true
 ---
-> Name: Claire
->
-> PGP Fingerprint: 97810FC8F87BB5DC53012E81C5A81C724397B6B5
-
+```
+Name: Claire
+PGP Fingerprint: 97810FC8F87BB5DC53012E81C5A81C724397B6B5
+```
 For inquiries about my work, writings, games, etc., or if you wish to ask a question for me to publicly answer on this blog, please contact me via the following methods:
 - e-mail: inquiries@chapien.net
 
