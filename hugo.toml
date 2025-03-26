@@ -7,6 +7,12 @@ copyright = "Website content Copyright © 2025 by Claire is licensed under [CC B
 theme = "hugo-PaperMod"
 builddrafts = false
 
+[module]
+  [[module.imports]]
+    path = "github.com/KKKZOZ/hugo-admonitions"
+  [[module.imports]]
+    path = "hugo-PaperMod"
+
 [outputs]
   home = ['html', 'rss']
   section = ['html']

@@ -2,13 +2,13 @@
 
 :root {
     --theme: var(--nord6);
-    --entry: var(--nord6);
+    --entry: var(--nord5);
     --primary: var(--nord1);
     --secondary: var(--nord3);
     --tertiary: var(--nord4);
     --content: var(--nord0);
     --hljs-bg: #242934;
-    --code-bg: var(--nord6);
+    --code-bg: var(--nord4);
     --border: var(--nord4);
     --link: var(--nord10);
     --link-hover: var(--nord9);
