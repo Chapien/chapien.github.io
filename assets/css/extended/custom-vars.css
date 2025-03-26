@@ -75,7 +75,7 @@ header {
 }
 
 .post-entry .entry-link {
-    position: static;
+    position: absolute;
     left: 0;
     right: 0;
     top: 0;
