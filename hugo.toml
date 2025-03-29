@@ -73,7 +73,7 @@ weight = 20
 ### Papermod Params ####################################################
 
 [params]
-home = ["HTML, JSON"]
+home = ["HTML", "JSON"]
 env = "production"
 hcard = true
 description = "Claire's personal blog."

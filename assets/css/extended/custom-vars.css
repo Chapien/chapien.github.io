@@ -14,6 +14,10 @@ header {
     font-family: Montserrat,'Symbols Nerd Font',-apple-system-headline,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
 }
 
+footer {
+    font-family: Inter,'Symbols Nerd Font',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+}
+
 .button { 
     font-family: Montserrat,'Symbols Nerd Font',-apple-system-headline,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
 }

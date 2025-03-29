@@ -1,4 +1,4 @@
 ---
 title: 'Blog'
-outputs: ['html', 'json', 'rss']
+outputs: ['html', 'rss']
 ---
