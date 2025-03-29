@@ -2,6 +2,10 @@ body {
     font-family: Inter,'Symbols Nerd Font',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
 }
 
+.serif-toggle {
+    font-family: Lora, Times, "Times New Roman", Georgia, serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat,'Symbols Nerd Font',-apple-system-headline,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
 }
@@ -10,6 +14,29 @@ header {
     font-family: Montserrat,'Symbols Nerd Font',-apple-system-headline,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
 }
 
+.button { 
+    font-family: Montserrat,'Symbols Nerd Font',-apple-system-headline,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+}
+
+button#fontToggle {
+    font-size: 1px;
+    margin: auto 3px;
+}
+#serif {
+    vertical-align: middle;
+}
+#sans {
+    vertical-align: middle;
+}
+body.serif-toggle #serif {
+    display: none;
+    vertical-align: middle;
+}
+
+body:not(.serif-toggle) #sans {
+    display: none;
+    vertical-align: middle;
+}
 
 .post-content a {
     box-shadow: none;
