@@ -53,3 +53,11 @@
     --border: #434C5E;
     --link: #88c0d0;
 } */
+
+.list {
+    background: var(--theme);
+}
+
+.dark.list {
+    background: var(--theme);
+}
