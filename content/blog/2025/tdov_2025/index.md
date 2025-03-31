@@ -5,7 +5,7 @@ description: Trans Day of Visiblity 2025
 draft: false
 tags:
   - blog
-  - lgbt
+  - LGBT
 author:
   - Claire
 showtoc: true
