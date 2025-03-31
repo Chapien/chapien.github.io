@@ -38,14 +38,12 @@
     position: relative;
     text-decoration: none;
     margin-right: 0;
-    letter-spacing: -1ex;
-    margin-right: 1ex;
 }
 
 #webmentions a.reaction img {
     max-height: 1.3em;
-    margin-right: -1ex;
-    border-radius: 25%;
+    margin-right: 1ex;
+    border-radius: 50%;
 }
 
 #webmentions a.reaction sub {
@@ -68,3 +66,13 @@
     color: var(--primary);
 }
 
+#webmentions .source a {
+    box-shadow: none;
+    color: var(--link);
+    text-decoration: none;
+}
+
+#webmentions .source a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
