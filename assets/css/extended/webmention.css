@@ -37,6 +37,10 @@
 #webmentions a.reaction {
     position: relative;
     text-decoration: none;
+    margin-right: 0px;
+}
+
+#webmentions .reacts .a.reaction {
     margin-right: 5px;
 }
 
