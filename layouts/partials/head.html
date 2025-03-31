@@ -2,6 +2,7 @@
 <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
 <link rel="microsub" href="https://aperture.p3k.io/microsub/1022">
 <link rel="webmention" href="https://webmention.io/chapien.net/webmention" />
+<script src="/scripts/webmention.min.js" async></script>
 <link rel ="me" href="https://libre.fm/user/chapien/">
 {{ with .OutputFormats.Get "rss" -}}
   {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
