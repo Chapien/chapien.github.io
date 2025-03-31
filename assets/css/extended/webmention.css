@@ -40,7 +40,7 @@
     margin-right: 0px;
 }
 
-#webmentions .reacts .a.reaction {
+#webmentions .reacts a.reaction {
     margin-right: 5px;
 }
 
