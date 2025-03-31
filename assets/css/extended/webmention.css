@@ -44,6 +44,10 @@
     margin-right: 15px;
 }
 
+#webmentions .reacts {
+    font-size: 80%;
+}
+
 #webmentions a.reaction img {
     max-height: 1.3em;
     margin-right: 0.5ex;
