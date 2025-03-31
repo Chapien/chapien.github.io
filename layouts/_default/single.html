@@ -60,10 +60,8 @@
     {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
     {{- partial "share_icons.html" . -}}
     {{- end }}
+    <div id="webmentions"></div>
   </footer>
-
-  <div id="webmentions"></div>
-
   {{- if (.Param "comments") }}
   {{- partial "comments.html" . }}
   {{- end }}

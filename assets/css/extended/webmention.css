@@ -3,6 +3,9 @@
     position: relative;
     z-index: 100;
     line-height: 1.2em;
+    border-radius: var(--radius);
+    background: var(--code-bg);
+    border: 1px solid var(--border);
 }
 
 #webmentions .comments {
@@ -16,7 +19,7 @@
     font-size: medium;
     margin: 0;
     padding: 2px;
-    background: var(--code-bg);
+    background: var(--nord3);
 }
 
 #webmentions .reacts .reaction img {
