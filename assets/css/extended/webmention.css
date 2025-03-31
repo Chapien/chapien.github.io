@@ -19,7 +19,7 @@
     background: var(--nord4);
 }
 
-#webmentions h2.dark {
+#webmentions .dark h2{
     background: var(--nord2);
 }
 
