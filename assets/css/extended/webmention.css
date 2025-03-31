@@ -20,7 +20,7 @@
 }
 
 #webmentions .reacts img {
-    margin: 3px -1ex 1px 0;
+    margin-right: 1ex;
 }
 
 #webmentions ul {
@@ -59,7 +59,6 @@
 
 #webmentions .comments li .text {
     color: var(--primary);
-    font-style: italic;
     text-decoration: none;
 }
 
