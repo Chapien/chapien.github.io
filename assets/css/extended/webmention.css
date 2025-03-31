@@ -20,6 +20,7 @@
     margin: 0;
     padding: 2px;
     background: var(--nord3);
+    color: var(--secondary);
 }
 
 #webmentions .reacts .reaction img {
@@ -69,12 +70,12 @@
 }
 
 #webmentions .comments li .text {
-    color: var(--primary);
+    color: var(--secondary);
     text-decoration: none;
 }
 
 #webmentions .comments li .name {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 #webmentions a.source {
