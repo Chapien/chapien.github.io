@@ -26,7 +26,7 @@
 #webmentions ul {
     list-style-type: none;
     margin: 0;
-    padding: 4px;
+    padding: 2px;
 }
 
 #webmentions li {
@@ -37,7 +37,6 @@
 #webmentions a.reaction {
     position: relative;
     text-decoration: none;
-    text-shadow: 0px 0px 3px white;
     margin-right: 0;
     letter-spacing: -1ex;
     margin-right: 1ex;
@@ -60,12 +59,12 @@
 }
 
 #webmentions .comments li .text {
-    color: #555;
+    color: var(--primary);
     font-style: italic;
     text-decoration: none;
 }
 
 #webmentions .comments li .name {
-    color: #111;
+    color: var(--primary);
 }
 
