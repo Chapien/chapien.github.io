@@ -5,6 +5,10 @@
     line-height: 1.2em;
 }
 
+#webmentions svg {
+    vertical-align: middle;
+}
+
 #webmentions .comments {
     max-height: 20em;
     overflow-x: hidden;
@@ -20,7 +24,7 @@
 }
 
 #webmentions .reacts img {
-    margin-right: 1ex;
+    margin-right: 0.5ex;
 }
 
 #webmentions ul {
@@ -37,7 +41,7 @@
 #webmentions a.reaction {
     position: relative;
     text-decoration: none;
-    margin-right: 0;
+    margin-right: 5px;
 }
 
 #webmentions a.reaction img {
