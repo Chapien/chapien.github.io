@@ -20,7 +20,7 @@
     margin: 0;
     padding: 2px;
     background: var(--nord3);
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 #webmentions .reacts .reaction img {
