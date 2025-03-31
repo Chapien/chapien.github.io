@@ -100,6 +100,8 @@ socialIcons = [
     {name = "tumblr", url = "https://chappydev.tumblr.com/"},
     {name = "mastodon", url = "https://transfem.social/@chapien"},
 ]
+ShowShareButtons = true
+ShareButtons = ["bluesky"]
 
 [params.homeInfoParams]
 Title = "Claire"
