@@ -1,7 +1,7 @@
 ---
 title: Trans Day of Visibility
 date: 2025-03-31
-description: 'Trans Day of Visiblity 2025'
+description: Trans Day of Visiblity 2025
 draft: false
 tags:
   - blog
