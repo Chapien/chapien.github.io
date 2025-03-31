@@ -16,7 +16,11 @@
     font-size: medium;
     margin: 0;
     padding: 2px;
-    background: #ccc;
+    background: var(--nord4);
+}
+
+#webmentions h2.dark {
+    background: var(--nord2);
 }
 
 #webmentions .reacts img {
