@@ -5,10 +5,6 @@
     line-height: 1.2em;
 }
 
-#webmentions svg {
-    vertical-align: middle;
-}
-
 #webmentions .comments {
     max-height: 20em;
     overflow-x: hidden;
@@ -23,7 +19,7 @@
     background: var(--code-bg);
 }
 
-#webmentions .reacts img {
+#webmentions .reacts .reaction img {
     margin-right: 0.5ex;
 }
 
@@ -46,7 +42,7 @@
 
 #webmentions a.reaction img {
     max-height: 1.3em;
-    margin-right: 1ex;
+    margin-right: 0.5ex;
     border-radius: 50%;
     display: inline-block;
 }
