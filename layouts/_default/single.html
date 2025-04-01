@@ -60,7 +60,11 @@
     {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
     {{- partial "share_icons.html" . -}}
     {{- end }}
-    <div id="webmentions"></div>
+    <div id="webmention-container">
+        <h2>Webmentions</h2>
+        <span class="webmention-info"><p>Webmentions are a new way to interact with websites that allow you to keep ownership of your comments. To leave a comment or reaction, simply interact with my post linking to this article on any platform, and your replies or reactions will show up here. <a href=https://indieweb.org/Webmention>Learn more!</a></p></span>
+        <div id="webmentions"></div>
+    </div>
   </footer>
   {{- if (.Param "comments") }}
   {{- partial "comments.html" . }}

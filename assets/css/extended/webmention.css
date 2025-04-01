@@ -1,4 +1,4 @@
-#webmentions {
+#webmention-container {
     margin: 0;
     position: relative;
     z-index: 100;
@@ -8,19 +8,51 @@
     border: 1px solid var(--border);
 }
 
+#webmention-container .webmention-info {
+    max-height: 20em;
+    word-break: break-word;
+    overflow-y: auto;
+    font-size: 80%;
+}
+
+#webmention-container .webmention-info p {
+    padding-left: 1ch;
+    padding-right: 1ch;
+    text-align: justify;
+}
+
+#webmention-container a {
+    box-shadow: none;
+    color: var(--link);
+    text-decoration: none;
+}
+
+#webmention-container a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+#webmention-container h2 {
+    font-size: large;
+    margin: 1px;
+    padding: 2px;
+    background: var(--nord3);
+    color: var(--primary);
+}
+
+#webmentions h3 {
+    font-size: medium;
+    margin: 1px;
+    padding: 2px;
+    background: var(--nord3);
+    color: var(--primary);
+}
+
 #webmentions .comments {
     max-height: 20em;
     overflow-x: hidden;
     overflow-y: auto;
     font-size: 80%;
-}
-
-#webmentions h2 {
-    font-size: medium;
-    margin: 0;
-    padding: 2px;
-    background: var(--nord3);
-    color: var(--primary);
 }
 
 #webmentions .reacts .reaction img {

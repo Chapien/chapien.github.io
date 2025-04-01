@@ -1,7 +1,7 @@
 <!-- Default h-card -->
  <section class="h-card" style="display: none;">
    <a class="u-url" rel="me" href="{{ .Site.BaseURL }}">{{ .Site.BaseURL }}</a>
-    <span class="p-name" rel="me">{{ .Site.Params.author }}</span>
+    <span class="p-name" rel="me">{{ .Site.Params.author.name }}</span>
     <span class="p-nickname">{{ .Site.Params.Nickname }}</span>
     {{ with .Site.Params.homeInfoParams.imageURL }}
         <img class="u-photo" alt="" src="{{ . | absURL }}">

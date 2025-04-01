@@ -11,7 +11,7 @@ author:
 showtoc: true
 tocopen: true
 hidesummary: false
-canonicalURL: https://chapien.net/blog/2025/tdov/
+canonicalURL: https://chapien.net/blog/2025/tdov_2025/
 ShowCanonicalLink: true
 cover:
   image: cover.png

@@ -165,9 +165,9 @@ A more detailed example:
     }
 
     function formatComments(comments) {
-        var html = '<h2>' + comments.length + ' Response' +
+        var html = '<h3>' + comments.length + ' Response' +
             (comments.length > 1 ? 's' : '') +
-            '</h2><ul class="comments">';
+            '</h3><ul class="comments">';
         comments.forEach(function(c) {
             html += '<li>';
 
@@ -217,9 +217,9 @@ A more detailed example:
     }
 
     function formatReactions(reacts) {
-        var html = '<h2>' + reacts.length + ' Reaction' +
+        var html = '<h3>' + reacts.length + ' Reaction' +
             (reacts.length > 1 ? 's' : '') +
-            '</h2><ul class="reacts">';
+            '</h3><ul class="reacts">';
 
         reacts.forEach(function(r) {
             html += reactImage(r);
