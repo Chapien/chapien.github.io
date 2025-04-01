@@ -3,12 +3,12 @@
 
 <div class="syndication">
     <i class="fas fa-link"></i>
-    This post was syndicated to:
+    <h3>This post was syndicated to:</h3>
     {{ $data:= index .Site.Data.syndication $urlized }}
-    {{ $data:= $data.syndication }}
+    {{ $data:= index $data.syndication 0 }}
     {{ range $index, $url := $data }}
         {{- $parsed_url := urls.Parse $url -}}
-        {{- if $index }}, {{- end }}
+        {{- if $index }},{{- end }}
         <a class="u-syndication" href="{{ $url }}" rel="syndication">{{ $parsed_url.Host }}</a>
         {{ end }}
 </div>
