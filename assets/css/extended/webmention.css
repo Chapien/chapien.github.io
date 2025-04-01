@@ -8,7 +8,7 @@
     border: 1px solid var(--border);
 }
 
-#webmention-container .webmention-info {
+#webmention-container .webmention-info,#webmention-container .u-syndication {
     max-height: 20em;
     word-break: break-word;
     overflow-y: auto;
@@ -21,16 +21,18 @@
     text-align: justify;
 }
 
-#webmention-container .webmention-info a {
+#webmention-container .webmention-info a, #webmention-container .u-syndication a {
     box-shadow: none;
     color: var(--link);
     text-decoration: none;
 }
 
-#webmention-container .webmention-info a:hover {
+#webmention-container .webmention-info a:hover, #webmention-container .u-syndication a:hover {
     color: var(--link-hover);
     text-decoration: underline;
 }
+
+
 
 #webmention-container h2 {
     font-size: large;
