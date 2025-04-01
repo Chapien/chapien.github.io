@@ -5,7 +5,7 @@
     <i class="fas fa-link"></i>
     <h3>This post was syndicated to:</h3>
     {{ $data:= index .Site.Data.syndication $urlized }}
-    {{ $data:= index $data.syndication }}
+    {{ $data:= $data.syndication }}
     {{ range $index, $url := $data }}
         {{- $parsed_url := urls.Parse $url -}}
         {{- if $index }},{{- end }}
