@@ -1,0 +1,47 @@
+{
+  "aliases": [
+    "https://chapien.net/",
+    "https://fed.brid.gy/"
+  ],
+  "links": [
+    {
+      "href": "https://chapien.net/",
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html"
+    },
+    {
+      "href": "https://chapien.net/assets/images/profile.png",
+      "rel": "http://webfinger.net/rel/avatar"
+    },
+    {
+      "href": "https://chapien.net/",
+      "rel": "canonical_uri",
+      "type": "text/html"
+    },
+    {
+      "href": "https://web.brid.gy/chapien.net",
+      "rel": "self",
+      "type": "application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\""
+    },
+    {
+      "href": "https://web.brid.gy/chapien.net",
+      "rel": "self",
+      "type": "application/activity+json"
+    },
+    {
+      "href": "https://web.brid.gy/chapien.net/inbox",
+      "rel": "inbox",
+      "type": "application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\""
+    },
+    {
+      "href": "https://web.brid.gy/ap/sharedInbox",
+      "rel": "sharedInbox",
+      "type": "application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\""
+    },
+    {
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template": "https://fed.brid.gy/web/chapien.net?url={uri}"
+    }
+  ],
+  "subject": "acct:chapien.net@chapien.net"
+}
