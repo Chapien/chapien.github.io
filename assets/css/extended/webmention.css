@@ -40,7 +40,7 @@
     color: var(--primary);
 }
 
-#webmentions h3 {
+#webmention-container h3 {
     font-size: medium;
     margin: 1px;
     padding: 2px;
