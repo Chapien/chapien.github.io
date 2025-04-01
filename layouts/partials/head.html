@@ -4,6 +4,7 @@
 <link rel="webmention" href="https://webmention.io/chapien.net/webmention" />
 <script src="/scripts/webmention.js" data-comments-are-reactions="true" async></script>
 <link rel ="me" href="https://libre.fm/user/chapien/">
+<link rel="alternate" type="application/rss+xml" title="Claire's Blog" href="https://chapien.net/blog/feed.xml">
 {{ with .OutputFormats.Get "rss" -}}
   {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
 {{ end }}
