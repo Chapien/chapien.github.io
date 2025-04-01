@@ -8,6 +8,8 @@ import re
 
 domain = "https://chapien.net"
 rss_bsky = "https://bsky.app/profile/did:plc:rm76gmxw3bcqghndbzzscxzf/rss"
+rss_masto = "https://tech.lgbt/@chapien.rss"
+feeds = [rss_bsky, rss_masto]
 
 def clean_slug(slug: str):
     print("Slug:", slug)
@@ -15,7 +17,7 @@ def clean_slug(slug: str):
 
 class SyndicationFinder:
     def find_urls(self, string):
-        x = re.split(' |\n', string)
+        x = re.split(' |\n|"', string)
         res = []
         for i in x:
             if i.startswith("https:") or i.startswith("http:"):
@@ -32,22 +34,25 @@ class SyndicationFinder:
                 for e in self.find_urls(description):
                     if domain in e:
                         e = clean_slug(e)
-                        output[e] = [link.strip()]
-                        print("Output:", output[e])
+                        if (output.get(e, False)) and (link not in output.get(e)):
+                            output[e].append(link)
+                        else:
+                            output[e] = [link.strip()]
+                print(output)
         else:
             print("Failed to get RSS feed. Status code:", feed.status)
 
 class WriterSyndication:
-    def __init__(self, rss_bsky: str, domain: str):
+    def __init__(self, feeds, domain: str):
         print('Init')
         self.output = {}
-        self.rss_bsky = rss_bsky
+        self.rss = feeds
         self.domain = domain
     
     def data_gathering(self):
         s = SyndicationFinder()
-        s.run(self.rss_bsky, self.domain, self.output)
-    
+        for feed in self.rss:
+            s.run(feed, self.domain, self.output)
     def write(self):
         for key in self.output.keys():
             path_folder = os.path.join("data", "syndication")
@@ -61,5 +66,5 @@ class WriterSyndication:
         self.data_gathering()
         self.write()
         
-w = WriterSyndication(rss_bsky, domain)
+w = WriterSyndication(feeds, domain)
 w.run()
