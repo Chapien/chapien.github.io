@@ -21,7 +21,7 @@
     text-align: justify;
 }
 
-#webmention-container .webmention-info a, #webmention-container .u-syndication a {
+#webmention-container .webmention-info a, #webmention-container .syndication a {
     box-shadow: none;
     color: var(--link);
     text-decoration: none;
