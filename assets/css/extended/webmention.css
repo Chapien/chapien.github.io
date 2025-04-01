@@ -52,7 +52,7 @@
 
 #webmentions .comments {
     max-height: 20em;
-    overflow-x: hidden;
+    word-break: break-word;
     overflow-y: auto;
     font-size: 80%;
 }
