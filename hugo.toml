@@ -98,7 +98,7 @@ socialIcons = [
     {name = "bookwyrm", url = "https://bookwyrm.social/user/chapien"},
     {name = "bluesky", url = "https://bsky.app/profile/claire.chapien.net"},
     {name = "tumblr", url = "https://chappydev.tumblr.com/"},
-    {name = "mastodon", url = "https://transfem.social/@chapien"},
+    {name = "mastodon", url = "https://tech.lgbt/@chapien"},
 ]
 ShowShareButtons = true
 ShareButtons = ["bluesky"]
