@@ -33,6 +33,6 @@ jobs:
           git config user.email "inquiries@chapien.net"
           git config user.name "Chapien"
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/Chapien/chapien.github.io.git
-          git checkout main
+          git checkout master
           git add .
           git diff --quiet && git diff --staged --quiet || (git commit -m "${COMMIT_MSG}"; git push origin master)
