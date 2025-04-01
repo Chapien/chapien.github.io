@@ -27,7 +27,7 @@
     text-decoration: none;
 }
 
-#webmention-container .webmention-info a:hover, #webmention-container .u-syndication a:hover {
+#webmention-container .webmention-info a:hover, #webmention-container .syndication a:hover {
     color: var(--link-hover);
     text-decoration: underline;
 }
