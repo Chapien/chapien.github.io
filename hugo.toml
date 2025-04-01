@@ -4,7 +4,7 @@ baseURL = "https://chapien.net/"
 languageCode = "en-us"
 title = "The Claire Scrolls"
 copyright = "Website content Copyright © 2025 by Claire is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/#?)"
-theme = "hugo-PaperMod"
+theme = ["hugo-redirect", "hugo-PaperMod"]
 builddrafts = false
 
 [module]
