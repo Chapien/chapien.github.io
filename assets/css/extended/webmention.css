@@ -21,13 +21,13 @@
     text-align: justify;
 }
 
-#webmention-container a {
+#webmention-container .webmention-info a {
     box-shadow: none;
     color: var(--link);
     text-decoration: none;
 }
 
-#webmention-container a:hover {
+#webmention-container .webmention-info a:hover {
     color: var(--link-hover);
     text-decoration: underline;
 }
