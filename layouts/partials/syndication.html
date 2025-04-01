@@ -1,6 +1,7 @@
 {{ $urlized := .Page.Permalink | md5 }}
 
 <div class="syndication">
+    "{{ $urlized }}"
     <i class="fas fa-link"></i>
     This post was syndicated to:
     {{ $data:= index .Site.Data.syndication $urlized }}
