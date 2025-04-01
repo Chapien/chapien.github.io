@@ -1,6 +1,4 @@
 {{ $urlized := .Page.Permalink | md5 }}
-{{ $json := printf "%s" (print "/data/syndication/" $urlized ".json") -}}
-{{ if (fileExists $json) -}}
 
 <div class="syndication">
     <i class="fas fa-link"></i>
@@ -13,5 +11,3 @@
         <a class="u-syndication" href="{{ $url }}" rel="syndication">{{ $parsed_url.Host }}</a>
         {{ end }}
 </div>
-
-{{- end }}
