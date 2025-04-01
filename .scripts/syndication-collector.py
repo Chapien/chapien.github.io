@@ -60,7 +60,7 @@ class WriterSyndication:
             print('Created:', path_folder)
             path_file = os.path.join(path_folder, key)
             with open(path_file + ".json", "w") as fp:
-                json.dump({"syndication": self.output[key]}, fp)
+                json.dump({"syndication": self.output[key][0]}, fp)
                 
     def run(self):
         self.data_gathering()
