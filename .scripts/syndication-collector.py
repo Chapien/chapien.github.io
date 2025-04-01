@@ -29,16 +29,11 @@ class SyndicationFinder:
                 link = entry.get("link")
                 description = entry.get("description")
                 print(link)
-                print(description)
                 for e in self.find_urls(description):
-                    print("Finder")
                     if domain in e:
                         e = clean_slug(e)
-                        if output.get(e, False):
-                            output[e].append(link)
-                            print(output[e])
-                        else:
-                            output[e] = [link.strip()]
+                        output[e] = [link.strip()]
+                        print("Output:", output[e])
         else:
             print("Failed to get RSS feed. Status code:", feed.status)
 
@@ -60,7 +55,7 @@ class WriterSyndication:
             print('Created:', path_folder)
             path_file = os.path.join(path_folder, key)
             with open(path_file + ".json", "w") as fp:
-                json.dump({"syndication": self.output[key][0]}, fp)
+                json.dump({"syndication": self.output[key]}, fp)
                 
     def run(self):
         self.data_gathering()
