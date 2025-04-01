@@ -10,6 +10,7 @@ domain = "https://chapien.net"
 rss_bsky = "https://bsky.app/profile/did:plc:rm76gmxw3bcqghndbzzscxzf/rss"
 
 def clean_slug(slug: str):
+    print("Slug:", slug)
     return hashlib.md5((slug.split("?")[0]).encode("utf-8"), usedforsecurity=False).hexdigest()
 
 class SyndicationFinder:
