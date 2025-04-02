@@ -9,7 +9,7 @@
     {{ range $index, $url := $data }}
         {{- $parsed_url := urls.Parse $url -}}
         {{- if $index }},{{- end }}
-        <a class="u-syndication" href="{{ $url }}" rel="syndication">{{ $parsed_url.Host }}</a>
+        <a class="u-syndication" href="{{ $url }}" rel="syndication">{{- $parsed_url.Host -}}</a>
         {{ end }}
 </div>
 {{ end }}
