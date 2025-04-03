@@ -59,8 +59,15 @@ class WriterSyndication:
             Path(path_folder).mkdir(parents=True, exist_ok=True)
             print('Created:', path_folder)
             path_file = os.path.join(path_folder, key)
+            if os.path.exists(path_file + ".json"):
+                with open(path_file + ".json") as fp:
+                    existing_data = json.load(fp)
+                    self.output[key] += existing_data["syndication"]
             with open(path_file + ".json", "w") as fp:
+                self.output[key] = list(set(self.output[key]))
+                self.output[key].sort()
                 json.dump({"syndication": self.output[key]}, fp)
+            
                 
     def run(self):
         self.data_gathering()
