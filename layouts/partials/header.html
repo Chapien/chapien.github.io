@@ -47,7 +47,7 @@
 </script>
 {{- end }}
 <header class="header">
-    {{if site.Params.hcard }}
+    {{if and (site.Params.hcard) (.IsHome) }}
         {{- partial "hcard.html" . -}}
     {{end}}
     <nav class="nav">
