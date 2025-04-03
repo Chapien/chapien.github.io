@@ -1,6 +1,7 @@
 @import "nord.css";
 
 :root {
+    --gap: 20px;
     --theme: var(--nord6);
     --entry: var(--nord5);
     --primary: var(--nord1);
