@@ -1,15 +1,14 @@
 ---
 title: An Open Source Setting
 date: 2025-04-25
-description: Applying open source organizing and licensing to the creating of fictional worlds.
-draft: false
-robotsNoIndex: true
-private: true
+description: Applying open source organizing and licensing to the creation of fictional worlds.
+draft: true
+tags:
+  - blog
 author:
   - Claire
 showtoc: true
 tocopen: true
-searchHidden: true
 hidesummary: false
 canonicalURL: https://chapien.net/blog/2025/opensetting/
 ShowCanonicalLink: true
@@ -18,11 +17,14 @@ cover:
   relative: true
   caption:
 ---
+## The Prelude
+Have you ever read a quote from someone that you can't let go? I have. For years, this quote has kept me up at night, thinking in the shower, pondering upon what it could mean. What sort of profound quote could keep me up at night? Musings on the nature of the universe? Pondering the meaning of life? No. A quote from a reddit AMA about *The Elder Scrolls*, of all things, has been haunting me for years.
+
 > [!quote] Quote
 > "As for canon, it's really all interactive fiction, and that should mean something to everyone. That said, I appreciate and understand the stamp of "official", but I think it will hurt more that it will help in the long run. TES should be Open Source. It is for me."
 > — [Michael Kirkbride, 2019](https://web.archive.org/web/20250118210824/https://old.reddit.com/r/teslore/comments/1ptr0o/i_am_michael_kirkbride_ask_me_anything/cd5ycm2/?context=1)
 
-Ever since I first read this quote years ago, I've been thinking it constantly. Open Source, applied not to coding, but to a setting itself; the 'bones' that make up a fictional story. What would that look like? Is such a thing even possible?
+Ever since I first read this quote years ago, I've been thinking it constantly. Open Source, applied not to coding, but to a setting itself; the 'bones' that make up a fictional story. What would that look like? Is such a thing even possible? 
 
 A little background. Michael Kirkbride is a game designer most well-known for his work on *The Elder Scrolls III: Morrowind*. He left Bethesda before the game was finished, though he continues to work with them to this day as a contractor from time to time. Though his time at Bethesda was brief, he contributed much of what makes the Elder Scrolls setting, well, Tamriel. All of the esoteric weirdness of its religions, its strange history, and so on. 
 
