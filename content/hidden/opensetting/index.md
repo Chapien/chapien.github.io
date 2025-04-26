@@ -3,8 +3,8 @@ title: An Open Source Setting
 date: 2025-04-25
 description: Applying open source organizing and licensing to the creation of fictional worlds.
 draft: true
-tags:
-  - blog
+robotsNoIndex: true
+private: true
 author:
   - Claire
 showtoc: true
