@@ -20,7 +20,7 @@ class SyndicationFinder:
         x = re.split(' |\n|"', string)
         res = []
         for i in x:
-            if i.startswith("https:") or i.startswith("http:"):
+            if i.startswith("https:") or i.startswith("http:") or i.startswith("https:") or i.startswith("http:"):
                 res.append(i)
         return res
     
