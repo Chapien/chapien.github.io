@@ -4,6 +4,7 @@ date: 2025-04-25
 description: Applying open source organizing and licensing to the creating of fictional worlds.
 draft: false
 robotsNoIndex: true
+private: true
 author:
   - Claire
 showtoc: true
