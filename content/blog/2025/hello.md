@@ -4,7 +4,6 @@ tags:
 title: Hello World
 date: 2025-01-04T00:00:00.000Z
 draft: true
-searchHidden: true
 author:
   - Claire
 showtoc: true
