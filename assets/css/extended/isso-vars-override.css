@@ -14,7 +14,7 @@
     --isso-input-outline-color: var(--border);
 
     --isso-button-background-color: var(--tertiary);
-    --isso-button-border: 1px solid var(--border);
+    --isso-button-border: 1px solid var(--code-bg);
     --isso-button-hover-background-color: var(--primary);
     --isso-button-active-background-color: var(--primary);
 
