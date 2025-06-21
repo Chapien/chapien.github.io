@@ -1,0 +1,26 @@
+{{ if hugo.IsProduction }}
+
+<style>
+#isso-root {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.isso-comment {
+    flex: 0;
+    width: 100%;
+}
+</style>
+
+<script
+    data-isso="//{{ $.Site.Params.isso_url }}/"
+    data-isso-title=""
+    data-isso-avatar="false"
+    data-isso-vote="false"
+    src="//{{ $.Site.Params.isso_url }}/js/embed.min.js" crossorigin async></script>
+
+<div id="isso-thread" data-title="Guestbook" data-isso-id="/guestbook">
+    <noscript>Javascript needs to be activated to view comments.</noscript>
+</div>
+{{ else }}
+(Guestbook is disabled in development mode.)
+{{ end }}

@@ -75,6 +75,7 @@ weight = 20
 [params]
 home = ["HTML", "JSON"]
 env = "production"
+isso_url = "comments.chapien.net"
 hcard = true
 description = "Claire's personal blog."
 author = {name = "Claire", email = "inquiries@chapien.net"}
@@ -111,7 +112,7 @@ AlignSocialIconsTo = "Center"
 buttons = [
     {name = "About", url = "about"},
     {name = "Contact", url = "contact"},
-    {name = "Blog", url = "/blog"},
+    {name = "Guestbook", url = "/guestbook"}
 ]
 
 
