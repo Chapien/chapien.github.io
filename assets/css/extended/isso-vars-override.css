@@ -8,6 +8,7 @@
     --isso-hover-color: var(--entry);
 
     --isso-link-hover-color: var(--link-hover);
+    --isso-link-text-shadow-color: #ff000000
 
     --isso-input-background-color: var(--code-bg);
     --isso-input-outline-color: var(--border);
