@@ -38,7 +38,7 @@
     font-size: large;
     margin: 1px;
     padding: 2px;
-    background: var(--nord3);
+    background: var(--tertiary);
     color: var(--primary);
 }
 
@@ -46,7 +46,7 @@
     font-size: medium;
     margin: 1px;
     padding: 2px;
-    background: var(--nord3);
+    background: var(--tertiary);
     color: var(--primary);
 }
 
