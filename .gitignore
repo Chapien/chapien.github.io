@@ -13,3 +13,7 @@ hugo.linux
 /.hugo_build.lock
 
 mastodon2hugo.py
+
+# Frontmatter cms
+frontmatter.json
+.frontmatter

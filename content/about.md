@@ -3,18 +3,19 @@ title: About
 date: 2025-01-04
 draft: false
 tags:
-  - info
+    - info
 author:
-  - Claire
+    - Claire
 showtoc: true
 tocopen: true
 canonicalURL: https://chapien.net/about/
 ShowCanonicalLink: true
 cover:
-  image: gobboportrait.png
-  relative: true
-  responsiveImages: true
-  caption: May or may not be an actual goblin. Art by my friend [Kamala](https://www.tumblr.com/transgwenderart).
+    image: gobboportrait.png
+    relative: true
+    responsiveImages: true
+    caption: May or may not be an actual goblin. Art by my friend [Kamala](https://www.tumblr.com/transgwenderart).
+fmContentType: Information
 ---
 ## About the Author
 ### Who are you?
@@ -47,8 +48,6 @@ Most of my work here should be fine to view anywhere and by anyone. That said, I
 An excellent question. If you want short form, random chatting with strangers, you can check out my [Bluesky](https://bsky.app/profile/claire.chapien.net). For longer form stuff, but still seat-of-the-pants, you can check out my [Tumblr](https://chappydev.tumblr.com/). That said, neither are spaces I am comfortable with minors. Only go to my social media accounts if you are over 18 (and to be honest, you shouldn't even be here if you are under 18). And, for the sake of my own personal comfort, do not directly interact with me on social media unless you are 21 or older. Thanks for understanding.
 ### What about your stories?
 All of the stories I write that are not fanfiction and are not inappropriate will be posted here. They will likely not be hosted here, mind you; rather, I will make a blog post with a brief summary, which will include a link to wherever I have decided to host any given fic. Some of my more refined fanfiction could also end up here; I enjoy writing apocrypha (or non-canon, in-universe texts) for the Elder Scrolls setting, and this feels a fine enough place to promote that. 
-#### What if I want to see your... other stories?
-Yeesh. You can find links to my AO3 on my [Tumblr](https://chappydev.tumblr.com/). You'll find fanfiction there, both safe and unsafe for work. And if you want to see me talk about my process with those works, you can probably find it somewhere on my Tumblr.
 ### Is it all stories?
 Not at all! I will also post my opinions on video games, other people's works, things I enjoy, politics when I can stomach it, queer stuff when I feel like it, and really anything that comes to mind that I care enough to write about. 
 ### What about Game Development stuff?
