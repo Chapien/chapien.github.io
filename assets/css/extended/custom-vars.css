@@ -26,6 +26,43 @@ textarea, input {
     font-family: Montserrat,'Symbols Nerd Font',-apple-system-headline,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
 }
 
+.buttons {
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+
+.pagination {
+    display: flex;
+}
+
+.home-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination a {
+    color: var(--primary);
+    font-size: 13px;
+    line-height: 36px;
+    background: var(--entry);
+    border-radius: calc(36px / 2);
+    padding: 0 16px;
+}
+
+.home-pagination a {
+    color: var(--primary);
+    font-size: 13px;
+    line-height: 36px;
+    background: var(--entry);
+    border-radius: calc(36px / 2);
+    padding: 0 16px;
+}
+
+.pagination .next {
+    margin-inline-start: auto;
+}
+
 .admonition-header {
     font-family: Montserrat,'Symbols Nerd Font',-apple-system-headline,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
 }

@@ -110,9 +110,10 @@ Content = "Short stories. Blogs about mental health, game dev, and LGBTQ+ issues
 imageURL = "assets/images/profile.png"
 AlignSocialIconsTo = "Center"
 buttons = [
+    {name = "Blog", url = "blog"},
     {name = "About", url = "about"},
     {name = "Contact", url = "contact"},
-    {name = "Guestbook", url = "/guestbook"}
+    {name = "Guestbook", url = "guestbook"}
 ]
 
 
