@@ -1,6 +1,6 @@
 @import "themes-var-override.css";
 
-:root {
+:root.comments {
     --isso-primary-text-color: var(--content);
     --isso-secondary-text-color: var(--primary);
     --isso-border: 1px solid var(--border);
