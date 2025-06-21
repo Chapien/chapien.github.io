@@ -15,8 +15,8 @@
 
     --isso-button-background-color: var(--tertiary);
     --isso-button-border: 1px solid var(--border);
-    --isso-button-hover-background-color: var(--secondary);
-    --isso-button-active-background-color: var(--secondary);
+    --isso-button-hover-background-color: var(--primary);
+    --isso-button-active-background-color: var(--primary);
 
     --isso-preview-border-color: var(--border);
     --isso-preview-box-shadow-color: var(--border);
