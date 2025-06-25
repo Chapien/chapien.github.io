@@ -17,3 +17,4 @@ mastodon2hugo.py
 # Frontmatter cms
 frontmatter.json
 .frontmatter
+.vscode
