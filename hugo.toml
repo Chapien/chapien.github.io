@@ -6,6 +6,7 @@ title = "The Claire Scrolls"
 copyright = "Copyright © 2025 by Claire. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/#?)"
 theme = ["hugo-redirect", "hugo-PaperMod"]
 builddrafts = false
+mainSections = ['blog']
 
 [module]
   [[module.imports]]
@@ -46,8 +47,8 @@ url = "contact"
 weight = 4
 
 [[languages.en.menu.main]]
-name = "Archive"
-url = "archive"
+name = "Blog"
+url = "blog"
 weight = 5
 
 [[languages.en.menu.main]]
@@ -69,6 +70,9 @@ weight = 16
 name = "Search"
 url = "search/"
 weight = 20
+
+[pagination]
+pagerSize = 10
 
 ### Papermod Params ####################################################
 
@@ -115,6 +119,11 @@ buttons = [
     {name = "Contact", url = "contact"},
     {name = "Guestbook", url = "guestbook"}
 ]
+
+[params.cover]
+hidden = false
+hiddenInList = false
+hiddenInSingle = false
 
 
 #[params.profileMode]

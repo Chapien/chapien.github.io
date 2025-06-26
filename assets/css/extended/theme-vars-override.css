@@ -1,6 +1,8 @@
 @import "nord.css";
 
 :root {
+    --nav-width: 85%;
+    --main-width: 1084px;
     --gap: 20px;
     --theme: var(--nord6);
     --entry: var(--nord5);

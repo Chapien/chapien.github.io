@@ -1,22 +1,23 @@
----
-title: About
-date: 2025-01-04
-draft: false
-tags:
-    - info
-author:
-    - Claire
-showtoc: true
-tocopen: true
-canonicalURL: https://chapien.net/about/
-ShowCanonicalLink: true
-cover:
-    image: gobboportrait.png
-    relative: true
-    responsiveImages: true
-    caption: May or may not be an actual goblin. Art by my friend [Kamala](https://www.tumblr.com/transgwenderart).
-fmContentType: Information
----
++++
+title = "About Me"
+date = "2025-01-04"
+draft = false
+tags = [ "about", "personal", "meta" ]
+author = [ "Claire" ]
+showtoc = true
+tocopen = true
+canonicalURL = "https://chapien.net/about/"
+ShowCanonicalLink = true
+fmContentType = "info"
+categories = [ "Information" ]
+
+[cover]
+image = "assets/images/profile.png"
+relative = true
+responsiveImages = true
+hidden = false
+caption = "May or may not be an actual goblin. Art by my friend [Kamala](https://www.tumblr.com/transgwenderart)."
++++
 ## About the Author
 ### Who are you?
 My name is Claire. [I'm an asexual trans woman](https://en.pronouns.page/u/chapien#!) with a passion for video games, history, and writing. I'm around 30 years old (+/-, depending on when you're reading). I'm a game developer as well as a hobbyist writer. It's not particularly hard to find out more about me, but I prefer to keep at least some separation between my real life and online life, and so I won't share my last name here. 

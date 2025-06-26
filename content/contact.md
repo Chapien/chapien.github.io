@@ -1,18 +1,18 @@
----
-title: Contact
-date: 2025-01-04
-description: How to contact me
-draft: false
-tags:
-  - info
-author:
-  - Claire
-showtoc: true
-tocopen: true
-hidesummary: true
-canonicalURL: https://chapien.net/contact/
-ShowCanonicalLink: true
----
++++
+title = "Contact"
+date = "2025-01-04"
+description = "How to contact me"
+draft = false
+tags = [ "contact", "personal", "meta" ]
+author = [ "Claire" ]
+showtoc = true
+tocopen = true
+hidesummary = true
+canonicalURL = "https://chapien.net/contact/"
+ShowCanonicalLink = true
+fmContentType = "info"
+categories = [ "Information" ]
++++
 > [!info] Info
 > Name: Claire  
 > PGP Fingerprint: 97810FC8F87BB5DC53012E81C5A81C724397B6B5

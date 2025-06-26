@@ -42,12 +42,24 @@ textarea, input {
 }
 
 .pagination a {
+    display: inline-block;
     color: var(--primary);
     font-size: 13px;
     line-height: 36px;
     background: var(--entry);
     border-radius: calc(36px / 2);
     padding: 0 16px;
+}
+
+.pagination a.disabled {
+    display: inline-block;
+    color: #4c566a;
+    font-size: 13px;
+    line-height: 36px;
+    background: var(--entry);
+    border-radius: calc(36px / 2);
+    padding: 0 16px;
+    pointer-events: none;
 }
 
 .home-pagination a {
@@ -61,6 +73,17 @@ textarea, input {
 
 .pagination .next {
     margin-inline-start: auto;
+}
+
+.pagination .archive {
+    margin-inline-start: auto;
+}
+
+.entry-cover img {
+    border-radius: var(--radius);
+    pointer-events: none;
+    width: auto;
+    height: auto;
 }
 
 .admonition-header {

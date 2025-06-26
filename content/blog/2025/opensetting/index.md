@@ -1,23 +1,24 @@
----
-title: An Open Source Setting
-date: 2025-04-25
-description: Applying open source organizing and licensing to the creation of fictional worlds.
-summary: Applying open source organizing and licensing to the creation of fictional worlds.
-draft: false
-tags:
-  - blog
-author:
-  - Claire
-showtoc: true
-tocopen: true
-hidesummary: false
-canonicalURL: https://chapien.net/blog/2025/opensetting/
-ShowCanonicalLink: true
-cover:
-  image: cover.jpg
-  relative: true
-  caption: The setting that started this rabbit hole of mine, Tamriel from Bethesda's Elder Scrolls series. Copyright Bethesda Softworks.
----
++++
+title = "An Open Source Setting"
+date = "2025-04-25"
+description = "Applying open source organizing and licensing to the creation of fictional worlds."
+summary = "Applying open source organizing and licensing to the creation of fictional worlds."
+draft = false
+categories = [ "Blog" ]
+tags = [ "writing" ]
+author = [ "Claire" ]
+showtoc = true
+tocopen = true
+hidesummary = false
+canonicalURL = "https://chapien.net/blog/2025/opensetting/"
+ShowCanonicalLink = true
+fmContentType = "blog"
+
+[cover]
+image = "cover.jpg"
+relative = true
+caption = "The setting that started this rabbit hole of mine, Tamriel from Bethesda's Elder Scrolls series. Copyright Bethesda Softworks."
++++
 ## The Prelude
 Have you ever read a quote from someone that you can't let go? I have. For years, this quote has kept me up at night, thinking in the shower, pondering upon what it could mean. What sort of profound quote could keep me up at night? Musings on the nature of the universe? Pondering the meaning of life? No. A quote from a reddit AMA about *The Elder Scrolls*, of all things, has been haunting me for years.
 
