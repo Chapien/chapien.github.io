@@ -61,7 +61,7 @@
     {{- partial "share_icons.html" . -}}
     {{- end }}
   </footer>
-  {{- if in .Params.tags "blog" }}
+  {{- if in .Params.categories "Blog" }}
   {{- partial "comments.html" . }}
   {{- end }}
 </article>
