@@ -7,7 +7,7 @@
         data-isso-reveal-on-click="5"
         data-isso-page-author-hashes="96ab157c3aaa"
         src="//{{ $.Site.Params.isso_url }}/js/embed.min.js" async crossorigin></script>
-    <section id="isso-thread" data-title="{{ .Title }}" data-isso-id="{{ .File.ContentBaseName }}">
+    <section id="isso-thread" class="comments" data-title="{{ .Title }}" data-isso-id="{{ .File.ContentBaseName }}">
         {{ .Scratch.Set "header-type" "h3" }}
         {{ .Scratch.Set "header-name" "Comments" }}
         <noscript>Javascript needs to be activated to view comments.</noscript>
