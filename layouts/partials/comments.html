@@ -10,7 +10,6 @@
     <section id="isso-thread" data-title="{{ .Title }}" data-isso-id="{{ .File.ContentBaseName }}">
         {{ .Scratch.Set "header-type" "h3" }}
         {{ .Scratch.Set "header-name" "Comments" }}
-        {{ partial "fake-heading.html" . }}
         <noscript>Javascript needs to be activated to view comments.</noscript>
     </section>
 {{ else }}
