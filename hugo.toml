@@ -120,11 +120,5 @@ buttons = [
     {name = "Guestbook", url = "guestbook"}
 ]
 
-[params.cover]
-hidden = false
-hiddenInList = false
-hiddenInSingle = false
-
-
 #[params.profileMode]
 #enabled = true
