@@ -177,6 +177,7 @@ body:not(.serif-toggle) #sans {
 .post-entry .entry-cover {
     display: inherit;
     max-width: 180px;
+    max-height: 180px;
     margin: auto;
     grid-row: span 3;
 }
