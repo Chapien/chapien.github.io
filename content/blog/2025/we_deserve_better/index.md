@@ -10,7 +10,7 @@ author:
 showtoc: true
 tocopen: true
 hidesummary: false
-canonicalURL: https://chapien.net/blog/2025/we_deserve_better/
+slug: /we-deserve-better
 ShowCanonicalLink: true
 cover:
   image: cover.png

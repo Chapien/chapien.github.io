@@ -10,7 +10,7 @@ author = [ "Claire" ]
 showtoc = true
 tocopen = true
 hidesummary = false
-canonicalURL = "https://chapien.net/blog/2025/opensetting/"
+slug = "opensetting"
 ShowCanonicalLink = true
 fmContentType = "blog"
 

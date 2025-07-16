@@ -8,7 +8,7 @@ author:
   - Claire
 showtoc: true
 tocopen: true
-canonicalURL: https://chapien.net/blog/2025/hello/
+slug: /hello
 ShowCanonicalLink: true
 ---
 This is my first post to this blog. I don't really have anything to say yet, it's just here to make sure that there isn't empty space on the homepage. Make sure to read the about page, if you want to know what to expect!
