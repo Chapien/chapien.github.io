@@ -4,3 +4,6 @@
 [submodule "themes/rusty-typewriter"]
 	path = themes/rusty-typewriter
 	url = https://github.com/math-queiroz/rusty-typewriter.git
+[submodule "themes/blue"]
+	path = themes/blue
+	url = https://github.com/Chapien/blue.git

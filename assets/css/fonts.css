@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-Bold.woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-BoldItalic.woff2");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-Italic.woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-Regular.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Bold.woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-BoldItalic.woff2");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Italic.woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Regular.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --font-body: "Inter";
+    --font-header: "Montserrat";
+    body {
+        font-family: var(--font-body), sans-serif;
+    }
+    
+}
+
+:root .serif-toggle {
+    --font-body: "Lora";
+    --font-header: "Montserrat";
+    body {
+        font-family: var(--font-body), serif;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    font-family: var(--font-header), sans-serif;
+}

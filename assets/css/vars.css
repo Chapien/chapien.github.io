@@ -1,0 +1,50 @@
+:root {
+    --nord0: #2e3440;
+    --nord1: #3b4252;
+    --nord2: #434c5e;
+    --nord3: #4c566a;
+
+    --nord4: #d8dee9;
+    --nord5: #e5e9f0;
+    --nord6: #eceff4;
+
+    --nord7: #8fbcbb;
+    --nord8: #88c0d0;
+    --nord9: #81a1c1;
+    --nord10: #5e81ac;
+    
+    --nord11: #bf616a;
+    --nord12: #d08770;
+    --nord13: #ebcb8b;
+    --nord14: #a3be8c;
+    --nord15: #b48ead;
+  }
+  
+:root {
+    --link: var(--nord10);
+    --secondary-accent: var(--nord10);
+    --border-color: var(--nord4);
+    --background-primary: var(--nord6);
+    --background-secondary: var(--nord5)
+    --background-tertiary: var(--nord4);
+    --text-color: var(--nord0);
+    --link-visited: var(--nord9);
+    --extra-color: var(--nord4);
+    --border: 3px double var(--border-color);
+    --shadow: transparent;
+}
+
+:root .dark {
+    --link: var(--nord8);
+    --secondary-accent: var(--nord8);
+    --border-color: var(--nord3);
+    --background-primary: var(--nord0);
+    --background-secondary: var(--nord1);
+    --background-tertiary: var(--nord2);
+    --text-color: var(--nord4);
+    --link-visited: var(--nord9);
+    --extra-color: var(--nord3);
+    --border: 3px double var(--border-color);
+    --shadow: transparent;
+}
+  
