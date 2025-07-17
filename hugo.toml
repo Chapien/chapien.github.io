@@ -130,6 +130,7 @@ profilePicture = "images/profile.png"
 related = false
 voting = false
 hideExternalMenu = true
+noData = true
 
 [[params.author]]
 name = 'Claire'
