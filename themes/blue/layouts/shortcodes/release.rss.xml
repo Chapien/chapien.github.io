@@ -1,0 +1,3 @@
+{{ $branch := .Get 0 }}
+
+<span>[{{ humanize $branch }}]</span>

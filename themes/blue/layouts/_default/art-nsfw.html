@@ -1,0 +1,22 @@
+{{/* Page layout used for the main art gallery page. */}}
+
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+
+    <hr>
+
+    {{ .Content }}
+
+    {{ $tags := slice "fan art" "artfight" }}
+    {{ $art := .Site.GetPage "/art" }}
+    {{ $artworks := (where $art.RegularPagesRecursive "Type" "art") }}
+    {{ $nsfw_art := (where $artworks "Params.nsfw" "=" true) }}
+
+    {{ $.Scratch.Set "paginator" (.Paginate $nsfw_art) }}
+    {{ partial "art-gallery" . }}
+{{ end }}
+
+{{ define "head" }}
+    {{ partial "gallery-js" . }}
+{{ end }}
+

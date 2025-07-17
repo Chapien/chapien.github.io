@@ -1,0 +1,50 @@
+{{/* Page layout used for the art commission page. */}}
+
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+    <hr>
+
+    {{ $art_config := index $.Site.Data "art-config" }}
+    {{ if $art_config.commissions }}
+        <p>My commissions are currently <span id="commission-open">OPEN</span>!</p>
+    {{ else }}
+        <p>My commissions are currently <span id="commission-closed">CLOSED</span>!</p>
+    {{ end }}
+
+    <p>I accept commissions for artwork from time to time. You can only commission me through my <a href="https://artistree.io/redstrate">Artistree</a>. Feel free to <a href="/contact">contact me</a> with any questions, but I <i>only</i> begin work through that specific website.</p>
+
+    <p>The details for each request type is available on my Artistree page.</p>
+
+    <h3>FAQ</h3>
+
+    <b>Q: How do I know you're open for commissions?</b>
+
+    <p>Since my slots are limited, I will announce when I'm about to open on my <a href="https://mastodon.art/@redstrate">Mastodon</a> and <a href="https://bsky.app/profile/redstrate.com">BlueSky</a> and then another when they finally open. Mastodon allows you to recieve a notification when someone posts, BlueSky does not.</p>
+
+    <b>Q: Do I need an account on Artistree?</b>
+
+    <p>No, and there's not even a way for clients to signup. You just to provide an e-mail address and an identifiable name (it does not need to be your online handle or real name.)</p>
+
+    <b>Q: How do I send reference images or photos?</b>
+
+    <p>Artistree allows you to drop images right inside of the request form, so you don't need to host them somewhere else. A Toyhouse or other character information site also works.</p>
+
+    <h3>Public Commissions</h3>
+
+    <div class="grid-container">
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="gutter-sizer"></div>
+
+            {{ $p := slice "commission" }}
+            {{ range where .Site.RegularPages "Params.arttags" "intersect" $p }}
+                {{ if not (.Params.guest) }}
+                    {{ partial "render-art" . }}
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+
+    {{ partial "gallery-js" . }}
+
+{{ end }}

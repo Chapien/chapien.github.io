@@ -1,0 +1,37 @@
+{{/* Page layout used for art statistics page. */}}
+
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+    <hr>
+
+    {{ $.Scratch.Set "header-type" "h3" }}
+    {{ $.Scratch.Set "header-name" "Most Drawn Characters" }}
+    {{ partial "fake-heading.html" $ }}
+
+    <div id="character-container" class="generic-con">
+    {{ range first 4 (index site.Taxonomies "characters").ByCount }}
+        {{ $year := .Page.Title }}
+        {{ $num := .Count }}
+        <a class="character" href="/art/characters/{{ urlize $year }}"><img class="gallery-img" width=256 height=256 src="{{ $.Site.Params.image_host }}/chars/{{ urlize $year }}.jpg"/><span>{{ $year }}<br>({{ $num }} artworks)</span></a>
+    {{ end }}
+    </div>
+
+    {{ $.Scratch.Set "header-name" "# of Artworks by Year" }}
+    {{ partial "fake-heading.html" $ }}
+    <ol>
+    {{ $years := (where .Site.RegularPages "Section" "=" "art").GroupByDate "2006" }}
+    {{ $year_sorted := slice }}
+    {{ range $years }}
+        {{ $year := .Key }}
+        {{ $num := len (where .Pages "Params.guest" "=" false) }}
+        {{ $year_sorted = $year_sorted | append (dict "year" $year "num" $num) }}
+    {{ end }}
+    {{ range (sort $year_sorted "num" "desc") }}
+        <li><a href="/art/{{ .year }}">{{ .year }}</a> ({{ .num }} artworks)</li>
+    {{ end }}
+    </ol>
+{{ end }}
+
+{{ define "details" }}
+    {{ partial "art-sidebar" . }}
+{{ end }}

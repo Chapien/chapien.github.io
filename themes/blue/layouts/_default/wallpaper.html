@@ -1,0 +1,53 @@
+{{/* Page layout used for art wallpapers page. */}}
+
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+    <hr>
+
+    {{ .Content }}
+
+    {{ $art := $.GetPage "/art" }}
+
+    {{ $wallpapers := index .Site.Data "wallpapers" }}
+    {{ range $wallpapers.wallpapers }}
+        {{ with $art.GetPage .art }}
+
+        {{ $month := "1" }}
+        {{ $year := "1" }}
+
+        {{ if .Date }}
+            {{ $split := split .Date "-" }}
+            {{ $month = index $split 1 }}
+            {{ $year = index $split 0 }}
+        {{ end }}
+
+        <hr>
+        <h2 style="text-align: center">{{ .Title }} ({{ $year }})</h2>
+        <figure class="gallery-fig">
+                {{ $filename_without_ext := .Params.slug }}
+
+                {{ $path := printf "/art/%s/%s/%s" $year $month $filename_without_ext}}
+
+                <a href="{{ $path }}" aria-label="Click to view details {{ $year }}" class="no-decoration">
+                    {{ $title := .Title }}
+
+                    {{ $full := printf "%s/thumb/%s.avif" $.Site.Params.image_host $filename_without_ext }}
+                    {{ $jpeg := printf "%s/thumb/%s.jpg" $.Site.Params.image_host $filename_without_ext }}
+
+                    <picture>
+                        <source srcset="{{ $full }}" type="image/avif"/>
+                        <img class="gallery-img featured-art" alt="{{ $title }}" src="{{ $jpeg }}">
+                    </picture>
+                </a>
+
+                <figcaption>
+                    {{ with .Title }}
+                        <span>Preview</span>
+                    {{ end }}
+                </figcaption>
+            </figure>
+        {{ end }}
+        <p style="text-align: center">{{ .resolution }}</p>
+        <p style="text-align: center"><a href="{{ $.Site.Params.image_host }}/wallpapers/{{ .art }}.png">Download PNG ({{ .size }})</a></p>
+    {{ end }}
+{{ end }}

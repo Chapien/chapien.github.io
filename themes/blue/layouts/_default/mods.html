@@ -1,0 +1,36 @@
+{{/* Page layout used for mods page. */}}
+
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+
+    <hr>
+
+    {{ .Content }}
+
+    {{ $art := (index site.Data ("mods")) }}
+
+    {{ range $art }}
+        <h3>
+            {{ $url := printf "icons/%s.png" .id }}
+            {{ with resources.Get $url }}
+                <img alt="Icon" width="16" height="16" src="{{ .RelPermalink }}">
+            {{ end }}
+
+            {{ .name }}
+        </h3>
+
+        <div class="buttons">
+            {{ range .mods }}
+                <div class="blurb">
+                    <p class="project-header project-contribution">{{ .name }}</p>
+
+                    <p class="project-desc">{{ .description }}</p>
+
+                    <ul class="nice-list">
+                        <li><a href="{{ .url }}">Link</a></li>
+                    </ul>
+                </div>
+            {{ end }}
+        </div>
+    {{ end }}
+{{ end }}

@@ -1,0 +1,15 @@
+{{/* Partial used to display a grid of artwork for a specific character. This is currently hardcoded. */}}
+
+<div class="grid">
+    <div class="grid-sizer"></div>
+    <div class="gutter-sizer"></div>
+
+    {{ $p := slice "ffxiv" }}
+    {{ range where .Site.RegularPages "Params.arttags" "intersect" $p }}
+        {{ if not (.Params.guest) }}
+            {{ partial "render-art" . }}
+        {{ end }}
+    {{ end }}
+</div>
+
+{{ partial "gallery-js" . }}

@@ -1,0 +1,16 @@
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+
+    {{ $artworks := (where .Pages "Type" "art") }}
+
+    {{ $.Scratch.Set "paginator" (.Paginate $artworks) }}
+    {{ partial "art-gallery" . }}
+{{ end }}
+
+{{ define "details" }}
+    {{ partial "art-sidebar" . }}
+{{ end }}
+
+{{ define "head" }}
+    {{ partial "gallery-js" . }}
+{{ end }}

@@ -1,0 +1,46 @@
+{{/* Partial used to display a list of featured artwork. */}}
+
+{{ $art_config := index .Site.Data "art-config" }}
+
+<div class="gallery-con">
+    <div style="display: flex; flex-wrap: wrap;">
+    {{ $art := .Site.GetPage "/art" }}
+    {{ range (where (where $art.RegularPagesRecursive "Type" "art") "Params.slug" "in" $art_config.featured) }}
+        {{ with ($art.GetPage .Params.slug) }}
+            <figure class="gallery-fig">
+                {{ $filename_without_ext := .Params.slug }}
+
+                {{ $month := "1" }}
+                {{ $year := "1" }}
+
+                {{ if .Date }}
+                    {{ $split := split .Date "-" }}
+                    {{ $month = index $split 1 }}
+                    {{ $year = index $split 0 }}
+                {{ end }}
+
+                {{ $path := printf "/art/%s/%s/%s" $year $month $filename_without_ext}}
+
+                <a href="{{ $path }}" aria-label="Click to view details {{ $year }}" class="no-decoration">
+                    {{ $title := .Title }}
+
+                    {{ $full := printf "%s/thumb/%s.avif" $.Site.Params.image_host $filename_without_ext }}
+                    {{ $jpeg := printf "%s/thumb/%s.jpg" $.Site.Params.image_host $filename_without_ext }}
+
+                    <picture>
+                        <source srcset="{{ $full }}" width="{{ .Params.thumb_width }}" height="{{ .Params.thumb_height }}" type="image/avif"/>
+                        <img class="gallery-img featured-art" width="{{ .Params.thumb_width }}" height="{{ .Params.thumb_height }}" alt="{{ $title }}" src="{{ $jpeg }}">
+                    </picture>
+                </a>
+
+                <figcaption>
+                    {{ with .Title }}
+                        <i>"{{ . }}"</i>
+                    {{ end }}
+                </figcaption>
+            </figure>
+        {{ end }}
+    {{ end }}
+    </div>
+    <a href="/art">View all art</a>
+</div>

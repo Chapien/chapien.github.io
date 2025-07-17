@@ -1,0 +1,56 @@
+{{/* Partial used to display a thumbnail of an artwork. */}}
+
+{{ $full := printf "%s/thumb/%s.avif" $.Site.Params.image_host .Params.filename }}
+{{ $jpeg := printf "%s/thumb/%s.jpg" $.Site.Params.image_host .Params.filename }}
+
+{{ $grid_class := "grid-item" }}
+{{ if ge $.Params.aspect_ratio 1 }}
+        {{ $grid_class = "grid-item-wide" }}
+{{ end }}
+
+<a aria-label="Gallery Item" class="no-decoration grid-item" href="{{ .RelPermalink }}">
+
+{{ $title := .Title }}
+{{ $year := .Date.Format "2006" }}
+
+{{ with $full }}
+        <picture>
+                <source srcset="{{ $full }}" type="image/avif" width="{{ $.Params.thumb_width }}" height="{{ $.Params.thumb_height }}"/>
+                <img style="width: 100%; height: auto;" alt="{{ $.Params.alt_text }}" width="{{ $.Params.thumb_width }}" height="{{ $.Params.thumb_height }}" src="{{ $jpeg }}"/>
+        </picture>
+
+        <span>
+        {{ $title }}, {{ $year }}
+
+        {{ if $.Params.threed }}
+                {{ with resources.Get "icons/3d.svg" }}
+                        <img class="symbolic-icon" style="float: right;margin-right: 6px;margin-top: 2px;" width="16" height="16" alt="3D cube icon" title="Viewable 3D Model" src="{{ .RelPermalink }}">
+                {{ end }}
+        {{ else }}
+                {{ if $.Params.comic }}
+                        {{ with resources.Get "icons/comic.svg" }}
+                                <img class="symbolic-icon" style="float: right;margin-right: 6px;margin-top: 2px;" width="16" height="16" alt="Comic icon" title="Viewable Comic" src="{{ .RelPermalink }}">
+                        {{ end }}
+                {{ else }}
+                        {{ if $.Params.animation }}
+                                {{ with resources.Get "icons/animation.svg" }}
+                                        <img class="symbolic-icon" style="float: right;margin-right: 6px;margin-top: 2px;" width="16" height="16" alt="Play animation icon" title="Viewable Animation" src="{{ .RelPermalink }}">
+                                {{ end }}
+                        {{ else }}
+                                {{ with resources.Get "icons/image.svg" }}
+                                        <img class="symbolic-icon" style="float: right;margin-right: 6px;margin-top: 2px;" width="16" height="16" alt="Image icon" title="Viewable Image" src="{{ .RelPermalink }}">
+                                {{ end }}
+                        {{ end }}
+                {{ end }}
+        {{ end }}
+
+        {{ if $.Params.nsfw }}
+                {{ with resources.Get "icons/warning.svg" }}
+                        <img style="float: right;margin-right: 6px;margin-top: 2px;" width="16" height="16" alt="Adult content icon" title="Contains adult content" src="{{ .RelPermalink }}">
+                {{ end }}
+        {{ end }}
+        </span>
+{{ end }}
+</a>
+
+

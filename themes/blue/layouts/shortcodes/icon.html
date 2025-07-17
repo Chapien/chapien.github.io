@@ -1,0 +1,4 @@
+{{ $name := .Get 0 }}
+{{ with resources.Get $name }}
+    <img alt="" class="symbolic-icon" style="image-rendering: pixelated;" width="16" height="16" src="{{ .RelPermalink }}">
+{{ end }}

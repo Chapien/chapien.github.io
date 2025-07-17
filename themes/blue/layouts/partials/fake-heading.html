@@ -1,0 +1,9 @@
+{{ $header_type := .Scratch.Get "header-type" }}
+{{ $header_name := .Scratch.Get "header-name" }}
+
+{{ $id := urlize $header_name }}
+{{ printf "<%s id=\"%s\">" $header_type $id | safeHTML }}
+{{ $header_name }}
+<a class="header-link" aria-hidden="true" href="#{{ $id }}">#</a>
+{{ printf "</%s>" $header_type | safeHTML }}
+

@@ -1,0 +1,50 @@
+{{/* Page layout used for music page. */}}
+
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+
+    <hr>
+
+    {{ with resources.Get "pics/pic-music.jpg" }}
+    <picture>
+        {{ $avif_path := replace . ".jpg" ".avif "}}
+		{{ with resources.Get (strings.TrimSpace $avif_path) }}
+			<source srcset="{{ .RelPermalink }}" type="image/avif">
+		{{ end }}
+        <img class="gallery-img page-pic" alt="Drawing of an art gallery with several people standing around a piece hanging on the wall." width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
+    </picture>
+    {{ end }}
+
+    {{ .Content }}
+
+    {{ $art := (index site.Data ($.Param "json")) }}
+
+    {{ range $art.categories }}
+        {{ $.Scratch.Set "header-type" "h3" }}
+        {{ $.Scratch.Set "header-name" .name }}
+        {{ partial "fake-heading.html" $ }}
+
+        <p>{{ .description }}</p>
+        {{ range sort .years "year" "desc" }}
+            {{ $.Scratch.Set "header-type" "h4" }}
+            {{ $.Scratch.Set "header-name" .year}}
+            {{ partial "fake-heading.html" $ }}
+
+            <div class="gallery">
+                {{ range .pieces }}
+                    <figure>
+                        {{ $full := resources.Get (printf "%s/%s" ($.Param "json") .filename) }}
+
+                        <audio controls src="{{ $full.RelPermalink }}" preload="metadata">
+                            Your browser does not support audio.
+                        </audio>
+
+                        <figcaption>
+                            "{{ .title }}"
+                        </figcaption>
+                    </figure>
+                {{ end }}
+            </div>
+        {{ end }}
+    {{ end }}
+{{ end }}

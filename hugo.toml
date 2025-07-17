@@ -1,124 +1,54 @@
-### Base Hugo ##########################################################
-
-baseURL = "https://chapien.net/"
-languageCode = "en-us"
-title = "The Claire Scrolls"
-copyright = "Copyright © 2025 by Claire. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/#?)"
-theme = ["hugo-redirect", "hugo-PaperMod"]
-builddrafts = false
-mainSections = ['blog']
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'The Claire Scrolls'
+theme = ['hugo-redirect', 'blue']
+disableKinds = ['taxonomy']
 
 [module]
   [[module.imports]]
     path = "github.com/KKKZOZ/hugo-admonitions"
   [[module.imports]]
-    path = "hugo-PaperMod"
+    path = "blue"
 
 [outputs]
-home = ['html', 'json']
+home = ['html']
 section = ['html']
 taxonomy = ['html']
 term = ['html']
 
-[outputFormats]
-    [outputFormats.RSS]
-        mediaType = "application/rss+xml"
-        baseName = "feed"
+[taxonomies]
+series = 'series'
+tag = 'tags'
+category = 'categories'
 
-### Languages ##########################################################
+[permalinks]
+tags = 'blog/tags/:title'
+series = 'blog/series/:title'
+bolg = 'blog/:year/:title'
 
-[languages.en]
-languageName = "English"
-weight = 1
+[[menu.main]]
+name = 'Home'
+url = ''
+weight = -1
 
-[languages.en.taxonomies]
-category = "categories"
-tag = "tags"
-series = "series"
-
-[[languages.en.menu.main]]
+[[menu.main]]
 name = "About"
 url = "about"
 weight = 1
 
-[[languages.en.menu.main]]
+[[menu.main]]
 name = "Contact"
 url = "contact"
-weight = 4
+weight = 2
 
-[[languages.en.menu.main]]
+[[menu.main]]
 name = "Blog"
 url = "blog"
-weight = 5
-
-[[languages.en.menu.main]]
-name = "Tags"
-url = "tags/"
-weight = 10
-
-[[languages.en.menu.main]]
-name = "Link Tree"
-url = "https://tree.chapien.net/"
-weight = 15
-
-[[languages.en.menu.main]]
-name = "RSS"
-url = "blog/feed.xml"
-weight = 16
-
-[[languages.en.menu.main]]
-name = "Search"
-url = "search/"
-weight = 20
-
-[pagination]
-pagerSize = 10
-
-### Papermod Params ####################################################
+weight = 3
 
 [params]
-home = ["HTML", "JSON"]
-env = "production"
-isso_url = "comments.chapien.net"
-hcard = true
-description = "Claire's personal blog."
-author = {name = "Claire", email = "inquiries@chapien.net"}
-Nickname="chapien"
-Pronouns= ["She","Her"]
-defaultTheme = "auto"
-CanonicalLinkText = " "
-ShowPostNavLinks = true
-ShowBreadCrumbs = true
-ShowCodeCopyButtons = true
-ShowAllPagesInArchive = false
-ShowPageNums = true
-ShowToC = true
-TocOpen = true
-ShowRssButtonInSectionTermList = true
-socialIcons = [
-    {name = "pronouns", url= "https://en.pronouns.page/u/chapien"},
-    {name = "itchio", url = "https://itch.io/profile/chapien"},
-    {name = "kofi", url = "https://ko-fi.com/chapien"},    
-    {name = "github", url = "https://github.com/Chapien"},
-    {name = "bookwyrm", url = "https://bookwyrm.social/user/chapien"},
-    {name = "bluesky", url = "https://bsky.app/profile/claire.chapien.net"},
-    {name = "tumblr", url = "https://chappydev.tumblr.com/"},
-    {name = "mastodon", url = "https://tech.lgbt/@chapien"},
-]
-ShowShareButtons = true
-ShareButtons = ["bluesky"]
+author = 'Claire'
+description = 'Weh'
+isso_url = 'comments.chapien.net'
+profile_picture = "profile.png"
 
-[params.homeInfoParams]
-Title = "Claire"
-Content = "Short stories. Blogs about mental health, game dev, and LGBTQ+ issues. [About me](about)."
-imageURL = "assets/images/profile.png"
-AlignSocialIconsTo = "Center"
-buttons = [
-    {name = "Blog", url = "blog"},
-    {name = "About", url = "about"},
-    {name = "Contact", url = "contact"},
-    {name = "Guestbook", url = "guestbook"}
-]
-
-#[params.profileMode]
-#enabled = true

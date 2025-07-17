@@ -1,0 +1,8 @@
+{{ $path := .Get 0 }}
+{{ $id := .Get 1 }}
+
+{{ $content := readFile (print .Page.File.Dir $path) | safeHTML }}
+
+<script type="x-shader/x-fragment" id="{{ $id }}">
+{{ $content }}
+</script>

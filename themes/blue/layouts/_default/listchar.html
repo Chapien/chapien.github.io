@@ -1,0 +1,51 @@
+{{/* Page layout used for the characters listing page. */}}
+
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+
+    <hr>
+
+    {{ $.Scratch.Set "header-type" "h3" }}
+    {{ $.Scratch.Set "header-name" "Original" }}
+    {{ partial "fake-heading.html" $ }}
+    <div class="generic-con" id="character-container">
+
+    {{ range $name, $taxonomy := (index .Site.Taxonomies .Params.listtag) }}
+        {{ $original := false }}
+        {{ if $taxonomy.Page.Params.original }}
+            {{ $original = $taxonomy.Page.Params.original }}
+        {{ end }}
+
+        {{ if $original }}
+        <a class="character" href="{{ $.Params.url | relLangURL }}{{ $name | urlize }}"><img class="gallery-img" width=256 height=256 src="{{ $.Site.Params.image_host }}/chars/{{ $name | urlize }}.jpg"/><span>{{ $taxonomy.Page.Title }}</span></a>
+        {{ end }}
+    {{ end }}
+    </div>
+
+    <br>
+
+    <details>
+        <summary>
+            {{ $.Scratch.Set "header-type" "strong" }}
+            {{ $.Scratch.Set "header-name" "Others" }}
+            {{ partial "fake-heading.html" $ }}
+        </summary>
+        <div class="generic-con" id="character-container">
+        {{ range $name, $taxonomy := (index .Site.Taxonomies .Params.listtag) }}
+            {{ $original := false }}
+            {{ if $taxonomy.Page.Params.original }}
+                {{ $original = $taxonomy.Page.Params.original }}
+            {{ end }}
+
+            {{ if not $original }}
+            <a class="character" href="{{ $.Params.url | relLangURL }}{{ $name | urlize }}"><img class="gallery-img" width=256 height=256 src="{{ $.Site.Params.image_host }}/chars/{{ $name | urlize }}.jpg"/><span>{{ $taxonomy.Page.Title }}</span></a>
+            {{ end }}
+        {{ end }}
+        </div>
+    </details>
+{{ end }}
+
+{{ define "details" }}
+    {{ partial "art-sidebar" . }}
+{{ end }}
+

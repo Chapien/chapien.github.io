@@ -1,0 +1,24 @@
+{{ $img := .Scratch.Get "img" }}
+{{ $title := .Scratch.Get "title" }}
+{{ $link := .Scratch.Get "link" }}
+{{ $commissions := .Scratch.Get "commissions" }}
+
+{{ with resources.Get $img }}
+    <a class="art-fancy-button" href="{{ $link }}">
+        <div style="display: inline-grid">
+            <p>{{ $title }}</p>
+            <img src="{{ .RelPermalink }}" width=400 height=150 />
+        </div>
+
+        {{ if $commissions }}
+            {{ $art_config := index $.Site.Data "art-config" }}
+            {{ if $art_config.commissions }}
+                <span class="commission-button-text" id="commission-open">OPEN</span>
+            {{ else }}
+                <span class="commission-button-text" id="commission-closed">CLOSED</span>
+            {{ end }}
+        {{ end }}
+    </a>
+{{ else }}
+    <strong>Could not find {{ $img }}!</strong>
+{{ end }}

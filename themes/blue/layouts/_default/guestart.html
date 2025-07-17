@@ -1,0 +1,21 @@
+{{/* Page layout used for guest art page. */}}
+
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+    <hr>
+
+    {{ .Content }}
+
+    {{ $paginator := .Paginate (where .RegularPagesRecursive "Type" "art") }}
+
+    {{ $.Scratch.Set "paginator" (.Paginate ((where (where .RegularPagesRecursive "Type" "art") "Params.guest" "=" true))) }}
+    {{ partial "art-gallery" . }}
+{{ end }}
+
+{{ define "details" }}
+    {{ partial "art-sidebar" . }}
+{{ end }}
+
+{{ define "head" }}
+    {{ partial "gallery-js" . }}
+{{ end }}

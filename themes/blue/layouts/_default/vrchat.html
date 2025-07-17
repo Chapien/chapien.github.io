@@ -1,0 +1,37 @@
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+
+    <hr>
+
+    <div class="container">
+        <div class="box">
+            <h2>Avatars</h2>
+
+            <p>This is my own custom avatar, based off of my <a href="/art/characters/sakura">OC</a>:</p>
+
+            <img style="display: block; margin-left: auto; margin-right: auto;margin-bottom:10px;" src="char.jpg" width=200 />
+
+            <p>This is one of my first character models that doesn't look completely terrible. I learned how to hide my terrible geometry with flat shading eventually too. I also created a <a href="https://code.ryne.moe/redstrate/reds-avatar-tools">custom Blender Add-on</a> to streamline my processes which helped to keep a PC and Quest version in sync.</p>
+        </div>
+
+        <div class="box">
+            <h2>Favorite Worlds</h2>
+
+            TODO!
+        </div>
+    </div>
+
+    <style>
+        .container {
+            display: flex;
+            column-gap: 15px;
+        }
+
+        .box {
+            display: block;
+            width: 100%;
+            border: 1px solid gray;
+            padding: 5px;
+        }
+    </style>
+{{ end }}

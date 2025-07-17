@@ -1,0 +1,28 @@
+{{/* Page layout used for the main art gallery page. */}}
+
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+
+    <hr>
+
+    {{ .Content }}
+
+    {{ $tags := slice "fan art" "artfight" "3d" "3D" }}
+    {{ $art := .Site.GetPage "/art" }}
+    {{ $artworks := (where $art.RegularPagesRecursive "Type" "art") }}
+    {{ $fan_art := (where $artworks "Params.arttags" "intersect" $tags) }}
+    {{ $guest_art := (where $artworks "Params.guest" "=" true) }}
+    {{ $originals := complement $fan_art $guest_art $artworks }}
+
+    {{ $.Scratch.Set "paginator" (.Paginate $originals) }}
+    {{ partial "art-gallery" . }}
+{{ end }}
+
+{{ define "details" }}
+    {{ partial "art-sidebar" . }}
+{{ end }}
+
+{{ define "head" }}
+    {{ partial "gallery-js" . }}
+{{ end }}
+

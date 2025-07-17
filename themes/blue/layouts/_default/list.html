@@ -1,0 +1,46 @@
+{{/* Page layout used for blog list view and others. */}}
+
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+
+    <hr>
+
+    {{ $paginator := .Paginate .Pages }}
+
+    {{ if eq $paginator.PageNumber 1}}
+    {{ .Content }}
+    {{ end }}
+
+    {{ range $paginator.Pages }}
+        <li style="margin-left: 10px; list-style-type: square;">
+            <h3 style="margin-bottom: 5px"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <i><time datetime='{{ .Date.Format "2006-01-02" }}'>{{ .Date.Format "Jan 2, 2006"}}</time></i>
+            <p><i>{{ .Summary }}</i></p>
+        </li>
+    {{ end }}
+
+    <ul class="pagination">
+    {{ with $paginator.Prev }}
+    <li class="page-item">
+    <a style="float: left" href="{{ .URL }}">Prev</a>
+    </li>
+    {{ else }}
+    <li class="page-item disabled">
+    <span style="float: left">Prev</span>
+    </li>
+    {{ end }}
+
+    <span style="display: inline-block;">{{ printf "Page %d" $paginator.PageNumber }}</span>
+
+    {{ with $paginator.Next }}
+    <li class="page-item">
+    <a style="float: right" href="{{ .URL }}">Next</a>
+    </li>
+    {{ else }}
+    <li class="page-item disabled">
+    <span style="float: right">Next</span>
+    </li>
+    {{ end }}
+
+    </ul>
+{{ end }}

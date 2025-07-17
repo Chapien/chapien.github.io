@@ -1,0 +1,12 @@
+<div class="generic-con">
+    <ul style="padding: 0">
+    {{ range first 3 (where .Site.Pages "Type" "blog").ByDate.Reverse }}
+        <li style="margin-left: 10px; list-style-type: square;">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <p><i>{{ .Summary }}</i></p>
+        </li>
+    {{ end }}
+    </ul>
+
+    <a href="/blog">View all blog posts</a>
+</div>

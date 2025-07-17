@@ -1,0 +1,23 @@
+Sitemap: https://redstrate.com/sitemap.xml
+
+# Block ALL crawlers, I don't want them here
+User-agent: *
+Disallow: /
+
+# Allow the two search engines I kind of care about
+User-agent: Googlebot
+User-agent: DuckDuckBot
+
+# And also Matrix & Mastodon
+User-agent: Synapse
+User-agent: Mastodon
+
+# Allow archive.org
+User-agent: archive.org_bot
+
+# Non-important pages I don't want indexed or one reason or another
+Disallow: /shrines/
+Disallow: /layout-archive/
+Disallow: /imprint/
+Disallow: /guestbook/
+Disallow: /fund/

@@ -1,0 +1,23 @@
+{{ $name := urlize .Title }}
+
+{{ with .Slug }}
+        {{ $name = . }}
+{{ end }}
+
+{{ if hugo.IsProduction }}
+        <div class="voting-container">
+                <button class="voting-button" id="num-votes" onClick="addVote({{ $name }})">❤️</button>
+                <noscript>Javascript is required to vote.</noscript>
+        </div>
+
+        {{ $site := resources.Get "js/voting.js" | minify | fingerprint | resources.PostProcess }}
+        <script src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}"></script>
+
+        <script>
+                refresh({{ $name }})
+        </script>
+{{ else }}
+        <div class="voting-container">
+                <button disabled class="voting-button" onClick="addVote({{ $name }})">❤️ ?</button>
+        </div>
+{{ end }}

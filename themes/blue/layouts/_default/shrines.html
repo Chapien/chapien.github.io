@@ -1,0 +1,18 @@
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+    <hr>
+
+    {{ .Content }}
+
+    <ul>
+    {{ range .Data.Pages.ByDate.Reverse }}
+        <li>
+            {{ $url := printf "icons/%s.png" .Slug }}
+            {{ with resources.Get $url }}
+                <img alt="Icon" width="16" height="16" src="{{ .RelPermalink }}">
+            {{ end }}
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+    {{ end }}
+    </ul>
+{{ end }}

@@ -1,0 +1,83 @@
+{{ $skip_next := false }}
+
+{{ if not .IsHome }}
+        {{ if .Params.skipparent }}
+                {{ $skip_next = true }}
+        {{ end }}
+
+        {{ $len := len .Ancestors }}
+        {{ $i := 0 }}
+        {{- range .Ancestors.Reverse }}
+                {{ $end := false }}
+                {{ if eq (add $i 1) $len }}
+                        {{ $end = true }}
+                {{ end }}
+
+                {{ $needs_skip := $skip_next }}
+
+                {{ if not (and $needs_skip $end) }}
+                        <!-- Workaround for art tags having the wrong breadcrumb -->
+                        {{ if eq .Title "Arttags" }}
+                                <a href="/art">Art</a>
+                                <span> / </span>
+                                <a href="/art/tags">Tags</a>
+                                <span> / </span>
+                        {{ else }}
+                                <!-- For project tags -->
+                                {{ if eq .Title "Projtags" }}
+                                        <a href="/software">Software</a>
+                                        <span> / </span>
+                                        <a href="/software/tags">Tags</a>
+                                        <span> / </span>
+                                {{ else }}
+                                        <!-- Workaround for blog tags having the wrong breadcrumb -->
+                                        {{ if and (eq .Title "Tags") (hasPrefix $.Path "/tags/") }}
+                                                {{ if not (and $needs_skip $end) }}
+                                                        <a href="/blog">Blog</a>
+                                                        <span> / </span>
+                                                        <a href="/blog/tags">Tags</a>
+                                                        <span> / </span>
+                                                {{ end }}
+                                        {{ else }}
+                                                <!-- Same workaround for blog series -->
+                                                {{ if and (eq .Title "Series") (hasPrefix $.Path "/series/") }}
+                                                        {{ if not (and $needs_skip $end) }}
+                                                                <a href="/blog">Blog</a>
+                                                                <span> / </span>
+                                                                <a href="/blog/series">Series</a>
+                                                                <span> / </span>
+                                                        {{ end }}
+                                                {{ else }}
+                                                        <!-- Ditto for art characters -->
+                                                        {{ if and (eq .Title "Characters") (hasPrefix $.Path "/characters/") }}
+                                                                <a href="/art">Art</a>
+                                                                <span> / </span>
+                                                                <a href="/art/characters">Characters</a>
+                                                                <span> / </span>
+                                                        {{ else }}
+                                                                {{ if eq .Title "Characters" }}
+                                                                        <a href="/art/characters">Characters</a>
+                                                                        <span> / </span>
+                                                                {{ else }}
+
+                                                                        {{ if not (and $needs_skip $end) }}
+                                                                                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                                                                                <span> / </span>
+                                                                        {{ end }}
+                                                                {{ end }}
+                                                        {{ end }}
+                                                {{ end }}
+                                        {{ end }}
+                                {{ end }}
+                        {{ end }}
+                {{ else }}
+                        {{ if $.Params.trueparent }}
+                                {{ with $.Site.GetPage ($.Params.trueparent) }}
+                                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                                        <span> / </span>
+                                {{ end }}
+                        {{ end }}
+                {{ end }}
+                {{ $i = add $i 1 }}
+        {{- end }}
+{{ end }}

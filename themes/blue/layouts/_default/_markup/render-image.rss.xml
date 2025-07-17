@@ -1,0 +1,23 @@
+{{- $url := .Destination | safeURL -}}
+{{- $img := .Page.Resources.GetMatch .Destination -}}
+
+{{- if and (not $img) .Page.File -}}
+{{ with .Page.File }}
+{{ $path := path.Join .Dir $url }}
+{{- $img = resources.Get $path -}}
+{{ end }}
+{{- end -}}
+
+{{- if and (not $img) .Page.File -}}
+{{- $img = resources.Get .Destination -}}
+{{- end -}}
+
+{{- with $img -}}
+    {{ if eq .MediaType.SubType "svg" }}
+    <img class="actual-article-img" src="{{ $img.RelPermalink }}" alt="{{ $.Text }}">
+    {{ else }}
+    <img class="actual-article-img" width="{{ $img.Width }}" height="{{ $img.Height }}" src="{{ $img.RelPermalink }}" alt="{{ $.Text }}">
+    {{ end }}
+{{- else -}}
+    <em>Unable to find image {{ $url }}!</em>
+{{- end -}}

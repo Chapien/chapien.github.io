@@ -1,0 +1,12 @@
+name = "red"
+license = "MIT"
+licenselink = "https://code.ryne.moe/redstrate/redstrate.com/tree/main/themes/red/LICENSE"
+description = "Custom Hugo theme for use on redstrate.com"
+homepage = "https://redstrate.com/"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "redstrate <josh@redstrate.com>"
+  homepage = "https://redstrate.com/"

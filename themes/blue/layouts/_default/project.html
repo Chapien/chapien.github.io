@@ -1,0 +1,13 @@
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+
+    {{ if (and ($.Param "source") (not .Content)) }}
+        {{- template "alias.html" (dict "Permalink" .Params.source) -}}
+    {{ else }}
+        <p>{{ .Summary }}</p>
+
+        <hr>
+
+        {{ .Content }}
+    {{ end }}
+{{ end }}

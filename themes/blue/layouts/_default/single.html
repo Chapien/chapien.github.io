@@ -1,0 +1,162 @@
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+
+    {{ if in .File.Dir "blog" }}
+        {{ $posted := $.Date.Format "January 02, 2006" }}
+        {{ $modified := $.Page.Lastmod.Format "January 02, 2006" }}
+
+        <i style="margin: 0">
+        Posted on
+        <time datetime="{{ .Page.Lastmod.Format "2006-01-02" }}" class="text-muted">
+            {{ $posted }}
+        </time>
+        {{ if not (eq $posted $modified) }}
+            <time datetime="{{ .Page.Lastmod.Format "2006-01-02" }}" class="text-muted">
+                (Updated on {{ $modified }})
+            </time>
+        {{ end }}
+        </i>
+
+        <br>
+
+        <span>Tags:</span>
+        {{ $terms := .GetTerms "tags" }}
+        {{ range $terms }}
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ end }}
+
+        <br>
+
+        <span>Syndicated to:</span>
+        {{ with .Params.mastodon_url }}
+            <a href="{{ . }}">
+                {{ with resources.Get "icons/mastodon.svg" }}
+                    <img alt="Mastodon logo" class="symbolic-icon" style="image-rendering: pixelated;" width="16" height="16" src="{{ .RelPermalink }}">
+                {{ end }}
+            </a>
+        {{ end }}
+        {{ with .Params.bluesky_url }}
+            <a href="{{ . }}">
+                {{ with resources.Get "icons/bluesky.svg" }}
+                    <img alt="BlueSky logo" class="symbolic-icon" style="image-rendering: pixelated;" width="16" height="16" src="{{ .RelPermalink }}">
+                {{ end }}
+            </a>
+        {{ end }}
+    {{ end }}
+
+    <hr>
+
+    {{ if .Params.toc }}
+    <details>
+        <summary>Table of Contents</summary>
+        {{ .Page.TableOfContents }}
+    </details>
+    {{ end }}
+
+    {{ .Content }}
+
+    {{ $series_name := "" }}
+    {{ with .Page.GetTerms "series" }}
+        {{ range . }}
+            {{ $series_name = (string .Title) }}
+        {{ end }}
+    {{ end }}
+
+    {{ with $series_name }}
+        {{ $series_pages := slice }}
+        {{ range $name, $pages := $.Site.Taxonomies.series }}
+            {{ if eq (lower $series_name) $name }}
+                {{ $series_pages = $pages }}
+            {{ end }}
+        {{ end }}
+
+
+        {{ $prev := "" }}
+        {{ $next := "" }}
+
+        {{ range (sort $series_pages "Date" "desc") }}
+            {{ if gt $.Date.Unix .Date.Unix }}
+                {{ $prev = .Path }}
+                {{ break }}
+            {{ end }}
+        {{ end }}
+
+        {{ range (sort $series_pages "Date" "asc") }}
+            {{ if lt $.Date.Unix .Date.Unix }}
+                {{ $next = .Path }}
+                {{ break }}
+            {{ end }}
+        {{ end }}
+
+        <div id="seriesnav" class="art-button-container">
+            {{ if $prev }}
+                {{ with $.Page.GetPage $prev }}
+                    <a class="art-button" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                {{ end }}
+            {{ else }}
+                <a class="art-button disabled">End</a>
+            {{ end }}
+
+            {{ with $.Page.GetTerms "series" }}
+                {{ range . }}
+                    <a class="art-button" href="{{ .RelPermalink }}">{{ .Title }}</p>
+                {{ end }}
+            {{ end }}
+
+            {{ if $next }}
+                {{ with $.Page.GetPage $next }}
+                    <a class="art-button" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                {{ end }}
+            {{ else }}
+                <a class="art-button disabled">End</a>
+            {{ end }}
+        </div>
+    {{ end }}
+
+    {{ if in .File.Dir "blog" }}
+        {{ partial "voting" . }}
+
+        {{ partial "related" . }}
+
+        {{ partial "comments" . }}
+    {{ end }}
+
+    {{ if .HasShortcode "three-scene" }}
+        {{ $imagesloaded := resources.Get "js/three.js" }}
+        {{ if hugo.IsProduction }}
+            {{ $imagesloaded = $imagesloaded | minify | fingerprint | resources.PostProcess }}
+        {{ end }}
+        <script src="{{ $imagesloaded.RelPermalink }}" integrity="{{ $imagesloaded.Data.Integrity }}"></script>
+    {{ end }}
+
+    {{ if .Params.math }}
+        {{ $math := resources.Get "js/katex.js" }}
+        {{ if hugo.IsProduction }}
+            {{ $math = $math | minify | fingerprint | resources.PostProcess }}
+        {{ end }}
+        <script src="{{ $math.RelPermalink }}" integrity="{{ $math.Data.Integrity }}"></script>
+
+        {{ $autorender := resources.Get "js/auto-render.js" }}
+        {{ if hugo.IsProduction }}
+            {{ $autorender = $autorender | minify | fingerprint | resources.PostProcess }}
+        {{ end }}
+        <script src="{{ $autorender.RelPermalink }}" integrity="{{ $autorender.Data.Integrity }}"></script>
+
+        {{ $style := resources.Get "css/katex.css" }}
+        {{ if hugo.IsProduction }}
+            {{ $style = $style | minify | fingerprint | resources.PostProcess }}
+        {{ end }}
+        <link href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" rel="stylesheet">
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                renderMathInElement(document.body, {
+                    delimiters: [
+                        {left: "$$", right: "$$", display: true},
+                        {left: "$", right: "$", display: false}
+                    ]
+                });
+            });
+        </script>
+    {{ end }}
+{{ end }}

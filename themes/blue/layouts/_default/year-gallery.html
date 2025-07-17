@@ -1,0 +1,25 @@
+{{/* Used for the "2020" and other year gallery pages, for example. */}}
+
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+
+    <hr>
+
+    {{ .Content }}
+
+    <div class="grid">
+    <div class="grid-sizer"></div>
+    <div class="gutter-sizer"></div>
+
+    {{ range (where .Site.RegularPages "Type" "art") }}
+        {{ if and (eq (.Date.Format "2006") $.Title) (not (.Params.guest)) }}
+            {{ partial "render-art" . }}
+        {{ end }}
+    {{ end }}
+
+    </div>
+{{ end }}
+
+{{ define "head" }}
+    {{ partial "gallery-js" . }}
+{{ end }}

@@ -1,0 +1,16 @@
+{{ $link := .Get "link" }}
+{{ $banner := .Get "banner" }}
+{{ $label := .Get "label" }}
+
+<a href="{{ $link }}" style="text-decoration: none;">
+
+{{ $path := printf "/links/%s" $banner}}
+{{ $img := resources.Get $path }}
+{{ with $img }}
+<!-- Some browsers (safari) sucks and blocks 88x31, so force them to be 89x31 instead. -->
+<img title="{{ $label }}" src="{{ .RelPermalink }}" style="width: auto; height: 31px" alt="{{ $label }}" width="{{ add .Width 1 }}" height="{{ .Height }}">
+{{ else }}
+<img title="{{ $label }}" src="{{ $banner }}" style="width: auto; height: 31px" alt="{{ $label }}" width="89" height="31">
+{{ end }}
+
+</a>

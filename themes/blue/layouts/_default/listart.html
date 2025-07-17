@@ -1,0 +1,13 @@
+{{/* Page layout used for art tags page. */}}
+
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+
+    <hr>
+
+    <ul id="all-tags">
+    {{ range $name, $taxonomy := (index .Site.Taxonomies .Params.listtag) }}
+        <li><a href="{{ $.Params.url | relLangURL }}{{ $name | urlize }}">{{ $taxonomy.Page.Title }}</a></li>
+    {{ end }}
+    </ul>
+{{ end }}

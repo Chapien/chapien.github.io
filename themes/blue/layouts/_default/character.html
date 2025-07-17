@@ -1,0 +1,64 @@
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+    <hr>
+
+    <img id="about-pic" alt="Drawing of a catgirl, with blonde hair and dark eyes." title="Profile Picture" src="{{ $.Site.Params.image_host }}/chars/{{ urlize .Slug }}.jpg" width=128 height=128>
+
+    {{ $has_age := .Params.age }}
+    {{ $has_pronouns := .Params.pronouns }}
+    {{ $has_origin := .Params.origin }}
+    {{ $has_charsheet := .Params.charsheet }}
+    {{ $has_race := .Params.race }}
+
+    {{ if or $has_origin (or $has_age $has_pronouns) }}
+        {{ if $has_race }}
+            <p><strong>Race</strong></p>
+            <p>{{ .Params.race }}</p>
+        {{ end }}
+        {{ if $has_age }}
+            <p><strong>Age</strong><p>
+            <p>{{ .Params.age }}</p>
+        {{ end }}
+        {{ if $has_pronouns }}
+            <p><strong>Pronouns</strong></p>
+            <p>{{ .Params.pronouns }}</p>
+        {{ end }}
+        {{ if $has_origin }}
+            <p><strong>Origin</strong></p>
+            <p>{{ .Params.origin }}</p>
+        {{ end }}
+        {{ if $has_charsheet }}
+            {{ $full := printf "%s/art/%s.avif" $.Site.Params.image_host .Params.charsheet }}
+            <a href="{{ $full }}">Character Sheet</a>
+        {{ end }}
+    {{ end }}
+
+    {{ .Content }}
+
+    {{ $tags := slice "fan art" "artfight" }}
+    {{ $artworks := (where .Pages "Type" "art") }}
+    {{ $guest_art := (where $artworks "Params.guest" "=" true) }}
+
+    {{ $.Scratch.Set "paginator" (.Paginate (complement $guest_art $artworks)) }}
+    {{ partial "art-gallery" . }}
+
+    {{ $paginator := (where (where .RegularPagesRecursive "Type" "art") "Params.guest" "=" true) }}
+    {{ if gt (len $paginator) 0 }}
+        <h3>Guest Art</h3>
+        <div class="grid-container">
+        <div class="second-grid">
+            <div class="grid-sizer"></div>
+            <div class="gutter-sizer"></div>
+
+            {{ range $paginator }}
+                {{ partial "render-art" . }}
+            {{ end }}
+        </div>
+        </div>
+    {{ end }}
+{{ end }}
+
+{{ define "head" }}
+    {{ partial "gallery-js" . }}
+{{ end }}
+

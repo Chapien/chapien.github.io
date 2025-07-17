@@ -1,0 +1,131 @@
+{{/* Page layout used for art details view, when visiting a specific artwork. */}}
+
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+    <i style="margin: 0">
+    Posted on
+    <time datetime="{{ .Page.Lastmod.Format "2006-01-02" }}" class="text-muted">
+        {{ $.Date.Format "January 2006" }}
+    </time>
+    </i>
+
+    {{ if  (and (not $.Params.animation) (and (not (in .File.Dir "art/guest")) (and (not $.Params.threed) (not $.Params.comic) )) ) }}
+        {{ $full := printf "%s/art/%s.avif" $.Site.Params.image_host $.Params.filename }}
+        {{ $jpeg := printf "%s/art/%s.jpg" $.Site.Params.image_host $.Params.filename }}
+
+        <picture>
+                <source srcset="{{ $full }}" type="image/avif" width="{{ $.Params.width }}" height="{{ $.Params.height }}"/>
+                <img class="gallery-img" style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto; width: auto; margin-top: 10px; margin-bottom: 10px; max-width: 100%; height: auto" alt="{{ $.Params.alt_text }}" width="{{ $.Params.width }}" height="{{ $.Params.height }}" src="{{ $jpeg }}"/>
+        </picture>
+    {{ else }}
+
+        {{ if $.Params.threed }}
+            {{ $file := printf "%s/3d/%s.glb" $.Site.Params.image_host $.Params.slug }}
+            {{ with $file }}
+                {{ $cameraorbit := $.Params.orbit }}
+                {{ $cameratarget := $.Params.target }}
+                {{ $fov  := $.Params.fov }}
+                <model-viewer style="margin-top: 10px; margin-bottom: 10px;" class="gallery-img" alt="{{ $.Params.alt_text }}" title="{{ $.Params.alt_text }}" src="{{ . }}" shadow-intensity="1" camera-controls touch-action="pan-y" camera-orbit="{{ $cameraorbit }}" camera-target="{{ $cameratarget }}" field-of-view="{{ $fov }}"></model-viewer>
+            {{ end }}
+        {{ else }}
+            {{ $file := printf "%s/animation/%s.webm" $.Site.Params.image_host $.Params.slug }}
+            {{ with $file }}
+                {{ if $.Params.animation }}
+                    <div style="text-align: center;">
+                        <video style="max-width: 100%" class="gallery-img" controls loop>
+                            <source src="{{ . }}" type="video/webm">
+                        </video>
+                    </div>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+    {{ if $.Params.comic }}
+        {{ range $.Params.pages }}
+            {{ $full := printf "%s/art/%s.avif" $.Site.Params.image_host .filename }}
+            {{ $jpeg := printf "%s/art/%s.jpg" $.Site.Params.image_host .filename}}
+
+            <picture>
+                    <source srcset="{{ $full }}" type="image/avif"/>
+                    <img class="gallery-img" style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto; width: auto; margin-top: 10px; margin-bottom: 10px; max-width: 100%; height: auto" alt="{{ .alt_text }}" src="{{ $jpeg }}"/>
+            </picture>
+        {{ end }}
+    {{ end }}
+
+    {{ partial "voting" . }}
+
+    {{ with .Content }}
+        {{ $.Scratch.Set "header-type" "h3" }}
+        {{ $.Scratch.Set "header-name" "Commentary" }}
+        {{ partial "fake-heading.html" $ }}
+
+        {{ . }}
+    {{ end }}
+
+    <div class="generic-con" id="art-detail-inline">
+    {{ partial "art-detail" . }}
+    </div>
+
+    {{ if .Params.threed }}
+        {{ $site := resources.Get "js/model-viewer.min.js" }}
+        {{ if hugo.IsProduction }}
+            {{ $site = $site | fingerprint | resources.PostProcess }}
+        {{ end }}
+        <script type="module" src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}"></script>
+    {{ end }}
+
+    {{ $related := .Site.RegularPages.Related . | first 3 }}
+    {{ with $related }}
+        <h3>Related Art</h3>
+        <div class="generic-con" style="display: flex; flex-wrap: wrap;">
+            {{ range . }}
+             <figure class="gallery-fig">
+                {{ $filename_without_ext := .Params.slug }}
+
+                {{ $month := "1" }}
+                {{ $year := "1" }}
+
+                {{ if .Date }}
+                    {{ $split := split .Date "-" }}
+                    {{ $month = index $split 1 }}
+                    {{ $year = index $split 0 }}
+                {{ end }}
+
+                {{ $path := printf "/art/%s/%s/%s" $year $month $filename_without_ext}}
+
+                <a href="{{ $path }}" aria-label="Click to view details {{ $year }}" class="no-decoration">
+                    {{ $title := .Title }}
+
+                    {{ $full := printf "%s/thumb/%s.avif" $.Site.Params.image_host $filename_without_ext }}
+                    {{ $jpeg := printf "%s/thumb/%s.jpg" $.Site.Params.image_host $filename_without_ext }}
+
+                    {{ $thumb_width :=  math.Div (int .Params.thumb_width) 2 }}
+                    {{ $thumb_height :=  math.Div (int .Params.thumb_height) 2 }}
+
+                    <picture>
+                        <source srcset="{{ $full }}" width="{{ $thumb_width }}" height="{{ $thumb_height }}" type="image/avif"/>
+                        <img class="gallery-img featured-art" width="{{ $thumb_width }}" height="{{ $thumb_height }}" alt="{{ $title }}" src="{{ $jpeg }}">
+                    </picture>
+                </a>
+
+                <figcaption>
+                    {{ with .Title }}
+                        <i>"{{ . }}"</i>
+                    {{ end }}
+                </figcaption>
+            </figure>
+            {{ end }}
+        </div>
+    {{ end }}
+
+    {{ partial "comments" . }}
+{{ end }}
+
+{{ define "details" }}
+    {{ partial "art-sidebar" . }}
+
+    <hr>
+
+    {{ partial "art-detail" . }}
+{{ end }}

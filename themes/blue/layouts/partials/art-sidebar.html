@@ -1,0 +1,8 @@
+<a class="art-sidebar-button" href="/art/stats">Statistics</a>
+
+{{ $art_config := index $.Site.Data "art-config" }}
+{{ if $art_config.commissions }}
+<a class="art-sidebar-button" href="/commission">Commissions</a>
+{{ else }}
+<a class="art-sidebar-button" href="/commission">Commissions (CLOSED)</a>
+{{ end }}

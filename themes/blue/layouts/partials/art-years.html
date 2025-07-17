@@ -1,0 +1,12 @@
+{{/* Partial used to display a horizontal list of years, each with a clickable link image. */}}
+
+<div class="generic-con year-con">
+{{ range (where .Site.RegularPages "Type" "in" "art").GroupByDate "2006" }}
+  {{ with .Key }}
+    <a class="no-decoration" href="{{ printf "%sart/%s" $.Site.Home.Permalink . }}">
+        {{ $thumbp := printf "%s/year-thumbs/%s.webp" $.Site.Params.image_host . }}
+        <img width="256" height="128" title="{{ . }}" alt="A thumbnail of {{ . }}'s art with the text in the center." class="gallery-img article-img" src="{{ $thumbp }}">
+    </a>
+  {{ end }}
+{{ end }}
+</div>

@@ -1,0 +1,14 @@
+{{ $name := .Get 0 }}
+{{ $alt := .Get 1 }}
+
+{{ $path := printf "pics/%s" $name}}
+
+{{ with resources.Get $path }}
+<picture>
+{{ $avif_path := replace . ".jpg" ".avif "}}
+{{ with resources.Get (strings.TrimSpace $avif_path) }}
+    <source srcset="{{ .RelPermalink }}" type="image/avif">
+{{ end }}
+<img alt="{{ $alt }}" class="gallery-img page-pic" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
+</picture>
+{{ end }}

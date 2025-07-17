@@ -1,0 +1,51 @@
+<nav>
+    <details id="nav-menu" open>
+        <summary>Menu</summary>
+
+        <strong>{{ lang.Translate "navigation" }}</strong>
+
+        {{ $icon := resources.Get "external-link.svg" }}
+
+        {{ range .Site.Menus.main }}
+            <div class="site-menu">
+                {{ with resources.Get .Params.img }}
+                    <img alt="" class="symbolic-icon" style="image-rendering: pixelated;" width="16" height="16" src="{{ .RelPermalink }}">
+                {{ end }}
+                {{ $url := .URL }}
+                {{ if not (strings.Contains $url "https") }}
+                    {{ $url = printf "%s%s" $.Site.Home.Permalink .URL }}
+                {{ end }}
+                <a href="{{ $url }}">{{ .Name }}{{ if strings.HasPrefix .URL "http" }}<img class="external-link" aria-hidden="true" alt="External link" width="16" height="16" src="{{ $icon.RelPermalink }}">{{- end -}}</a>
+            </div>
+        {{ end }}
+
+        <br/>
+
+        <strong>{{ lang.Translate "social_media" }}</strong>
+
+        {{ range .Site.Menus.socials }}
+            <div class="site-menu">
+                {{ with resources.Get .Params.img }}
+                    <img alt="" class="symbolic-icon" style="image-rendering: pixelated;" width="16" height="16" src="{{ .RelPermalink }}">
+                {{ end }}
+                <a rel="me" href="{{ .URL  }}">{{ .Name }}{{ if strings.HasPrefix .URL "http" }}<img class="external-link" aria-hidden="true" alt="External link" width="16" height="16" src="{{ $icon.RelPermalink }}">{{- end -}}</a>
+            </div>
+        {{ end }}
+
+        {{ if .IsTranslated }}
+            <br>
+            <strong>Page Languages</strong>
+            <div class="site-meni">
+                {{ $currentPage := . }}
+                {{ range .Translations }}
+                    {{ $specificLang := .Lang }}
+                    {{ range $currentPage.Translations }}
+                        {{ if (eq .Lang $specificLang) }}
+                            <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+            </div>
+        {{ end }}
+    </details>
+</nav>
