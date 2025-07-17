@@ -1,0 +1,14 @@
+{{ range readDir "/assets/art" }}
+    {{ $name := .Name }}
+    {{ $ext := path.Ext .Name }}
+    {{ $basename := strings.TrimSuffix (path.Ext .Name) .Name }}
+    {{ $content := dict "mediaType" "text/markdown" "value" .Name }}
+    {{ $params := dict "extension" $ext }}
+    {{ $page := dict "content" $content "params" $params "path" $basename "title" $basename "layout" "art-single" }}
+    {{ $.AddPage $page }}
+    {{ with resources.Get (printf "art/%s" $name) }}
+        {{ $content := dict "mediaType" .MediaType.Type "value" .Content }}
+        {{ $resource := dict "content" $content "path" (printf "%s/image.%s" $basename .MediaType.SubType) }}
+        {{ $.AddResource $resource }}
+    {{ end }}
+{{ end }}
