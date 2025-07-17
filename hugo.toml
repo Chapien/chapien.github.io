@@ -131,6 +131,7 @@ related = false
 voting = false
 hideExternalMenu = true
 noData = true
+fontSwap = true
 
 [[params.author]]
 name = 'Claire'
