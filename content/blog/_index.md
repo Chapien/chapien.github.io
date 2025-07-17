@@ -1,6 +1,7 @@
 +++
 title = "Blog"
 outputs = [ "html", "rss" ]
+type = "List"
 
 [params]
 archived = true

@@ -57,4 +57,20 @@
 :root {
     --font-body: "Inter";
     --font-header: "Montserrat";
+    body {
+        font-family: var(--font-body), sans-serif;
+    }
+    
+}
+
+:root .serif-toggle {
+    --font-body: "Lora";
+    --font-header: "Montserrat";
+    body {
+        font-family: var(--font-body), serif;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    font-family: var(--font-header), sans-serif;
 }

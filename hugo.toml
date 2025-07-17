@@ -1,6 +1,7 @@
 baseURL = 'https://chapien.net/'
 languageCode = 'en-us'
 title = 'The Claire Scrolls'
+copyright = "Copyright © 2025 by Claire. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/#?)"
 theme = 'blue'
 disableKinds = ['taxonomy']
 
@@ -50,11 +51,59 @@ url = "blog"
 weight = 3
 params.img = 'icons/blog.svg'
 
+[[menu.main]]
+name = "Guestbook"
+url = "guestbook"
+weight = 4
+params.img = "icons/guestbook.svg"
+
+[[menu.socials]]
+name = "Pronouns"
+url = "https://en.pronouns.page/@chapien"
+weight = -1
+params.img = 'icons/pronouns.svg'
+
+[[menu.socials]]
+name = "itch.io"
+url = "https://chapien.itch.io/"
+weight = 1
+params.img = "icons/itchio.svg"
+
+[[menu.socials]]
+name = "ko-fi"
+url = "https://ko-fi.com/chapien"
+weight = 2
+params.img = "icons/kofi.svg"
+
+[[menu.socials]]
+name = "Github"
+url = "https://github.com/Chapien"
+weight = 3
+params.img = "icons/github.svg"
+
+[[menu.socials]]
+name = "Bookwyrm"
+url = "https://bookwyrm.social/user/chapien"
+weight = 4
+params.img = "icons/bookwyrm.svg"
+
 [[menu.socials]]
 name = "Bluesky"
 url = "https://bsky.app/profile/claire.chapien.net"
-weight = -1
+weight = 5
 params.img = 'icons/bluesky.svg'
+
+[[menu.socials]]
+name = "Tumblr"
+url = "https://chappydev.tumblr.com/"
+weight = 6
+params.img = "icons/tumblr.svg"
+
+[[menu.socials]]
+name = "Mastodon"
+url = "https://tech.lgbt/@chapien"
+weight = 7
+params.img = "icons/mastodon.svg"
 
 [[menu.socials]]
 name = "RSS"
