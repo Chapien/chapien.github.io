@@ -111,6 +111,16 @@ url = "/blog/feed.xml"
 weight = 10
 params.img = 'icons/rss.svg'
 
+[[menu.footer]]
+name = "About"
+url = "about"
+weight = -1
+
+[[menu.footer]]
+name = "Source Code"
+url = "https://github.com/Chapien/chapien.github.io"
+weight = 1
+
 [params]
 env = "production"
 hcard = true
@@ -119,6 +129,7 @@ issoURL = 'comments.chapien.net'
 profilePicture = "images/profile.png"
 related = false
 voting = false
+hideExternalMenu = true
 
 [[params.author]]
 name = 'Claire'
