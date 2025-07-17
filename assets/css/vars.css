@@ -31,7 +31,7 @@
     --link-visited: var(--nord9);
     --extra-color: var(--nord4);
     --border: 3px double var(--border-color);
-    --shadow: 3px 3px 0px black;
+    --shadow: transparent;
 }
 
 :root .dark {
@@ -45,6 +45,6 @@
     --link-visited: var(--nord9);
     --extra-color: var(--nord3);
     --border: 3px double var(--border-color);
-    --shadow: 3px 3px 0px black;
+    --shadow: transparent;
 }
   

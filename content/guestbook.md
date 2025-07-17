@@ -1,9 +1,8 @@
 +++
 title = "Guestbook"
 draft = false
-tags = [ "meta" ]
 author = [ "Claire" ]
-showtoc = false
+toc = false
 tocopen = false
 slug = "/guestbook"
 ShowCanonicalLink = true

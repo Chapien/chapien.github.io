@@ -2,9 +2,8 @@
 title = "About Me"
 date = "2025-01-04"
 draft = false
-tags = [ "about", "personal", "meta" ]
 author = [ "Claire" ]
-showtoc = true
+toc = true
 tocopen = true
 slug = "/about"
 ShowCanonicalLink = true

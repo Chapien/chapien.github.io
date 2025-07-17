@@ -7,7 +7,7 @@ tags:
   - blog
 author:
   - Claire
-showtoc: true
+toc: true
 tocopen: true
 hidesummary: false
 slug: /we-deserve-better

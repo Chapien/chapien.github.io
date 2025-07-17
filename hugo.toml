@@ -67,7 +67,7 @@ env = "production"
 hcard = true
 description = 'Weh'
 issoURL = 'comments.chapien.net'
-profilePicture = "profile.png"
+profilePicture = "images/profile.png"
 related = false
 voting = false
 
