@@ -6,3 +6,4 @@ outputs = [ "html", "rss" ]
 archived = true
 +++
 You can find my various blog posts here.
+{{< blog-featured >}}

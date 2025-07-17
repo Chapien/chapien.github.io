@@ -1,7 +1,7 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://chapien.net/'
 languageCode = 'en-us'
 title = 'The Claire Scrolls'
-theme = ['hugo-redirect', 'blue']
+theme = 'blue'
 disableKinds = ['taxonomy']
 
 [module]
@@ -24,31 +24,55 @@ category = 'categories'
 [permalinks]
 tags = 'blog/tags/:title'
 series = 'blog/series/:title'
-bolg = 'blog/:year/:title'
+blog = 'blog/:year/:title'
 
 [[menu.main]]
 name = 'Home'
 url = ''
 weight = -1
+params.img = 'icons/home.svg'
 
 [[menu.main]]
 name = "About"
 url = "about"
 weight = 1
+params.img = 'icons/about.svg'
 
 [[menu.main]]
 name = "Contact"
 url = "contact"
 weight = 2
+params.img = 'icons/contact.svg'
 
 [[menu.main]]
 name = "Blog"
 url = "blog"
 weight = 3
+params.img = 'icons/blog.svg'
+
+[[menu.socials]]
+name = "Bluesky"
+url = "https://bsky.app/profile/claire.chapien.net"
+weight = -1
+params.img = 'icons/bluesky.svg'
+
+[[menu.socials]]
+name = "RSS"
+url = "/blog/feed.xml"
+weight = 10
+params.img = 'icons/rss.svg'
 
 [params]
-author = 'Claire'
+env = "production"
+hcard = true
 description = 'Weh'
-isso_url = 'comments.chapien.net'
-profile_picture = "profile.png"
+issoURL = 'comments.chapien.net'
+profilePicture = "profile.png"
+related = false
+voting = false
 
+[[params.author]]
+name = 'Claire'
+email = 'inquiries@chapien.net'
+nickname = 'chapien'
+pronouns = ['She', 'Her']
