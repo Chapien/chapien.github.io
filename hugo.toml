@@ -59,6 +59,12 @@ weight = 15
 params.img = 'icons/contact.svg'
 
 [[menu.main]]
+name = "RSS"
+url = "/blog/feed.xml"
+weight = 16
+params.img = 'icons/rss.svg'
+
+[[menu.main]]
 name = "Blog"
 url = "blog"
 weight = 3
@@ -123,12 +129,6 @@ name = "Bookwyrm"
 url = "https://bookwyrm.social/user/chapien"
 weight = 7
 params.img = "icons/bookwyrm.svg"
-
-[[menu.socials]]
-name = "RSS"
-url = "/blog/feed.xml"
-weight = 10
-params.img = 'icons/rss.svg'
 
 [[menu.footer]]
 name = "About"
