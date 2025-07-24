@@ -31,7 +31,7 @@ category = 'categories'
 
 [permalinks]
 tags = 'blog/tags/:title'
-arttags = 'art/tags/:title'
+arttags = 'art/:title'
 series = 'blog/series/:title'
 blog = 'blog/:year/:title'
 

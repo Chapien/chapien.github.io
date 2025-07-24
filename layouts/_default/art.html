@@ -19,7 +19,9 @@
         </picture>
         {{ end }}
     </div>
-
+    {{ range $name, $taxonomy := (index .Site.Taxonomies "arttags") }}
+        <a href="/art/{{ $name | urlize }}">{{ $taxonomy.Page.Title }}</a><br>
+    {{ end }}
     <div id="art-button-main-container">
         {{ with $.Site.GetPage "/art/original" }}
             {{ .Scratch.Set "title" .Title }}
@@ -85,6 +87,6 @@
 
     <p><strong>Tags</strong></p>
     {{ range $name, $taxonomy := (index .Site.Taxonomies "arttags") }}
-        <a href="/art/tags/{{ $name | urlize }}">{{ $taxonomy.Page.Title }}</a><br>
+        <a href="/art/{{ $name | urlize }}">{{ $taxonomy.Page.Title }}</a><br>
     {{ end }}
 {{ end }}

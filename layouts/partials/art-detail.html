@@ -17,7 +17,7 @@
     <p><strong>{{ i18n "tags" }}</strong></p>
     {{ $len := (len .) }}
     {{ range $index, $element := . }}
-    <a href="/art/tags/{{ urlize . }}/"><strong>{{ strings.Title $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
+    <a href="/art/{{ urlize . }}/"><strong>{{ strings.Title $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
     {{ end }}
 {{ end }}
 
