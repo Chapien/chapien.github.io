@@ -136,7 +136,7 @@ weight = 1
 [params]
 env = "production"
 hcard = true
-description = 'Weh'
+description = "Claire's personal blog."
 issoURL = 'comments.chapien.net'
 profilePicture = "images/profile.png"
 related = false
