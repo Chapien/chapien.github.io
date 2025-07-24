@@ -94,28 +94,28 @@ weight = 3
 params.img = "icons/github.svg"
 
 [[menu.socials]]
-name = "Bookwyrm"
-url = "https://bookwyrm.social/user/chapien"
-weight = 4
-params.img = "icons/bookwyrm.svg"
-
-[[menu.socials]]
 name = "Bluesky"
 url = "https://bsky.app/profile/claire.chapien.net"
-weight = 5
+weight = 4
 params.img = 'icons/bluesky.svg'
 
 [[menu.socials]]
 name = "Tumblr"
 url = "https://chappydev.tumblr.com/"
-weight = 6
+weight = 5
 params.img = "icons/tumblr.svg"
 
 [[menu.socials]]
 name = "Mastodon"
 url = "https://tech.lgbt/@chapien"
-weight = 7
+weight = 6
 params.img = "icons/mastodon.svg"
+
+[[menu.socials]]
+name = "Bookwyrm"
+url = "https://bookwyrm.social/user/chapien"
+weight = 7
+params.img = "icons/bookwyrm.svg"
 
 [[menu.socials]]
 name = "RSS"
