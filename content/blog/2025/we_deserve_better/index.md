@@ -1,23 +1,24 @@
----
-title: We Deserve Better
-date: 2025-03-01
-description: Mad in America does not center neurodiverse advocates.
-draft: false
-tags:
-  - blog
-author:
-  - Claire
-toc: true
-tocopen: true
-hidesummary: false
-slug: /we-deserve-better
-ShowCanonicalLink: true
-cover:
-  image: cover.png
-  relative: true
-  responsiveImages: true
-  caption: Image taken from [Wikipedia](https://commons.wikimedia.org/wiki/File:Neurodiversity_Crowd_2.png)
----
++++
+title = "We Deserve Better"
+date = "2025-03-01"
+description = "Mad in America does not center neurodiverse advocates."
+draft = false
+tags = [ "mental-health" ]
+categories = [ "Blog" ]
+author = "Claire"
+toc = true
+tocopen = true
+hidesummary = false
+slug = "/we-deserve-better"
+ShowCanonicalLink = true
+fmContentType = "blog"
+
+[cover]
+image = "cover.png"
+relative = true
+responsiveImages = true
+caption = "Image taken from [Wikipedia](https://commons.wikimedia.org/wiki/File:Neurodiversity_Crowd_2.png)"
++++
 Being neurodiverse in America can be rough, to say the least. You are seen as strange at best, dangerous at worst. If you are not being maligned as lazy, you are being fetishized for the seemingly positive traits of your disorder. Then, of course, there's the problem with the word *disorder* to begin with, since it implies something to be fundamentally wrong with your mind. But what if it's society that's wrong, and not you?
 
 That is, in brief, the thesis statement of the anti-psychiatry movement. With roots in Foucault, the anti-psychiatry movement sees psychiatry as an instrument of societal hierarchy, with the mentally ill being the outsiders that the community must be protected from. To be completely honest, I have some sympathy for this movement. I've been involuntarily committed before; I've seen some of the worst the mental healthcare system has to offer, especially when paired with the blunt force of the state.
