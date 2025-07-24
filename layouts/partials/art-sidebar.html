@@ -1,0 +1,11 @@
+{{ if .Site.Params.art.statsPage }}
+<a class="art-sidebar-button" href="/art/stats">Statistics</a>
+{{ end }}
+
+{{ if .Site.Params.art.takesCommissions }}
+    {{ if .Site.Params.art.commissionsOpen }}
+        <a class="art-sidebar-button" href="/commission">Commissions</a>
+    {{ else }}
+        <a class="art-sidebar-button" href="/commission">Commissions (CLOSED)</a>
+    {{ end }}
+{{ end }}

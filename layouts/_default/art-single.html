@@ -1,0 +1,19 @@
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+
+    {{ .Content }}
+    {{ if site.Params.noData }}
+        {{ with .Resources.Get "image.png" }}
+            <img class="gallery-img" style="display: block; max-height: 800px; margin-left: auto; margin-right: auto; width: auto; margin-top: 10px; margin-bottom: 10px; max-width: 100%; height: auto" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" title="{{ page.Title }}" alt="{{ page.Params.alt }}">
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+{{ define "details" }}
+    {{ partial "art-sidebar" . }}
+
+    <hr>
+
+    {{ partial "art-detail" . }}
+{{ end }}
+

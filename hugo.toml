@@ -26,10 +26,12 @@ term = ['html']
 [taxonomies]
 series = 'series'
 tag = 'tags'
+arttag = 'arttags'
 category = 'categories'
 
 [permalinks]
 tags = 'blog/tags/:title'
+arttags = 'art/tags/:title'
 series = 'blog/series/:title'
 blog = 'blog/:year/:title'
 
@@ -145,8 +147,13 @@ hideExternalMenu = true
 noData = true
 fontSwap = true
 
-[[params.author]]
+[params.author]
 name = 'Claire'
 email = 'inquiries@chapien.net'
 nickname = 'chapien'
 pronouns = ['She', 'Her']
+
+[params.art]
+takesCommissions = false
+commissionsOpen = false
+statsPage = false

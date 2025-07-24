@@ -1,0 +1,90 @@
+{{/* Page layout used for the main art gallery page. */}}
+
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+    <hr>
+
+    <div class="art-outer">
+        <div class="art-inner">
+            {{ .Content }}
+        </div>
+
+        {{ with resources.Get "pics/pic-gallery.jpg" }}
+        <picture>
+            {{ $avif_path := replace . ".jpg" ".avif "}}
+            {{ with resources.Get (strings.TrimSpace $avif_path) }}
+                <source srcset="{{ .RelPermalink }}" type="image/avif">
+            {{ end }}
+            <img class="gallery-img page-pic" alt="Drawing of an art gallery with several people standing around a piece hanging on the wall." width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
+        </picture>
+        {{ end }}
+    </div>
+
+    <div id="art-button-main-container">
+        {{ with $.Site.GetPage "/art/original" }}
+            {{ .Scratch.Set "title" .Title }}
+            {{ .Scratch.Set "img" "original.png" }}
+            {{ .Scratch.Set "link" .RelPermalink }}
+            {{ partial "art-fancy-button" . }}
+        {{ end }}
+
+        {{ with $.Site.GetPage "/arttags/fan-art" }}
+            {{ .Scratch.Set "title" .Title }}
+            {{ .Scratch.Set "img" "fanart.png" }}
+            {{ .Scratch.Set "link" .RelPermalink }}
+            {{ partial "art-fancy-button" . }}
+        {{ end }}
+
+        {{ with $.Site.GetPage "/arttags/3d" }}
+            {{ .Scratch.Set "title" "3D Art" }}
+            {{ .Scratch.Set "img" "3d.png" }}
+            {{ .Scratch.Set "link" .RelPermalink }}
+            {{ partial "art-fancy-button" . }}
+        {{ end }}
+
+        {{ with $.Site.GetPage "/art/guest" }}
+            {{ .Scratch.Set "title" .Title }}
+            {{ .Scratch.Set "img" "guest.png" }}
+            {{ .Scratch.Set "link" .RelPermalink }}
+            {{ partial "art-fancy-button" . }}
+        {{ end }}
+
+        {{ with $.Site.GetPage "/art/wallpapers" }}
+            {{ .Scratch.Set "title" .Title }}
+            {{ .Scratch.Set "img" "wallpapers.png" }}
+            {{ .Scratch.Set "link" .RelPermalink }}
+            {{ partial "art-fancy-button" . }}
+        {{ end }}
+
+        {{ with $.Site.GetPage "/characters" }}
+            {{ .Scratch.Set "title" .Title }}
+            {{ .Scratch.Set "img" "characters.png" }}
+            {{ .Scratch.Set "link" .RelPermalink }}
+            {{ partial "art-fancy-button" . }}
+        {{ end }}
+
+        {{ with $.Site.GetPage "/art/commission" }}
+            {{ .Scratch.Set "title" .Title }}
+            {{ .Scratch.Set "img" "commissions.png" }}
+            {{ .Scratch.Set "link" .RelPermalink }}
+            {{ .Scratch.Set "commissions" true }}
+            {{ partial "art-fancy-button" . }}
+        {{ end }}
+
+        {{ with $.Site.GetPage "/art/stats" }}
+            {{ .Scratch.Set "title" .Title }}
+            {{ .Scratch.Set "img" "stats.png" }}
+            {{ .Scratch.Set "link" .RelPermalink }}
+            {{ partial "art-fancy-button" . }}
+        {{ end }}
+    </div>
+{{ end }}
+
+{{ define "details" }}
+    {{ partial "art-sidebar" . }}
+
+    <p><strong>Tags</strong></p>
+    {{ range $name, $taxonomy := (index .Site.Taxonomies "arttags") }}
+        <a href="/art/tags/{{ $name | urlize }}">{{ $taxonomy.Page.Title }}</a><br>
+    {{ end }}
+{{ end }}

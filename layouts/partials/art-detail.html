@@ -1,0 +1,58 @@
+<p><strong>Authors</strong></p>
+{{- if (isset .Params "author") -}}
+        {{ .Params.author | $.RenderString }}
+{{- else if (isset .site.Params "author") -}}
+        {{ .site.Params.author | $.RenderString }}
+{{- end -}}
+
+{{ $posted := $.Date.Format "January 02, 2006" }}
+
+<p><strong>Date</strong></p>
+<time datetime="{{ .Page.Lastmod.Format "2006-01-02" }}" class="text-muted">
+    {{ $posted }}
+</time>
+</i>
+
+{{ with .Params.arttags }}
+    <p><strong>{{ i18n "tags" }}</strong></p>
+    {{ $len := (len .) }}
+    {{ range $index, $element := . }}
+    <a href="/art/tags/{{ urlize . }}/"><strong>{{ strings.Title $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
+    {{ end }}
+{{ end }}
+
+{{ if or (or .Params.mastodon_url .Params.pixiv_url) .Params.bluesky_url }}
+    <p><strong>Syndications</strong></p>
+
+    <div style="margin: 10px; text-align: center">
+
+    {{ with .Params.mastodon_url }}
+        <a href="{{ . }}"><img class="symbolic-icon" alt="Mastodon icon" title="Mastodon" width="32" height="32" src="/icons/mastodon.svg"/></a>
+    {{ end }}
+
+    {{ with .Params.bluesky_url }}
+    <a href="{{ . }}"><img class="symbolic-icon" alt="Bluesky icon" title="Bluesky" width="32" height="32" src="/icons/bluesky.svg"/></a>
+    {{ end }}
+
+    {{ with .Params.pixiv_url }}
+        <a href="{{ . }}"><img class="symbolic-icon" alt="Pixiv icon" title="Pixiv" width="32" height="32" src="/icons/pixiv.svg"/></a>
+    {{ end }}
+    </div>
+{{ end }}
+
+{{ with .Params.program }}
+    <p><strong>Programs</strong></p>
+    <span>{{ . }}</span>
+{{ end }}
+
+{{ with .Params.characters }}
+    <p><strong>Characters</strong></p>
+    <!-- characters are only localized in english -->
+    {{ $site := index (where $.Site.Sites "Language.Lang" "eq" "en") 0 }}
+    {{ range . }}
+        {{ with $site.GetPage "taxonomyTerm" (printf "characters/%s" .) }}
+            {{ $year := .Page.Title }}
+            <a class="character" href="{{ .RelPermalink }}"><img class="gallery-img" width=128 height=128 src="{{ $.Site.Params.image_host }}/chars/{{ urlize .Page.Slug }}.jpg"/><span>{{ $year }}<br></span></a>
+        {{ end }}
+    {{ end }}
+{{ end }}

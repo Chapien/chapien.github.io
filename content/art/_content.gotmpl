@@ -6,11 +6,12 @@
     {{ $author := $data.author }}
     {{ $alt := $data.alt }}
     {{ $ext := $data.extension }}
+    {{ $tags := $data.tags }}
     {{ $basename := strings.TrimSuffix (path.Ext .Name) .Name }}
     {{ $title := $data.title }}
     {{ $content := dict "mediaType" "text/markdown" "value" $data.description }}
-    {{ $params := dict "extension" $ext "basename" $basename "author" $author "alt" $alt }}
-    {{ $page := dict "content" $content "dates" $dates "params" $params "path" $basename "title" $title "layout" "art-single" }}
+    {{ $params := dict "extension" $ext "basename" $basename "author" $author "alt" $alt "showDetailPane" true "arttags" $data.tags }}
+    {{ $page := dict "content" $content "dates" $dates "params" $params "path" $basename "title" $title "layout" "art-single"  }}
     {{ $.AddPage $page }}
     {{ with resources.Get $data.file }}
         {{ $content := dict "mediaType" .MediaType.Type "value" .Content }}
