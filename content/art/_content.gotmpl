@@ -1,12 +1,18 @@
-{{ range readDir "/assets/art" }}
+{{ range readDir "/data/art" }}
+    {{ $file := readFile (printf "/data/art/%s" .Name) }}
+    {{ $data := unmarshal $file }}
     {{ $name := .Name }}
-    {{ $ext := path.Ext .Name }}
+    {{ $dates := dict "date" (time.AsTime $data.date) }}
+    {{ $author := $data.author }}
+    {{ $alt := $data.alt }}
+    {{ $ext := $data.extension }}
     {{ $basename := strings.TrimSuffix (path.Ext .Name) .Name }}
-    {{ $content := dict "mediaType" "text/markdown" "value" .Name }}
-    {{ $params := dict "extension" $ext }}
-    {{ $page := dict "content" $content "params" $params "path" $basename "title" $basename "layout" "art-single" }}
+    {{ $title := $data.title }}
+    {{ $content := dict "mediaType" "text/markdown" "value" $data.description }}
+    {{ $params := dict "extension" $ext "basename" $basename "author" $author "alt" $alt }}
+    {{ $page := dict "content" $content "dates" $dates "params" $params "path" $basename "title" $title "layout" "art-single" }}
     {{ $.AddPage $page }}
-    {{ with resources.Get (printf "art/%s" $name) }}
+    {{ with resources.Get $data.file }}
         {{ $content := dict "mediaType" .MediaType.Type "value" .Content }}
         {{ $resource := dict "content" $content "path" (printf "%s/image.%s" $basename .MediaType.SubType) }}
         {{ $.AddResource $resource }}

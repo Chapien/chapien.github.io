@@ -5,6 +5,12 @@ copyright = "Copyright © 2025 by Claire. Licensed under [CC BY-NC-SA 4.0](https
 theme = 'blue'
 disableKinds = ['taxonomy']
 
+[markup]
+  [markup.tableOfContents]
+    endLevel = 5
+    ordered = true
+    startLevel = 1
+
 [module]
   [[module.imports]]
     path = "github.com/KKKZOZ/hugo-admonitions"
@@ -36,13 +42,13 @@ params.img = 'icons/home.svg'
 [[menu.main]]
 name = "About"
 url = "about"
-weight = 1
+weight = 10
 params.img = 'icons/about.svg'
 
 [[menu.main]]
 name = "Contact"
 url = "contact"
-weight = 2
+weight = 15
 params.img = 'icons/contact.svg'
 
 [[menu.main]]
@@ -52,9 +58,15 @@ weight = 3
 params.img = 'icons/blog.svg'
 
 [[menu.main]]
+name = "Art"
+url = "art"
+weight = 4
+params.img = 'icons/art.svg'
+
+[[menu.main]]
 name = "Guestbook"
 url = "guestbook"
-weight = 4
+weight = 9
 params.img = "icons/guestbook.svg"
 
 [[menu.socials]]
