@@ -8,6 +8,7 @@ toc = true
 categories = [ "Blog" ]
 slug = "/institutionalization"
 date = "2025-07-25"
+bluesky_link = "https://bsky.app/profile/claire.chapien.net/post/3luqth5ryns2f"
 +++
 # Background
 
