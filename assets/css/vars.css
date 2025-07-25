@@ -32,6 +32,7 @@
     --extra-color: var(--nord4);
     --border: 3px double var(--border-color);
     --shadow: transparent;
+    --isso-thread-heading: var(--text-color);
 }
 
 :root .dark {
@@ -46,4 +47,5 @@
     --extra-color: var(--nord3);
     --border: 3px double var(--border-color);
     --shadow: transparent;
+    --isso-thread-heading: var(--text-color);
 }
