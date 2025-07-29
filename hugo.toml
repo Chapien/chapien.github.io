@@ -130,6 +130,12 @@ url = "https://bookwyrm.social/user/chapien"
 weight = 7
 params.img = "icons/bookwyrm.svg"
 
+[[menu.socials]]
+name = "Letterboxd"
+url = "https://letterboxd.com/chapien/"
+weight = 8
+params.img = "icons/letterboxd.svg"
+
 [[menu.footer]]
 name = "About"
 url = "about"
