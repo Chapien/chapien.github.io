@@ -47,6 +47,30 @@ weight = -1
 params.img = 'icons/home.svg'
 
 [[menu.main]]
+name = "Blog"
+url = "blog"
+weight = 3
+params.img = 'icons/blog.svg'
+
+[[menu.main]]
+name = "Art"
+url = "art"
+weight = 4
+params.img = 'icons/art.svg'
+
+[[menu.main]]
+name = "Links"
+url = "links"
+weight = 8
+params.img = "icons/globe.svg"
+
+[[menu.main]]
+name = "Guestbook"
+url = "guestbook"
+weight = 9
+params.img = "icons/guestbook.svg"
+
+[[menu.main]]
 name = "About"
 url = "about"
 weight = 10
@@ -63,24 +87,6 @@ name = "RSS"
 url = "/blog/feed.xml"
 weight = 16
 params.img = 'icons/rss.svg'
-
-[[menu.main]]
-name = "Blog"
-url = "blog"
-weight = 3
-params.img = 'icons/blog.svg'
-
-[[menu.main]]
-name = "Art"
-url = "art"
-weight = 4
-params.img = 'icons/art.svg'
-
-[[menu.main]]
-name = "Guestbook"
-url = "guestbook"
-weight = 9
-params.img = "icons/guestbook.svg"
 
 [[menu.socials]]
 name = "Pronouns"
