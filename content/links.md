@@ -18,4 +18,7 @@ If you want to be added to this list and I know who you are, you can [contact me
 {{< end-con >}}
 
 # Incoming
-You are welcome to link to my website! I don't have a button yet, however. Please link directly to https://chapien.net/.
+You are welcome to link to my website! Please link directly to https://chapien.net/. You can also use my button, if you want, but please host the image yourself.
+| Type | Preview | HTML |
+|------|---------|------|
+|88x31 Button | {{< out-link banner="button.png" link="https://chapien.net/" label="chapien" >}} | ```<a href="https://chapien.net/"><img src="button.png"/></a>```

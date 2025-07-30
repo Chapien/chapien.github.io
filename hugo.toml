@@ -164,6 +164,19 @@ name = "Source Code"
 url = "https://github.com/Chapien/chapien.github.io"
 weight = 1
 
+[[menu.badges]]
+name = 'CC BY NC SA'
+url = 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en'
+params.img = "by-nc-sa.png"
+weight = 1
+
+[[menu.badges]]
+name = 'RSS'
+url = 'https://chapien.net/blog/feed.xml'
+params.img = "rssbanner.webp"
+weight = 2
+
+
 [params]
 env = "production"
 hcard = true
