@@ -89,9 +89,15 @@ weight = 15
 params.img = 'icons/contact.svg'
 
 [[menu.main]]
+name = "Attributions"
+url = "attributions"
+weight = 16
+params.img = 'icons/copyleft.svg'
+
+[[menu.main]]
 name = "RSS"
 url = "/blog/feed.xml"
-weight = 16
+weight = 20
 params.img = 'icons/rss.svg'
 
 [[menu.socials]]
