@@ -59,6 +59,12 @@ weight = 4
 params.img = 'icons/art.svg'
 
 [[menu.main]]
+name = "Archives"
+url = "archives"
+weight = 5
+params.img = 'icons/archives.svg'
+
+[[menu.main]]
 name = "Links"
 url = "links"
 weight = 8
