@@ -19,7 +19,7 @@ image = "cover.jpg"
 relative = true
 caption = "The setting that started this rabbit hole of mine, Tamriel from Bethesda's Elder Scrolls series. Copyright Bethesda Softworks."
 +++
-## The Prelude
+# The Prelude
 Have you ever read a quote from someone that you can't let go? I have. For years, this quote has kept me up at night, thinking in the shower, pondering upon what it could mean. What sort of profound quote could keep me up at night? Musings on the nature of the universe? Pondering the meaning of life? No. A quote from a reddit AMA about *The Elder Scrolls*, of all things, has been haunting me for years.
 
 > [!quote] Quote
@@ -37,7 +37,7 @@ So, what did Kirkbride *mean* by TES as open source? To my knowledge, he never r
 I *think* Kirkbride was saying that because Elder Scrolls is a video game series, it is inherently a setting owned by everyone. That is, it's not the writers alone that create the world; the players do, too. Your decisions in the games change the state of the world, which characters live and die, and so on. So, in Kirkbride's view, video game settings are, in a way, open source. He wasn't necessarily being *literal*; more that such collaborative storytelling is best understood *as open source*.
 
 I, however, want to take this idea *literally*. Because I am a crazy person who loves making things overly complicated, obviously. In this article, I will be elaborating my idea for what a truly open source setting would look like, in terms of governance, ownership, and licensing, and if such a thing is even possible or desirable (spoiler: I think so). It's going to be a bit dense, but please stick with me until the end!
-## What?
+# What?
 My idea of an "open source setting" is one where the setting itself is free for use. That is, the setting itself is maintained by a core group of maintainers, and any author that wants to use the world can. People should be able to make their own video games, tabletop roleplaying games, books, and so on using the setting as its *baseline*. They should even be allowed to sell these derivative works. However, the core setting *itself* will not change to reflect these derivative works *unless* the author of the derivative work and the community at large *want* the work to be incorporated into the core setting.
 
 Before I get into more details, let's define some terms.
@@ -71,7 +71,7 @@ So, let's look at the other example. In some ways, Orion's Arm is the opposite o
 This is pretty close to how open source software works, except for the fact that *derivative works are equally controlled*. Derivative works are approved by the Orion's Arm Project. This means that, while Orion's Arm is a *collaborative* project, it is *not* an open one. The contents of the setting are freely available, yes, and in theory anyone can contribute, but the work *cannot* be modified or redistributed. 
 
 My ideal open source setting, as I interpreted from Kirkbride's quote, would be something in between. Open enough that anyone can use it and change it, but organized enough that there's still some semblance of a core "setting" beneath it all. The SCP foundation fulfills the "openness" criteria, but there is no central canon. There is no consensus universe. Derivative works have been made, but they are narrow in scope and genre. Orion's Arm fulfills the "organized" criteria, but it is not at all open, controlled instead by the contributors. Neither of these models are *bad*. In fact, I enjoy both projects. But this article is setting to answer the question: What would a truly open source project look like? And neither satisfies me in that regard.
-## How?
+# How?
 So, let's talk about what my ideal open source setting would look like, as a project. First, let's talk organization. Similar to open source projects, there would be a core group of maintainers, with the work itself being owned either by one individual or a nonprofit (preferably the latter). These maintainers would control the website on which the core setting is published, likely in wiki format. They would be able to approve and deny changes to articles, similar to how maintainers approve or deny pull requests on open source repositories. 
 
 Surrounding the core maintainers would be the community. These are the bulk of the writers, creating lore for the setting. Like the SCP community, they would write articles, stories, and so on, and contribute them to the wiki. Their proposed changes would be sandboxed until approved by a maintainer, and would then be integrated into the project itself. These proposed changes aren't simply blanket denied, however; the maintainers would work with the contributor to get it up to the standards of the project. 
@@ -89,5 +89,5 @@ Of course, sometimes an author wants to incorporate their work in the core canon
 I imagine that, similar to the SCP foundation, there would be a section on the wiki for people to publish stories of their own. These would not be derivative works strictly speaking, as they would be hosted on the project's site, but they wouldn't necessarily be canon either; instead, it'd be a place to share creative works. Authors would be able to remove their work from the site, so long as it has not been incorporated into the canon. This can only be done under explicit agreement (a contributor directly submitting their work for review) between the project and the author. Once something is 'canon', it can no longer be retracted at will, but the maintainers will be able to remove works at their discretion (and agreement with other maintainers). 
 
 Ultimately, what I am envisioning here is something akin to the *Forgotten Realms* campaign setting; a world worked on by many authors, with their own individual interpretations of the world coexisting. Unlike *Forgotten Realms* or *Warhammer* or indeed *Elder Scrolls*, however, it would be owned and maintained *by the community*. Anyone would be allowed to publish their own stories set in the world, creating a truly open resource for any writers to use. 
-## Will I Really Do This?
+# Will I Really Do This?
 Maybe! Right now this is a theoretical exercise. An obsession that's been lodged firmly in my cerebral cortex for years now. Something I needed to write down and share with the world. I *do* have a world in mind that I would love to turn into a full collaborative fiction project, but that would require collaborators. In short, if enough people find this idea interesting, I will make it a reality. And of course, if you have your own idea for an open source setting, feel free to use my ideas as you wish! I find this idea exciting, and I'd love to see more projects like SCP and Orion's Arm in the world.
