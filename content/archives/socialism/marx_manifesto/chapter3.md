@@ -2,14 +2,14 @@
 title = "Chapter III. Socialist and Communist Literature"
 date = "1848-02-21"
 author = "Karl Marx"
-summary = "Owing to their historical position, it became the vocation of the aristocracies of France and England to write pamphlets against modern bourgeois society. In the French Revolution of July 1830, and in the English reform agitation[A], these aristocracies again succumbed to the hateful upstart. Thenceforth, a serious political struggle was altogether out of the question. A literary battle alone remained possible. But even in the domain of literature the old cries of the restoration period had become impossible."
+summary = "Owing to their historical position, it became the vocation of the aristocracies of France and England to write pamphlets against modern bourgeois society. In the French Revolution of July 1830, and in the English reform agitation, these aristocracies again succumbed to the hateful upstart. Thenceforth, a serious political struggle was altogether out of the question. A literary battle alone remained possible. But even in the domain of literature the old cries of the restoration period had become impossible."
 page = 4
 weight = 50
 +++
 
 # Reactionary Socialism
 ## Feudal Socialism
-Owing to their historical position, it became the vocation of the aristocracies of France and England to write pamphlets against modern bourgeois society. In the French Revolution of July 1830, and in the English reform agitation[A], these aristocracies again succumbed to the hateful upstart. Thenceforth, a serious political struggle was altogether out of the question. A literary battle alone remained possible. But even in the domain of literature the old cries of the restoration period had become impossible.
+Owing to their historical position, it became the vocation of the aristocracies of France and England to write pamphlets against modern bourgeois society. In the French Revolution of July 1830, and in the English reform agitation, these aristocracies again succumbed to the hateful upstart. Thenceforth, a serious political struggle was altogether out of the question. A literary battle alone remained possible. But even in the domain of literature the old cries of the restoration period had become impossible.
 
 In order to arouse sympathy, the aristocracy was obliged to lose sight, apparently, of its own interests, and to formulate their indictment against the bourgeoisie in the interest of the exploited working class alone. Thus, the aristocracy took their revenge by singing lampoons on their new masters and whispering in his ears sinister prophesies of coming catastrophe.
 
