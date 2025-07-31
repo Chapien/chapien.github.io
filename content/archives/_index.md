@@ -3,7 +3,6 @@ title = "Archives"
 outputs = [ "html", "rss" ]
 nodetails = true
 type = "List"
-archivetags = "test"
 
 [params]
 archived = true
