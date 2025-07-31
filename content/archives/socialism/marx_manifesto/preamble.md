@@ -4,6 +4,8 @@ date = "1848-02-21"
 author = "Karl Marx"
 page = 1
 weight = 10
+archivetags = ["marxism", "politics", "philosophy"]
+hidefrontmatter = true
 +++
 
 A spectre is haunting Europe — the spectre of communism. All the powers of old Europe have entered into a holy alliance to exorcise this spectre: Pope and Tsar, Metternich and Guizot, French Radicals and German police-spies.

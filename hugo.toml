@@ -31,11 +31,13 @@ term = ['html']
 [taxonomies]
 series = 'series'
 tag = 'tags'
+archivetag = 'archivetags'
 arttag = 'arttags'
 category = 'categories'
 
 [permalinks]
 tags = 'blog/tags/:title'
+archivetags = 'archives/tags/:title'
 arttags = 'art/tags/:title'
 series = 'blog/series/:title'
 blog = 'blog/:year/:title'

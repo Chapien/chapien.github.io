@@ -5,6 +5,8 @@ author = "Karl Marx"
 summary = "Owing to their historical position, it became the vocation of the aristocracies of France and England to write pamphlets against modern bourgeois society. In the French Revolution of July 1830, and in the English reform agitation, these aristocracies again succumbed to the hateful upstart. Thenceforth, a serious political struggle was altogether out of the question. A literary battle alone remained possible. But even in the domain of literature the old cries of the restoration period had become impossible."
 page = 4
 weight = 50
+archivetags = ["marxism", "politics", "philosophy"]
+hidefrontmatter = true
 +++
 
 # Reactionary Socialism

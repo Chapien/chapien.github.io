@@ -4,6 +4,8 @@ date = "1848-02-21"
 author = "Karl Marx"
 page = 2
 weight = 30
+archivetags = ["marxism", "politics", "philosophy"]
+hidefrontmatter = true
 +++
 
 The history of all hitherto existing society is the history of class struggles.
