@@ -3,6 +3,7 @@ title = "Links"
 toc = true
 slug = "/links"
 categories = "Information"
+hidefrontmatter = true
 +++
 
 Here are some links to other independent websites and blogs that I enjoy. 

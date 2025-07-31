@@ -6,9 +6,9 @@ author = [ "Claire" ]
 toc = true
 tocopen = true
 slug = "/about"
-ShowCanonicalLink = true
 fmContentType = "info"
 categories = [ "Information" ]
+hidefrontmatter = true
 
 [cover]
 image = "assets/images/profile.png"

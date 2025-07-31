@@ -4,6 +4,7 @@ author = "Claire"
 slug = "/attributions"
 fmContentType = "info"
 categories = [ "Information" ]
+hidefrontmatter = true
 +++
 
 All content that I own on this website is licensed under the [ CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/#?) license. This means that you are allowed to share, repost and modify my content as long as you do not profit off of it and properly credit me. Content that is not owned by me, or may be under a different license, will be labeled with the appropriate license.

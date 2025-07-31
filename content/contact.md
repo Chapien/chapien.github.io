@@ -9,6 +9,7 @@ slug = "/contact"
 ShowCanonicalLink = true
 fmContentType = "info"
 categories = [ "Information" ]
+hidefrontmatter = true
 +++
 > [!info] Info
 > Name: Claire  
