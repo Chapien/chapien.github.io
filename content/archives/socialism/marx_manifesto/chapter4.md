@@ -4,7 +4,6 @@ date = "1848-02-21"
 author = "Karl Marx"
 page = 5
 weight = 60
-archivetags = ["marxism", "politics", "philosophy"]
 hidefrontmatter = true
 +++
 [Section II](../chapter2) has made clear the relations of the Communists to the existing working-class parties, such as the Chartists in England and the Agrarian Reformers in America.
