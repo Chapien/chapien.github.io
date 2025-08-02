@@ -10,6 +10,7 @@ repo = "https://src.fedoraproject.org/rpms/mygui"
 upstream = "http://mygui.info/"
 repoico = "/icons/fedora.svg"
 summary = "MyGUI is a cross-platform library for creating graphical user interfaces (GUIs) for games and 3D applications."
+what = "Packaged RPM"
 
 [thumb]
 img = "cover.png"

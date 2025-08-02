@@ -10,6 +10,7 @@ repo = "https://src.fedoraproject.org/rpms/openmw"
 upstream = "https://openmw.org/"
 repoico = "/icons/fedora.svg"
 summary = "OpenMW is an open-source open-world RPG game engine that supports playing *Morrowind* by Bethesda Softworks."
+what = "Packaged RPM"
 
 [thumb]
 img = "cover.jpg"
