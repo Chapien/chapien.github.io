@@ -8,4 +8,4 @@ thumbnails = true
 [thumb]
 img = "cover.png"
 +++
-I am a maintainer on the [Fedora Linux Project](https://fedoraproject.org/). Here, you can find the packages that I maintain the RPMs for. Note that in most of these, I am not an upstream developer; I merely provide the RPM installers for Fedora Linux and its downstreams.
+I am a maintainer for the [Fedora Linux Project](https://fedoraproject.org/). Here, you can find the packages that I maintain the RPMs for. Note that in most of these, I am not an upstream developer; I merely provide the RPM installers for Fedora Linux and its downstreams.
