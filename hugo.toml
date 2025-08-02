@@ -121,6 +121,12 @@ weight = 20
 params.img = 'icons/rss.svg'
 
 [[menu.socials]]
+name = "Keyoxide (GPG Proofs)"
+url = "https://keyoxide.org/97810fc8f87bb5dc53012e81c5a81c724397b6b5"
+weight = -2
+params.img = 'icons/keyoxide.svg'
+
+[[menu.socials]]
 name = "Pronouns"
 url = "https://en.pronouns.page/@chapien"
 weight = -1
