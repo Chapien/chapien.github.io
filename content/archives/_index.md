@@ -3,6 +3,7 @@ title = "Archives"
 outputs = [ "html", "rss" ]
 nodetails = true
 type = "List"
+thumbnails = true
 
 [params]
 archived = true
