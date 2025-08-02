@@ -33,6 +33,7 @@
     --border: 3px double var(--border-color);
     --shadow: transparent;
     --isso-thread-heading: var(--text-color);
+    --isso-author: var(--nord14);
 }
 
 :root .dark {
@@ -48,4 +49,5 @@
     --border: 3px double var(--border-color);
     --shadow: transparent;
     --isso-thread-heading: var(--text-color);
+    --isso-author: var(--nord14);
 }
