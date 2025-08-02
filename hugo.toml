@@ -55,33 +55,51 @@ weight = 3
 params.img = 'icons/blog.svg'
 
 [[menu.main]]
+name = "Stories"
+url = "stories"
+weight = 4
+params.img = 'icons/book.svg'
+
+[[menu.main]]
+name = "Game Dev"
+url = "game-dev"
+weight = 5
+params.img = 'icons/games.svg'
+
+[[menu.main]]
+name = "Software"
+url = "software"
+weight = 6
+params.img = 'icons/git.svg'
+
+[[menu.main]]
 name = "Art"
 url = "art"
-weight = 4
+weight = 7
 params.img = 'icons/art.svg'
 
 [[menu.main]]
 name = "Archives"
 url = "archives"
-weight = 5
+weight = 8
 params.img = 'icons/archives.svg'
 
 [[menu.main]]
 name = "Links"
 url = "links"
-weight = 8
+weight = 9
 params.img = "icons/globe.svg"
 
 [[menu.main]]
 name = "Guestbook"
 url = "guestbook"
-weight = 9
+weight = 10
 params.img = "icons/guestbook.svg"
 
 [[menu.main]]
 name = "About"
 url = "about"
-weight = 10
+weight = 11
 params.img = 'icons/about.svg'
 
 [[menu.main]]

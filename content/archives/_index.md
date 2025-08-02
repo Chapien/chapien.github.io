@@ -1,12 +1,9 @@
 +++
 title = "Archives"
-outputs = [ "html", "rss" ]
+outputs = [ "html" ]
 nodetails = true
 type = "List"
 thumbnails = true
-
-[params]
-archived = true
 +++
 A page to hold archived works from other places. All works posted here are either public domain, licensed under some sort of CC-BY license, or posted with permission. 
 

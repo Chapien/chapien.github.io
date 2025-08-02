@@ -9,13 +9,6 @@ slug = "/about"
 fmContentType = "info"
 categories = [ "Information" ]
 hidefrontmatter = true
-
-[cover]
-image = "assets/images/profile.png"
-relative = true
-responsiveImages = true
-hidden = false
-caption = "May or may not be an actual goblin. Art by my friend [Kamala](https://www.tumblr.com/transgwenderart)."
 +++
 # About the Author
 ## Who are you?
