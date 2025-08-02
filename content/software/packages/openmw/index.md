@@ -15,6 +15,6 @@ summary = "OpenMW is an open-source open-world RPG game engine that supports pla
 img = "cover.jpg"
 +++
 
-I am the primary maintainer for the Fedora Linux package of OpenMW, a game engine for 3D role-playing games that can play Bethesda's award winning *Elder Scrolls III: Morrowind*.
+I am the primary maintainer for the Fedora Linux package of OpenMW, a game engine for 3D role-playing games that can play Bethesda's award winning *Elder Scrolls III: Morrowind*. In addition to packaging the RPM, I have made a few minor upstream contributions to this project
 <!--more-->
 ![OpenMW Screenshot, taken from [openmw.org](https://openmw.org/media/)](screenshot.png)
