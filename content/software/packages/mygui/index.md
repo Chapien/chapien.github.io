@@ -13,6 +13,7 @@ summary = "MyGUI is a cross-platform library for creating graphical user interfa
 
 [thumb]
 img = "cover.png"
+caption = "MyGui logo"
 +++
 
 I am the primary maintainer for the Fedora Linux package of MyGUI, a UI framework for video games.
