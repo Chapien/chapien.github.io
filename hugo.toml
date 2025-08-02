@@ -208,6 +208,7 @@ env = "production"
 hcard = true
 description = "Claire's personal blog."
 issoURL = 'comments.chapien.net'
+issohash = '9df0b07c8393'
 profilePicture = "images/profile.png"
 related = false
 voting = false
