@@ -8,6 +8,7 @@ toc = true
 categories = [ "Blog" ]
 slug = "/mac-from-linux"
 date = "2025-08-02"
+bluesky_url = "https://bsky.app/profile/claire.chapien.net/post/3lvhne6itv22i"
 
 [cover]
 image = "cover.png"
