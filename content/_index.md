@@ -7,6 +7,8 @@ Here, you'll find [blog](blog) posts about a myriad of topics ranging from softw
 
 In addition to blog posts, I'm hoping to post short stories as well as updates on games I'm developing. Watch this space!
 
+All content on this website is written by a human being, usually me. I do not make use of AI tools. If I ever do, it will likely be to experiment and demonstrate the flaws of relying on said tools rather than wholesale relying on them. Even in the usecases of AI I am okay with (such as upscaling), I will make extremely clear if there is any AI involved in anything I am posting, even if I am merely sharing it.
+
 [Read more about me](about)
 
 # Recent Blog Posts
