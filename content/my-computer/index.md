@@ -34,7 +34,7 @@ Graphics Processor: AMD Radeon RX 7800 XT
 ## Operating Systems
 My primary computer is a desktop running [Fedora Linux 42 Workstation KDE Edition](https://fedoraproject.org/kde/). Previously, I used Windows almost exlcusively, though I have always used Linux off and on for school, work and other things. I made the switch full-time to Linux in January of 2025, after the EOL of Windows 10 was announced. As Microsoft became a worse and worse company, and Desktop Linux became more and more viable, I decided to make the switch full time. I started off with [Arch Linux](https://archlinux.org/), which helped me learn a lot about Linux, but I've now settled in comfortably with Fedora.
 
-On my laptop and Steam Deck, I use [Bazzite](https://bazzite.gg/) with KDE Plasma. For work, I have a Mac Mini M1.
+On my laptop and Steam Deck, I use [Bazzite](https://bazzite.gg/) with KDE Plasma. For work, I have a Mac Mini M2.
 
 ## Development Environment
 I primarily use [VSCodium](https://vscodium.com/). I like Visual Studio Code, but I wanted to get away from Microsoft's telemetry as much as possible. I've enabled Microsoft extensions on VSCodium, but I try to avoid them when I can. If I absolutely need a VS Code feature, I still have it installed, but I avoid using it where I can.
