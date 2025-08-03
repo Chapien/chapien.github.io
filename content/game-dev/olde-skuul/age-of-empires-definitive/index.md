@@ -17,6 +17,7 @@ status = "Completed"
 [thumb]
 img = "cover.jpg"
 caption = "Age of Empires Definitive Edition logo"
+center = true
 src = "https://store.steampowered.com/app/1017900/Age_of_Empires_Definitive_Edition/"
 +++
 Olde Sküül was contracted by Forgotten Empires and Microsoft to help with some of the early port work, bringing old C/C++ code into modern APIs. My specific responsibility was porting DirectPlay into modern WinSock, and laying the groundwork for Xbox Live integration.

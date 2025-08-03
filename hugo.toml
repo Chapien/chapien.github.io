@@ -97,9 +97,15 @@ weight = 10
 params.img = "icons/guestbook.svg"
 
 [[menu.main]]
+name = "My Computer"
+url = "my-computer"
+weight = 11
+params.img = "icons/computer.svg"
+
+[[menu.main]]
 name = "About"
 url = "about"
-weight = 11
+weight = 14
 params.img = 'icons/about.svg'
 
 [[menu.main]]
