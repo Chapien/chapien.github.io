@@ -18,24 +18,24 @@ While I am trying to break more into the world of writing, I am still primarily 
 
 | Language   | Skill Level  |
 | ---------- | ------------ |
-| C/C++      | Experienced  |
-| C#         | Intermediate |
-| Java       | Intermediate |
-| Rust       | Beginner     |
-| Python     | Intermediate |
-| Bash/Zsh   | Intermediate |
-| HTML       | Experienced  |
-| CSS        | Intermediate |
-| JavaScript | Intermediate |
+| C/C++      | {{< color color="#a3be8c" text="Experienced" >}}  |
+| C#         | {{< color color="#ebcb8b" text="Intermediate" >}} |
+| Java       | {{< color color="#ebcb8b" text="Intermediate" >}} |
+| Rust       | {{< color color="#bf616a" text="Beginner" >}}     |
+| Python     | {{< color color="#ebcb8b" text="Intermediate" >}} |
+| Bash/Zsh   | {{< color color="#ebcb8b" text="Intermediate" >}} |
+| HTML       | {{< color color="#a3be8c" text="Experienced" >}}  |
+| CSS        | {{< color color="#ebcb8b" text="Intermediate" >}} |
+| JavaScript | {{< color color="#ebcb8b" text="Intermediate" >}} |
 
 ## Frameworks
 
 | Framework     | Skill Level  |
 | ------------- | ------------ |
-| Godot Engine  | Experienced  |
-| RPG Maker     | Intermediate |
-| Unity Engine  | Intermediate |
-| Unreal Engine | Rusty        |
-| Game Maker    | Rusty        |
-| Qt            | Beginner     |
-| Hugo          | Intermediate |
+| Godot Engine  | {{< color color="#a3be8c" text="Experienced" >}}  |
+| RPG Maker     | {{< color color="#ebcb8b" text="Intermediate" >}} |
+| Unity Engine  | {{< color color="#ebcb8b" text="Intermediate" >}} |
+| Unreal Engine | {{< color color="#d08770" text="Rusty" >}}       |
+| Game Maker    | {{< color color="#d08770" text="Rusty" >}}         |
+| Qt            | {{< color color="#bf616a" text="Beginner" >}}     |
+| Hugo          | {{< color color="#ebcb8b" text="Intermediate" >}} |

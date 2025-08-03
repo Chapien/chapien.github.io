@@ -1,0 +1,3 @@
+{{ $color := .Get "color" | safeCSS }}
+{{ $text := .Get "text" | markdownify }}
+<span style="color: {{ $color }};">{{ $text }}</span>
