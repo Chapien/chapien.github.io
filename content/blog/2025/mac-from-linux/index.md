@@ -47,7 +47,7 @@ if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
 fi
 ```
 
-This portion of my `.zshrc` checks if zinit is installed, and if it is, it checks if any of my packages need updates. Obviously, this won't work out of the box on MacOS (though zinit DOES work on Mac with a bit of effort); that isn't what bothered me. What bothered me was that first line, the `if` statement.
+This portion of my `.zshrc` checks if zinit is installed, and if it isn't, it installs zinit. Obviously, this won't work out of the box on MacOS (though zinit DOES work on Mac with a bit of effort); that isn't what bothered me. What bothered me was that first line, the `if` statement.
 
 The compiler settings that Apple uses on their zsh build does not support compound commands (ie `[[ foo ]]`). Or, if it does, the behavior is entirely different. None of my scripts that used if statements worked out of the box as a result. I had to manually a bracket -- which in most cases worked fine, but in some specific cases meant refactoring was necessary due to shell expansions.
 
