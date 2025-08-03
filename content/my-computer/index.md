@@ -54,6 +54,6 @@ I oscillate between [GIMP](https://www.gimp.org/) and [Krita](https://krita.org/
 ## Office
 For documents, spreadsheets, and so on, I use [LibreOffice](https://www.libreoffice.org/). For e-mails, RSS feeds, and calendars, I use [Betterbird](https://www.betterbird.eu/). I do not use Google Calendar; all of my caldavs and contacts are stored on my own server using [Radicale](https://radicale.org/v3.html). 
 
-For note taking, brainstorming, flowchart creation, some scheduling and pretrty much everything, I use [Obsidian](https://obsidian.md/). It's a wonderful program that I encourage everyone to try out. That said, I've recently had some performance issues, so please be cautious not to install too many plugins like I have!
+For note taking, brainstorming, flowchart creation, some scheduling and pretty much everything, I use [Obsidian](https://obsidian.md/). It's a wonderful program that I encourage everyone to try out. That said, I've recently had some performance issues, so please be cautious not to install too many plugins like I have!
 
 For writing Markdown files outside of Obsidian, I use [Typora](https://typora.io/). It's not FOSS, unfortunately, but it's the best one I've managed to find that uses live previews. WYSIWYG is vital for me for any Markdown editor.
