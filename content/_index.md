@@ -11,3 +11,31 @@ In addition to blog posts, I'm hoping to post short stories as well as updates o
 
 # Recent Blog Posts
 {{< recent-posts >}}
+# Programming
+While I am trying to break more into the world of writing, I am still primarily a programmer. Here are some of the programming languages and APIs that I know.
+
+## Languages
+
+| Language   | Skill Level  |
+| ---------- | ------------ |
+| C/C++      | Experienced  |
+| C#         | Intermediate |
+| Java       | Intermediate |
+| Rust       | Beginner     |
+| Python     | Intermediate |
+| Bash/Zsh   | Intermediate |
+| HTML       | Experienced  |
+| CSS        | Intermediate |
+| JavaScript | Intermediate |
+
+## Frameworks
+
+| Framework     | Skill Level  |
+| ------------- | ------------ |
+| Godot Engine  | Experienced  |
+| RPG Maker     | Intermediate |
+| Unity Engine  | Intermediate |
+| Unreal Engine | Rusty        |
+| Game Maker    | Rusty        |
+| Qt            | Beginner     |
+| Hugo          | Intermediate |
