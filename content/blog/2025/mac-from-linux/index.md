@@ -49,7 +49,7 @@ fi
 
 This portion of my `.zshrc` checks if zinit is installed, and if it isn't, it installs zinit. Obviously, this won't work out of the box on MacOS (though zinit DOES work on Mac with a bit of effort); that isn't what bothered me. What bothered me was that first line, the `if` statement.
 
-The compiler settings that Apple uses on their zsh build does not support compound commands (ie `[[ foo ]]`). Or, if it does, the behavior is entirely different. None of my scripts that used if statements worked out of the box as a result. I had to manually a bracket -- which in most cases worked fine, but in some specific cases meant refactoring was necessary due to shell expansions.
+The compiler settings that Apple uses on their zsh build does not support compound commands (ie `[[ foo ]]`). Or, if it does, the behavior is entirely different. None of my scripts that used if statements worked out of the box as a result. I had to manually remove a bracket -- which in most cases worked fine, but in some specific cases meant refactoring was necessary due to shell expansions.
 
 This is an extremely technical thing, I realize, but it immediately prejudiced me against MacOS. I'm fine with things being different. I'm even fine with MacOS using their own build of zsh -- sure, distros do that all the time. My problem is there's no way to *change* that. I cannot replace their zsh build with my own. It's part of the MacOS system. I suppose I could install a secondary install of zsh through `brew`, but come on now. I'm not doing that. 
 
