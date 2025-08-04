@@ -57,61 +57,61 @@
                 {{ end }}
             </div>
         {{ end }}
-    </details>
-    {{ if $.Site.Params.lastfm.enabled }}
-        <hr>
-        <!-- 
-        * Copyright (c) 2020 Eric Goebelbecker.
-        * 
-        * This program is free software: you can redistribute it and/or modify  
-        * it under the terms of the GNU General Public License as published by  
-        * the Free Software Foundation, version 3.
-        *
-        * This program is distributed in the hope that it will be useful, but 
-        * WITHOUT ANY WARRANTY; without even the implied warranty of 
-        * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU 
-        * General Public License for more details.
-        *
-        * You should have received a copy of the GNU General Public License 
-        * along with this program. If not, see <http://www.gnu.org/licenses/>.
-        -->
+        {{ if $.Site.Params.lastfm.enabled }}
+            <hr>
+            <!-- 
+            * Copyright (c) 2020 Eric Goebelbecker.
+            * 
+            * This program is free software: you can redistribute it and/or modify  
+            * it under the terms of the GNU General Public License as published by  
+            * the Free Software Foundation, version 3.
+            *
+            * This program is distributed in the hope that it will be useful, but 
+            * WITHOUT ANY WARRANTY; without even the implied warranty of 
+            * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU 
+            * General Public License for more details.
+            *
+            * You should have received a copy of the GNU General Public License 
+            * along with this program. If not, see <http://www.gnu.org/licenses/>.
+            -->
 
-        <script src="/scripts/nowplaying.js"></script>
+            <script src="/scripts/nowplaying.js"></script>
 
-        <div class="nowplayingcard">
-            <div class="nowplayingcontainer-inner">
-                <strong class="nav-title">Now Playing</strong>
-                <div class="trackInfo">
-                    <img id="trackart" src="#">
-                    <div class="site-menu">
-                        {{ $image := resources.Get "icons/music.svg" }}
-                        {{ with $image }}
-                            <img alt="" class="symbolic-icon" style="image-rendering: pixelated;" width="16" height="16" src="{{ .RelPermalink }}">
-                        {{ end }}
-                        <a id="tracktitle" class="nav-item"></a>
-                    </div>
-                    <div class="site-menu">
-                        {{ $image := resources.Get "icons/disc.svg" }}
-                        {{ with $image }}
-                            <img alt="" class="symbolic-icon" style="image-rendering: pixelated;" width="16" height="16" src="{{ .RelPermalink }}">
-                        {{ end }}
-                        <span id="album" class="nav-item" href="#"></a>
-                    </div>
-                    <div class="site-menu">
-                        {{ $image := resources.Get "icons/mic.svg" }}
-                        {{ with $image }}
-                            <img alt="" class="symbolic-icon" style="image-rendering: pixelated;" width="16" height="16" src="{{ .RelPermalink }}">
-                        {{ end }}
-                        <span id="artist" class="nav-item" href="#"></a>
+            <div class="nowplayingcard">
+                <div class="nowplayingcontainer-inner">
+                    <strong class="nav-title">Now Playing</strong>
+                    <div class="trackInfo">
+                        <img id="trackart" src="#">
+                        <div class="site-menu">
+                            {{ $image := resources.Get "icons/music.svg" }}
+                            {{ with $image }}
+                                <img alt="" class="symbolic-icon" style="image-rendering: pixelated;" width="16" height="16" src="{{ .RelPermalink }}">
+                            {{ end }}
+                            <a id="tracktitle" class="nav-item"></a>
+                        </div>
+                        <div class="site-menu">
+                            {{ $image := resources.Get "icons/disc.svg" }}
+                            {{ with $image }}
+                                <img alt="" class="symbolic-icon" style="image-rendering: pixelated;" width="16" height="16" src="{{ .RelPermalink }}">
+                            {{ end }}
+                            <span id="album" class="nav-item" href="#"></a>
+                        </div>
+                        <div class="site-menu">
+                            {{ $image := resources.Get "icons/mic.svg" }}
+                            {{ with $image }}
+                                <img alt="" class="symbolic-icon" style="image-rendering: pixelated;" width="16" height="16" src="{{ .RelPermalink }}">
+                            {{ end }}
+                            <span id="artist" class="nav-item" href="#"></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <script>
-        setInterval(getLastTrack({{ $.Site.Params.lastfm.user }},{{ $.Site.Params.lastfm.key }}), 10 * 1000);
-        </script>
+            <script>
+            setInterval(getLastTrack({{ $.Site.Params.lastfm.user }},{{ $.Site.Params.lastfm.key }}), 10 * 1000);
+            </script>
         {{ end }}
+    </details>
 </nav>
 
 
