@@ -9,6 +9,8 @@ In addition to blog posts, I'm hoping to post short stories as well as updates o
 
 All content on this website is written by a human being, usually me. I do not make use of AI tools. If I ever do, it will likely be to experiment and demonstrate the flaws of relying on said tools rather than wholesale relying on them. Even in the usecases of AI I am okay with (such as upscaling), I will make extremely clear if there is any AI involved in anything I am posting, even if I am merely sharing it.
 
+Do not train your AI model on this website. If you do, [Cloudflare will banish you to the shadow realm](https://developers.cloudflare.com/bots/additional-configurations/ai-labyrinth/).
+
 [Read more about me](about)
 
 # Recent Blog Posts
@@ -26,8 +28,8 @@ Languages I know with my experience level. Sorted by type: Programming language,
 | Java       | {{< color color="#ebcb8b" text="Intermediate" >}} |
 | Rust       | {{< color color="#bf616a" text="Beginner" >}}     |
 | GDScript   | {{< color color="#a3be8c" text="Experienced" >}}
-| Python     | {{< color color="#ebcb8b" text="Intermediate" >}} |
 | Bash/Zsh   | {{< color color="#ebcb8b" text="Intermediate" >}} |
+| Python     | {{< color color="#ebcb8b" text="Intermediate" >}} |
 | HTML       | {{< color color="#a3be8c" text="Experienced" >}}  |
 | CSS        | {{< color color="#ebcb8b" text="Intermediate" >}} |
 | JavaScript | {{< color color="#ebcb8b" text="Intermediate" >}} |
@@ -41,7 +43,7 @@ APIs and frameworks that I am familiar with and my skill level. Sorted by: Game 
 | Godot Engine  | {{< color color="#a3be8c" text="Experienced" >}}  |
 | RPG Maker     | {{< color color="#ebcb8b" text="Intermediate" >}} |
 | Unity Engine  | {{< color color="#ebcb8b" text="Intermediate" >}} |
-| Unreal Engine | {{< color color="#d08770" text="Rusty" >}}       |
 | Game Maker    | {{< color color="#d08770" text="Rusty" >}}         |
+| Unreal Engine | {{< color color="#d08770" text="Rusty" >}}       |
 | Qt            | {{< color color="#bf616a" text="Beginner" >}}     |
 | Hugo          | {{< color color="#ebcb8b" text="Intermediate" >}} |
