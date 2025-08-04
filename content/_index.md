@@ -17,6 +17,7 @@ All content on this website is written by a human being, usually me. I do not ma
 While I am trying to break more into the world of writing, I am still primarily a programmer. Here are some of the programming languages and APIs that I know.
 
 ## Languages
+Languages I know with my experience level. Sorted by type: Programming language, scripting language, web development.
 
 | Language   | Skill Level  |
 | ---------- | ------------ |
@@ -24,6 +25,7 @@ While I am trying to break more into the world of writing, I am still primarily 
 | C#         | {{< color color="#ebcb8b" text="Intermediate" >}} |
 | Java       | {{< color color="#ebcb8b" text="Intermediate" >}} |
 | Rust       | {{< color color="#bf616a" text="Beginner" >}}     |
+| GDScript   | {{< color color="#a3be8c" text="Experienced" >}}
 | Python     | {{< color color="#ebcb8b" text="Intermediate" >}} |
 | Bash/Zsh   | {{< color color="#ebcb8b" text="Intermediate" >}} |
 | HTML       | {{< color color="#a3be8c" text="Experienced" >}}  |
@@ -31,6 +33,8 @@ While I am trying to break more into the world of writing, I am still primarily 
 | JavaScript | {{< color color="#ebcb8b" text="Intermediate" >}} |
 
 ## Frameworks
+
+APIs and frameworks that I am familiar with and my skill level. Sorted by: Game development, UI frameworks, web development.
 
 | Framework     | Skill Level  |
 | ------------- | ------------ |
