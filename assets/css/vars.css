@@ -51,3 +51,11 @@
     --isso-thread-heading: var(--text-color);
     --isso-author: var(--nord14);
 }
+
+img#trackart {
+    border: 1px inset var(--border-color);
+    border-radius: 5px;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+}

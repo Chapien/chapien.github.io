@@ -234,3 +234,8 @@ takesCommissions = false
 commissionsOpen = false
 statsPage = false
 galleries = ["art/goblinsona"]
+
+[params.lastfm]
+enabled = true
+user = "chapien"
+key = "7d08c0a2824f4bd15ec6505cb5d06492"

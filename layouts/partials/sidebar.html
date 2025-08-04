@@ -1,0 +1,116 @@
+{{ if site.Params.hideExternalMenu }}
+<style>
+    .site-menu {
+        .external-link {
+            display: none;
+        }
+    }
+</style>
+{{ end }}
+
+<nav>
+    <details id="nav-menu" open>
+        <summary>Menu</summary>
+
+        <strong class="nav-title">{{ lang.Translate "navigation" }}</strong>
+
+        {{ $icon := resources.Get "external-link.svg" }}
+
+        {{ range .Site.Menus.main }}
+            <div class="site-menu">
+                {{ with resources.Get .Params.img }}
+                    <img alt="" class="symbolic-icon" style="image-rendering: pixelated;" width="16" height="16" src="{{ .RelPermalink }}">
+                {{ end }}
+                {{ $url := .URL }}
+                {{ if not (strings.Contains $url "https") }}
+                    {{ $url = printf "%s%s" $.Site.Home.Permalink .URL }}
+                {{ end }}
+                <a href="{{ $url }}" class="nav-item">{{ .Name }}{{ if strings.HasPrefix .URL "http" }}<img class="external-link" aria-hidden="true" alt="External link" width="16" height="16" src="{{ $icon.RelPermalink }}">{{- end -}}</a>
+            </div>
+        {{ end }}
+
+        <br/>
+
+        <strong class="nav-title">{{ lang.Translate "social_media" }}</strong>
+
+        {{ range .Site.Menus.socials }}
+            <div class="site-menu">
+                {{ with resources.Get .Params.img }}
+                    <img alt="" class="symbolic-icon" style="image-rendering: pixelated;" width="16" height="16" src="{{ .RelPermalink }}">
+                {{ end }}
+                <a rel="me" href="{{ .URL  }}" class="nav-item" target="_blank">{{ .Name }}{{ if strings.HasPrefix .URL "http" }}<img class="external-link" aria-hidden="true" alt="External link" width="16" height="16" src="{{ $icon.RelPermalink }}">{{- end -}}</a>
+            </div>
+        {{ end }}
+
+        {{ if .IsTranslated }}
+            <br>
+            <strong class="nav-title">Page Languages</strong>
+            <div class="site-meni">
+                {{ $currentPage := . }}
+                {{ range .Translations }}
+                    {{ $specificLang := .Lang }}
+                    {{ range $currentPage.Translations }}
+                        {{ if (eq .Lang $specificLang) }}
+                            <a href="{{ .RelPermalink }}" class="nav-item">{{ .Language.LanguageName }}</a>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+            </div>
+        {{ end }}
+    </details>
+</nav>
+
+{{ if $.Site.Params.lastfm.enabled }}
+<hr>
+<!-- 
+ * Copyright (c) 2020 Eric Goebelbecker.
+ * 
+ * This program is free software: you can redistribute it and/or modify  
+ * it under the terms of the GNU General Public License as published by  
+ * the Free Software Foundation, version 3.
+ *
+ * This program is distributed in the hope that it will be useful, but 
+ * WITHOUT ANY WARRANTY; without even the implied warranty of 
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU 
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License 
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<script src="/scripts/nowplaying.js"></script>
+
+<div class="nowplayingcard">
+	<div class="nowplayingcontainer-inner">
+        <strong class="nav-title">Now Playing</strong>
+		<div class="trackInfo">
+            <img id="trackart" src="#">
+            <div class="site-menu">
+                {{ $image := resources.Get "icons/music.svg" }}
+                {{ with $image }}
+                    <img alt="" class="symbolic-icon" style="image-rendering: pixelated;" width="16" height="16" src="{{ .RelPermalink }}">
+                {{ end }}
+                <a id="tracktitle" class="nav-item"></a>
+            </div>
+            <div class="site-menu">
+                {{ $image := resources.Get "icons/disc.svg" }}
+                {{ with $image }}
+                    <img alt="" class="symbolic-icon" style="image-rendering: pixelated;" width="16" height="16" src="{{ .RelPermalink }}">
+                {{ end }}
+                <span id="album" class="nav-item" href="#"></a>
+            </div>
+            <div class="site-menu">
+                {{ $image := resources.Get "icons/mic.svg" }}
+                {{ with $image }}
+                    <img alt="" class="symbolic-icon" style="image-rendering: pixelated;" width="16" height="16" src="{{ .RelPermalink }}">
+                {{ end }}
+                <span id="artist" class="nav-item" href="#"></a>
+            </div>
+        </div>
+	</div>
+</div>
+
+<script>
+setInterval(getLastTrack({{ $.Site.Params.lastfm.user }},{{ $.Site.Params.lastfm.key }}), 10 * 1000);
+</script>
+{{ end }}
